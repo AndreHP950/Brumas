@@ -55,13 +55,19 @@ A experiência é guiada por:
 
 ## ⚙️ Mecânicas Principais
 
+### Essenciais (Build 1)
 - Navegação por **toque/clique** (mobile-first)
-- Sistema de **escolhas** (ramificações narrativas)
+- Sistema de **escolhas** (ramificações narrativas — cada escolha leva ao texto correto)
 - Botão para **avançar** e **voltar** na história
+- Menu principal funcional (Iniciar, Sair)
+
+### Futuras (a partir da Build 2)
 - Botão para **reler** o trecho atual
 - **Histórico de decisões** tomadas
-- **Transições entre cenas** com áudio e efeitos
+- **Transições entre cenas** com efeitos visuais
 - Sistema de **seleção de personagem** (inicialmente apenas Benício)
+- Interações com elementos do cenário (ex: clicar em objetos)
+- Sistema de áudio e narração (a ser decidido pela equipe)
 
 ---
 
@@ -100,15 +106,34 @@ O cenário funciona como uma **representação visual da narrativa**, sendo modi
 - Integração entre UI e cenário
 - Uso de formas simples e cores sólidas
 
-### Paleta de Cores
+### Paleta de Cores (Sugestão Inicial – a ser definida pela equipe)
 
-| Cor | Hex | Uso |
+> ⚠️ **Nota:** Esta paleta é uma **sugestão inicial**. A paleta oficial deve ser pesquisada e definida pela equipe (Antonio e Laura) antes de ser aplicada em qualquer asset ou interface. Após a definição, atualizar esta seção e o GDR.
+
+| Cor | Hex | Uso sugerido |
 |-----|-----|-----|
 | 🟡 Amarelo Sol | `#F2C94C` | Cor primária / destaque |
 | 🟠 Amarelo Escuro | `#D4A017` | Cor secundária / ênfase |
 | 🟤 Marrom Terra | `#8B6914` | Apoio / elementos naturais |
 | 🟢 Verde Musgo | `#556B2F` | Complementar / vegetação |
 | ⚪ Cinza Concreto | `#808080` | Neutro / fundos |
+
+---
+
+## 📎 Links e Recursos Importantes
+
+> Preencher conforme o projeto avança. Manter sempre atualizado.
+
+| Recurso | Link / Informação |
+|---------|-------------------|
+| 🎨 **Paleta de Cores Oficial** | *(a ser definida pela equipe – ver sugestão acima)* |
+| 📄 **GDR (Game Design Document)** | *(inserir link aqui)* |
+| 📌 **Moodboard Pinterest** | *(inserir link da pasta aqui)* |
+| 💻 **Repositório GitHub** | [github.com/AndreHP950/Brumas](https://github.com/AndreHP950/Brumas) |
+| 🎮 **Projeto Unity** | *(inserir caminho ou instruções aqui)* |
+| 🎨 **Referências Visuais** | *(inserir link ou pasta aqui)* |
+| 📝 **Roteiro do Benício** | *(inserir link ou localização do arquivo)* |
+| 📊 **Planilha de Produção** | [`Planilha_Producao_Brumas.xlsx`](./Planilha_Producao_Brumas.xlsx) |
 
 ---
 
@@ -157,13 +182,61 @@ A narrativa é construída de forma fragmentada, permitindo:
 
 ## 🧪 Escopo da Primeira Build (Entrega 19/04)
 
-Para a primeira entrega, o projeto deve conter:
+Para a primeira entrega, o foco é no **essencial funcional**. Não precisamos de assets finais, efeitos visuais elaborados, áudio ou cenários detalhados neste momento.
 
-- [ ] GDR atualizado com referências e identidade visual
-- [ ] Interface básica funcional
-- [ ] Blocagem de pelo menos um cenário/ambiente (sandbox para teste)
-- [ ] Mecânicas principais propostas no GDR implementadas
-- [ ] Build executável funcional
+### Obrigatório:
+- [ ] GDR atualizado com referências, paleta de cores definida e direção de arte
+- [ ] Interface básica funcional (menu → narrativa → escolhas)
+- [ ] Sistema de narrativa funcionando (exibir texto, avançar, voltar)
+- [ ] Sistema de escolhas funcionando (cada escolha leva ao trecho correto)
+- [ ] Build executável funcional (APK)
+
+### Desejável (se der tempo):
+- [ ] Blocagem simples de um cenário (formas geométricas com cores da paleta)
+- [ ] Moodboard no Pinterest com referências visuais
+
+### NÃO é prioridade para Build 1:
+- ❌ Modelagem 3D detalhada de cenários
+- ❌ Iluminação, câmera e materiais refinados
+- ❌ Efeitos sonoros e música
+- ❌ Narração em áudio
+- ❌ Transições visuais elaboradas
+- ❌ Sistema de histórico de decisões
+- ❌ Tela de seleção de personagem
+- ❌ Material de apresentação (fica para depois da build pronta)
+
+---
+
+## 📅 Cronograma de Entregas
+
+| Entrega | Data | Pontos |
+|---------|------|--------|
+| **Build Inicial** | 19/04 | 15 pts |
+| **Build Intermediária** | 17/05 | 15 pts |
+| **Build Pré-banca** | 14/06 | 15 pts |
+| **Build Final para Banca** | 28/06 | 50 pts |
+
+> A última build deve estar 100% completa para o final de junho. Não há necessidade de pressa — vamos fazer com calma e planejamento.
+
+---
+
+## 📋 Diretrizes para Organização de Tarefas
+
+### Princípios importantes:
+
+1. **Respeitar dependências:** Não pedir para alguém implementar algo que depende de outra tarefa não concluída. Exemplo: não pedir para programar a interface de escolhas antes de um artista ter definido como ela deve ficar.
+
+2. **Máximo 1-3 tarefas por pessoa por semana:** Todos estudam, trabalham e têm outras responsabilidades. Tarefas devem ser realistas e alcançáveis.
+
+3. **Dividir tarefas pesadas:** Modelagem 3D de cenários completos, por exemplo, deve ser dividida entre mais pessoas e mais tempo. Nunca alocar como tarefa única de uma semana.
+
+4. **Definir antes de usar:** Paleta de cores, estilo visual, layout de interface — tudo isso precisa ser **definido e aprovado** pela equipe antes de ser implementado em código ou assets.
+
+5. **A história já existe:** O roteiro do Benício já está pronto em formato de texto. O trabalho agora é transformá-lo em formato jogável, não reescrever.
+
+6. **Focar no funcional:** Para as primeiras builds, o importante é que funcione. Visual bonito, efeitos e polimento vêm depois.
+
+7. **Nem todos precisam ter a mesma quantidade de tarefas:** Uma pessoa pode ter 3 tarefas simples enquanto outra tem 1 tarefa mais complexa. O importante é o equilíbrio de esforço.
 
 ---
 
@@ -182,14 +255,14 @@ A planilha de planejamento da produção está disponível no arquivo [`Planilha
 4. **A linha abaixo** (em branco) é onde o membro preenche o que fez, como fez e o link do commit
 5. Siga a **linha de exemplo** no topo da planilha para entender o formato
 
-### Cronograma Resumido
+### Cronograma Resumido (Ciclo da Build 1)
 
 | Semana | Período | Foco |
 |--------|---------|------|
-| **Semana 1** | 05/04 – 11/04 | Estrutura base + planejamento |
-| **Semana 2** | 12/04 – 18/04 | **FOCO TOTAL** – Integração e build |
-| **Semana 3** | 19/04 – 25/04 | Pós-entrega + melhorias |
-| **Semana 4** | 26/04 – 02/05 | Polimento + próximo ciclo |
+| **Semana 1** | 05/04 – 11/04 | Planejamento + estrutura base (definir paleta, referências, wireframes da interface) |
+| **Semana 2** | 12/04 – 18/04 | **FOCO TOTAL** – Implementar narrativa + escolhas, integrar e gerar build |
+| **Semana 3** | 19/04 – 25/04 | Pós-entrega + correções com base no feedback |
+| **Semana 4** | 26/04 – 02/05 | Planejamento do próximo ciclo (Build 2) |
 
 ---
 
