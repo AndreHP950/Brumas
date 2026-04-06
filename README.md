@@ -173,13 +173,6 @@ A narrativa é construída de forma fragmentada, permitindo:
 - Releitura de trechos
 - Exploração de decisões e consequências
 
-### Estrutura da Narrativa
-
-| Ato | Momento | Descrição |
-|-----|---------|-----------|
-| **Ato 1** | Manhã | Acordar, café da manhã, saída de casa |
-| **Ato 2** | Tarde | Trabalho, almoço, volta para casa |
-| **Ato 3** | Evento | Sinais do rompimento, decisões críticas, desfecho |
 
 ---
 
@@ -279,7 +272,7 @@ Brumas/
    ```bash
    git clone https://github.com/AndreHP950/Brumas.git
    ```
-2. Abra o projeto no **Unity 2022.3 LTS**
+2. Abra o projeto na **Unity**
 3. Abra a cena `MainMenu` em `Assets/Scenes/`
 4. Pressione **Play** para testar no editor
 5. Para build Android: `File > Build Settings > Android > Build`
