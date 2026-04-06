@@ -140,27 +140,6 @@ O jogo é dividido em módulos principais:
 └── 🏔️ Sistema de Cenário (representação visual dinâmica)
 ```
 
-### Estrutura de Pastas Unity
-
-```
-Assets/
-├── Scripts/
-│   ├── Core/          # GameManager, SceneLoader
-│   ├── UI/            # MenuController, NavigationUI
-│   ├── Narrative/     # NarrativeManager, ChoiceSystem
-│   └── Audio/         # AudioManager
-├── Scenes/            # MainMenu, GameScene, SelectionScene
-├── Prefabs/           # Prefabs reutilizáveis
-├── Audio/
-│   ├── SFX/           # Efeitos sonoros
-│   └── Narration/     # Áudios de narração
-├── UI/
-│   └── Sprites/       # Ícones, botões, frames
-├── Models/            # Modelos 3D low poly
-├── Textures/          # Texturas
-└── Materials/         # Materiais
-```
-
 ---
 
 ## 📖 Narrativa
@@ -180,30 +159,28 @@ A narrativa é construída de forma fragmentada, permitindo:
 
 Para a primeira entrega, o projeto deve conter:
 
-- [x] GDR atualizado com referências e identidade visual
-- [x] Interface básica totalmente funcional
-- [x] Menu principal implementado
-- [x] História completa do Benício navegável
-- [x] Sistema de escolhas funcional
-- [x] Pelo menos um cenário blocado (sandbox)
-- [x] Mecânicas principais implementadas
-- [x] Build executável funcional (APK)
+- [ ] GDR atualizado com referências e identidade visual
+- [ ] Interface básica funcional
+- [ ] Blocagem de pelo menos um cenário/ambiente (sandbox para teste)
+- [ ] Mecânicas principais propostas no GDR implementadas
+- [ ] Build executável funcional
 
 ---
 
 ## 📊 Planilha de Produção
 
-A planilha de planejamento da produção está disponível no arquivo [`Planilha_Producao_Brumas.csv`](./Planilha_Producao_Brumas.csv).
+A planilha de planejamento da produção está disponível no arquivo [`Planilha_Producao_Brumas.xlsx`](./Planilha_Producao_Brumas.xlsx).
 
 ### Como usar a planilha:
 
-1. **Abra o arquivo CSV** no Excel ou Google Sheets
+1. **Abra o arquivo** no Excel ou Google Sheets
 2. **Aplique cores** nas células para indicar status:
    - 🟢 **Verde** = Concluído
    - 🟡 **Amarelo** = Em andamento
    - 🔴 **Vermelho** = Não iniciado
-3. **Preencha o link do commit** em cada descrição de tarefa
-4. Siga a **linha de exemplo** no topo da planilha para entender o nível de detalhamento esperado
+3. **A linha de tarefa** contém a descrição detalhada do que precisa ser feito
+4. **A linha abaixo** (em branco) é onde o membro preenche o que fez, como fez e o link do commit
+5. Siga a **linha de exemplo** no topo da planilha para entender o formato
 
 ### Cronograma Resumido
 
@@ -227,8 +204,8 @@ O desenvolvimento está organizado em **ciclos semanais**, com:
 
 Cada tarefa deve conter:
 
-- ✏️ Descrição do que foi feito
-- 🔧 Detalhamento técnico (scripts, assets, etc.)
+- ✏️ Linha de tarefa com descrição detalhada do que precisa ser feito
+- 🔧 Linha em branco para o membro preencher o que fez, como fez
 - 🔗 Link do commit correspondente
 
 ---
@@ -259,7 +236,7 @@ A estrutura foi pensada para permitir **expansão futura**, com inclusão de nov
 ```
 Brumas/
 ├── README.md                        # Este documento
-├── Planilha_Producao_Brumas.csv     # Planilha de planejamento da produção
+├── Planilha_Producao_Brumas.xlsx    # Planilha de planejamento da produção
 ├── .gitignore                       # Configuração de arquivos ignorados (Unity)
 └── Assets/                          # Pasta principal do projeto Unity (a ser criada)
 ```
@@ -273,9 +250,8 @@ Brumas/
    git clone https://github.com/AndreHP950/Brumas.git
    ```
 2. Abra o projeto na **Unity**
-3. Abra a cena `MainMenu` em `Assets/Scenes/`
+3. Abra a cena principal em `Assets/Scenes/`
 4. Pressione **Play** para testar no editor
-5. Para build Android: `File > Build Settings > Android > Build`
 
 ---
 
