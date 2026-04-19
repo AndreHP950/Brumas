@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
   m_Name: HistoriaParte1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: " Em um belo dia Benicio,um velho senhor de 65 anos com sua esposa Raquel
-    de 60 anos mora em uma humilde casinha confort\xE1vel e rural"
+  text: " Em um belo dia Benicio, um senhor de 65 anos com sua esposa Raquel de 60
+    anos moram em uma humilde casinha confort\xE1vel e rural"
   nextDialog:
   - {fileID: 11400000, guid: ce5f60aea2d212e4eaa554c6d5eb24ba, type: 2}

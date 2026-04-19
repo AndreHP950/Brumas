@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
   m_Name: GavetaFalha
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: A Gaveta esta vazia, ja peguei a chave...
+  text: "A Gaveta est\xE1 vazia, j\xE1 peguei a chave..."
   nextDialog: []
