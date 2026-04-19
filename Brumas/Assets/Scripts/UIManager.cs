@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        /*
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        */
     }
 
     public void LoadGameScene()
