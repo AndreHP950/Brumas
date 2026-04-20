@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: HistoriaParte2
+  m_Name: InsistirProcura2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "Benicio acorda \xE0s 5 da manh\xE3 para come\xE7ar um belo dia, mas antes
-    de tudo, melhor come\xE7ar a achar o fogareiro para garantir a janta"
+  text: "Quanto mais cedo eu ir, mais tempo posso passar na volta com a Dona Raquel,
+    que fica cabreira se demoro muito. Mas talvez, se eu tomar um caf\xE9 direito,
+    as ideias clareiam... "
   nextDialog:
-  - {fileID: 11400000, guid: 7c44805a3ee89b4409648422d30d60a8, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 7d97e75ae74a5a344b1fa667817bd48b, type: 2}

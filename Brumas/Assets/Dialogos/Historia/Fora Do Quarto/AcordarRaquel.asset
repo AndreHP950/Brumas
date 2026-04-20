@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: PortaFalha
+  m_Name: AcordarRaquel
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "A porta est\xE1 trancada! Terei que achar a minha chave"
-  nextDialog: []
+  text: "Raquel est\xE1 dormindo profundamente. Ben\xEDcio pensa em tr\xEAs problemas:
+    um que ela n\xE3o gosta de acordar cedo; segundo, que ela vai ficar muito brava
+    por ter sido acordada de madrugada apenas para procurar um fogareiro, e terceiro,"
+  nextDialog:
+  - {fileID: 11400000, guid: f07fb3e451c3b4f4c84c748a6b1d77ee, type: 2}
+  - {fileID: 11400000}

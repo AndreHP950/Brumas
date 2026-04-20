@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: PortaFalha
+  m_Name: EsquecerFogareiro2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "A porta est\xE1 trancada! Terei que achar a minha chave"
-  nextDialog: []
+  text: "Quanto mais cedo eu ir, mais tempo posso passar na volta com a Dona Raquel,
+    que fica cabreira se demoro muito. Mas vai ser mais f\xE1cil de carregar as coisas
+    se eu colocar a cela, o que tamb\xE9m n\xE3o deve demorar tanto. "
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: f6b3e42218279064caccde3d73a14f22, type: 2}

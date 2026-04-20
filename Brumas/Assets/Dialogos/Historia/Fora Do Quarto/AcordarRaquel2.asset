@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: PortaSucesso
+  m_Name: AcordarRaquel2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "Ok consegui destrancar a porta... Mas e agora? T\xE1 tudo um breu\u2026
-    Ser\xE1 que eu acordo Raquel? Ela deve saber onde eu deixei esse trem!"
+  text: ' que ela vai ficar mais brava ainda com ela por ter acordado ela de madrugada,
+    para buscar um fogareiro, porque ele precisa dele para ir pescar! Melhor deixar
+    um bilhete na cozinha, e sair de fininho. Eu mesmo procuro o fogareiro, acho
+    que terei menos problemas. '
   nextDialog:
-  - {fileID: 11400000, guid: d5f6b4e6188140d469972fb84d9a8892, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 2bab1ab889432744cb2ee307ec9c4455, type: 2}

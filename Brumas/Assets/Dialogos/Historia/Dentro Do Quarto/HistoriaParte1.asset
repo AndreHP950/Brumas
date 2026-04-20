@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: PortaFalha
+  m_Name: HistoriaParte1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "A porta est\xE1 trancada! Terei que achar a minha chave"
-  nextDialog: []
+  text: "Ben\xEDcio Dias \xE9 um homem de 65 anos que mora com a esposa, Raquel Correia
+    Dias, de 60 anos. Eles possuem uma vida simples, em uma ch\xE1cara, h\xE1 mais
+    de 30 anos."
+  nextDialog:
+  - {fileID: 11400000, guid: ce5f60aea2d212e4eaa554c6d5eb24ba, type: 2}
+  - {fileID: 11400000}

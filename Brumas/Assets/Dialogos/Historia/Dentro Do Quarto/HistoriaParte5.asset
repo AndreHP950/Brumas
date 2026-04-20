@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: HistoriaParte3
+  m_Name: HistoriaParte5
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: Mas primeiro Benicio vai precisar sair de casa para fazer isso.
-  nextDialog: []
+  text: "Ent\xE3o t\xE1 tenho que sair do meu quarto antes..."
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: ac43c32d83fb12549b3f756901290311, type: 2}
