@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia521-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ben\xEDcio, tomava seu caf\xE9 na varanda, vendo o sol nascer. A brisa de
+    Brumadinho fazia bem aos seus velhos pulm\xF5es. Interessante como ele conseguia
+    distinguir, s\xF3 de respirar o ar, se ia chover ou n\xE3o, se ia fazer frio
+    ou calor. Bom, aquele dia prometia um calor de lascar, sentenciou."
+  nextDialog:
+  - {fileID: 11400000, guid: 1960dcefb23869a4c851d0cbc6fc95da, type: 2}
+  - {fileID: 11400000}

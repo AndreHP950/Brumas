@@ -16,3 +16,4 @@ MonoBehaviour:
     Ser\xE1 que eu acordo Raquel? Ela deve saber onde eu deixei esse trem!"
   nextDialog:
   - {fileID: 11400000, guid: d5f6b4e6188140d469972fb84d9a8892, type: 2}
+  - {fileID: 11400000}

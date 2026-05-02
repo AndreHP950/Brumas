@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: O que devo fazer?
   nextDialog:
-  - {fileID: 11400000, guid: f6b3e42218279064caccde3d73a14f22, type: 2}
-  - {fileID: 11400000, guid: 2bab1ab889432744cb2ee307ec9c4455, type: 2}
-  - {fileID: 11400000, guid: 7d97e75ae74a5a344b1fa667817bd48b, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}

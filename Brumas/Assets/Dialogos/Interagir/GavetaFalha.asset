@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: GavetaFalha
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "A Gaveta est\xE1 vazia, j\xE1 peguei a chave..."
-  nextDialog: []
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000}

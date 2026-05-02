@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia509-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Raquel est\xE1 dormindo profundamente. Ben\xEDcio pensa em tr\xEAs problemas:
+    um que ela n\xE3o gosta de acordar cedo; segundo, que ela vai ficar muito brava
+    por ter sido acordada de madrugada apenas para procurar um fogareiro"
+  nextDialog:
+  - {fileID: 11400000, guid: 3de37170368d1c542920af7a5f1f971c, type: 2}
+  - {fileID: 11400000}

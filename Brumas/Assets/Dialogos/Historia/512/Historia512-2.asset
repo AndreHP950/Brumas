@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia512-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Deveria ter tomado caf\xE9, tou cuma fome\u2026 Ai, Jesus: deve ter Piaba,
+    Tra\xEDra, Lambari, Til\xE1pia e Piau nesse rio hoje\u2026 comida! comida\u2026
+    Mas pera\xED! Eu lembrei da isca?"
+  nextDialog:
+  - {fileID: 11400000, guid: b4858be272eb22a4ea02c90c11b2b152, type: 2}
+  - {fileID: 11400000, guid: b90bd92954df03f49aec5996e1442957, type: 2}

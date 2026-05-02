@@ -15,3 +15,4 @@ MonoBehaviour:
   text: "N\xE3o abriu! Ela deve estar trancada"
   nextDialog:
   - {fileID: 11400000, guid: 197270f605d296b44830c50dc8038444, type: 2}
+  - {fileID: 11400000, guid: 132ee8a56bb3e0748b055bd7007703a0, type: 2}

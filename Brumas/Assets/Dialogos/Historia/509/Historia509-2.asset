@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia509-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: 'e terceiro, que ela vai ficar mais brava ainda com ela por ter acordado
+    ela de madrugada, para buscar um fogareiro, porque ele precisa dele para ir pescar!
+    Melhor deixar um bilhete na cozinha, e sair de fininho. Eu mesmo procuro o fogareiro,
+    acho que terei menos problemas. '
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 3b63b3c9661bada4e91234deddfd7dd7, type: 2}

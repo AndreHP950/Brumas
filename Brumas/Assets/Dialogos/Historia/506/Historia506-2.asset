@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia506-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: Quanto mais cedo eu ir, mais tempo posso passar na volta com a Dona Raquel,
+    que fica cabreira se demoro muito.
+  nextDialog:
+  - {fileID: 11400000, guid: 8c3dfd4e3e982924284ae5cd0146da48, type: 2}
+  - {fileID: 11400000, guid: c45152575bb103a4db9169fbbc4394fd, type: 2}

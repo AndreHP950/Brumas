@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ObeservarGaveta
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "\xC9 uma gaveta, talvez ainda possa ter algo dentro dela?"
-  nextDialog: []
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000}

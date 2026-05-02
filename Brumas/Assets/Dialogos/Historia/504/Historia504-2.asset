@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia504-2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Acho que eu posso catar algumas e sentar na sombra da goiabeira para comer.
+    Antes eu, depois os peixes! haha. Mas se eu parar com certeza vou atrasar, e
+    algu\xE9m pode me pegar pescando\u2026"
+  nextDialog:
+  - {fileID: 11400000, guid: 7cc9d7a95a3dfdb478393dd2e6f60183, type: 2}
+  - {fileID: 11400000, guid: 10f55f12b386fa746a2bffe3cbcb8166, type: 2}

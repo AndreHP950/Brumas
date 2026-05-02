@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia504-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Que baita fome, eu n\xE3o tomei caf\xE9, minha barriga t\xE1 \xE9 roncando.
+    Que trem b\xE3o, tem uns p\xE9s de Goiaba da boa no caminho. Nossa, como eu amo
+    goiaba, se eu parar eu como umas dez..."
+  nextDialog:
+  - {fileID: 11400000, guid: 7256e5d7e62813c4cbf4da22416b9a12, type: 2}
+  - {fileID: 11400000}

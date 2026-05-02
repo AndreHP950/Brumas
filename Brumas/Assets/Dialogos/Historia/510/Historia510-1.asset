@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia510-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "O grande Rio Paraopeba reluzia o c\xE9u claro do lindo dia; o ar fresco
+    e o cheiro revigorante limpava os seus velhos pulm\xF5es e o enchia de vida."
+  nextDialog:
+  - {fileID: 11400000, guid: d8a3cf2635da6cd40b2bf64a675164e6, type: 2}
+  - {fileID: 11400000}

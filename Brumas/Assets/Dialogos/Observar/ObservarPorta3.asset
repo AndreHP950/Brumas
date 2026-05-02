@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ObservarPorta3
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: Acho que deixei minha chave em algum lugar por aqui
-  nextDialog: []
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: c94c508cd4076d64bbc0c6d81bc277f5, type: 2}

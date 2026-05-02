@@ -15,3 +15,4 @@ MonoBehaviour:
   text: Parece ser uma porta de madeira
   nextDialog:
   - {fileID: 11400000, guid: c94c508cd4076d64bbc0c6d81bc277f5, type: 2}
+  - {fileID: 11400000}

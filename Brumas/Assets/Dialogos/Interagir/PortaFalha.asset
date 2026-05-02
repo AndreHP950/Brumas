@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: PortaFalha
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "A porta est\xE1 trancada! Terei que achar a minha chave"
-  nextDialog: []
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia504-4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: 'Um cachorro estava ali, ao lado da goiabeira, olhando fixo pra ele. Era
+    como se ele quisesse dizer algo. '
+  nextDialog:
+  - {fileID: 11400000, guid: c373d30d0b588284986b251445e779d5, type: 2}
+  - {fileID: 11400000, guid: 7cc9d7a95a3dfdb478393dd2e6f60183, type: 2}
