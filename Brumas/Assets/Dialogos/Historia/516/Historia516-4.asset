@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia516-4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "O sil\xEAncio da mata \xE9 interrompido por um barulho de galhos quebrando\u2026
+    Ser\xE1 sua mula voltando? Seria a salva\xE7\xE3o\u2026 Mas a esperan\xE7a \xE9
+    cortada por uma \xE1rvore, que come\xE7a a ser derrubada por uma lenta e mortal
+    onda de lama."
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 389c41e04207f4b40a91cd851a41830a, type: 2}

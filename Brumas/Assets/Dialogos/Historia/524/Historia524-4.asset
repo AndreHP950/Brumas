@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia524-4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ao ver a mula e o c\xE3o se afastando dele, Ben\xEDcio vai atr\xE1s dos
+    dois\u2026 Nervoso, Ben\xEDcio esbraveja em voz alta: "
+  nextDialog:
+  - {fileID: 11400000, guid: 8ba932828116d0a4d97e0ca5ef7e1e7e, type: 2}
+  - {fileID: 11400000, guid: 679e6200891d63f4d962545cc0ed57d5, type: 2}

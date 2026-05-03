@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia524-7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ben\xEDcio vira-se, surpreso. Um \xEDndio o observa. A tribo Na\xF4 Xoh\xE3
+    vive \xE0s margens do rio Paraopeba j\xE1 tem uns dois anos, e n\xE3o costumam
+    gostar muito da presen\xE7a de pescadores (sobretudo na Piracema).Ben\xEDcio
+    tinha entrado dentro da reserva deles, com mula, vara de pescar, cachorro e tudo. "
+  nextDialog:
+  - {fileID: 11400000, guid: 8a01c249775dc274f9a09abfef1ac56c, type: 2}
+  - {fileID: 11400000, guid: 3586c7401f378a94fa64a176b50e3aba, type: 2}

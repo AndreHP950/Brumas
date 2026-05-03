@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia520-3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "No rio, com raiva e sem paci\xEAncia, peixes somem. "
+  nextDialog:
+  - {fileID: 11400000, guid: 41656ec8ada3c0046b7320bf8d16d362, type: 2}
+  - {fileID: 11400000, guid: df4946cc1e8376844b055136624da5f5, type: 2}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia515-3
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "E n\xE3o \xE9 que um cachorro tinha seguido Ben\xEDcio? "
+  nextDialog:
+  - {fileID: 11400000, guid: 5274d75838f89514bb5f99ec54271f51, type: 2}
+  - {fileID: 11400000, guid: 0a7754f45f648f149ac92fb99bdcea7d, type: 2}

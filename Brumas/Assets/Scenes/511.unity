@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 49825040}
   - component: {fileID: 49825039}
   m_Layer: 5
-  m_Name: Proximo519
+  m_Name: Final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 519
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &49825040
@@ -325,8 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Seguir Caminho
-
+  m_text: 'Voltar Para o menu
 
 '
   m_isRightToLeft: 0
@@ -759,6 +758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1491231402940021998, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -160.13
+      objectReference: {fileID: 0}
     - target: {fileID: 1695618488311201677, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -846,7 +849,7 @@ PrefabInstance:
     - target: {fileID: 2199147444492851571, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: dialog
       value: 
-      objectReference: {fileID: 11400000, guid: 71a06ae57f7e51a42bc2d95fab596b57, type: 2}
+      objectReference: {fileID: 11400000, guid: 109cf0ad364afa44d8860afe51cd9479, type: 2}
     - target: {fileID: 2199147444492851571, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: UiExtra
       value: 
@@ -881,5 +884,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 2034824214}
   - {fileID: 2117589696}
-  - {fileID: 1986264538}
   - {fileID: 8907050581416149982}
+  - {fileID: 1986264538}

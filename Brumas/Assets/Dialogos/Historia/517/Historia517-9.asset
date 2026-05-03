@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia517-9
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "_ N\xE3o se desculpe _Indaga o \xEDndio. _ N\xF3s dois sabemos o que pode
+    ser ou n\xE3o terr\xEDvel para o nosso rio. E, no momento, voc\xEA j\xE1 deve
+    saber que est\xE1 vindo em nossa dire\xE7\xE3o um rio de lama, que ir\xE1 substituir
+    esse Paraopeba em breve, no m\xE1ximo, amanh\xE3.  Amanh\xE3 n\xE3o teremos mais
+    nenhum Mucusu\xED por aqui, ou peixe, como voc\xEAs dizem... Como disse o cacique,
+    o \"homem branco fez a terra vomitar\". "
+  nextDialog:
+  - {fileID: 11400000, guid: 6d930f90990c5f4499a7c8b646c80efa, type: 2}
+  - {fileID: 11400000, guid: b26bec44eb518fa4a9cda660f89fa17d, type: 2}

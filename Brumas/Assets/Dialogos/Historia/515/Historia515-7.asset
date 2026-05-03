@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia515-7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "_ Mas o que deu nos bichos hoje? Parem j\xE1 os dois, j\xE1 chega! Ben\xEDcio
+    tenta conter os \xE2nimos dos seus amigos, sem \xEAxito. "
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: d4214bc9a1497444ca6e36138e32a5cf, type: 2}

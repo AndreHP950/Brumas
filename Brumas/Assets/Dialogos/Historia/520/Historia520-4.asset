@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia520-4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Mas, pelo visto, parecia que s\xF3 a mula estava em paz. Ela ficava no canto
+    dela, pastando, alheio a tudo o que acontecia. Ben\xEDcio percebeu que n\xE3o
+    amarrou a sua mulinha\u2026 Mas ser\xE1 que precisava? Ela nunca saiu a pinote,
+    e o dia estava t\xE3o calmo. "
+  nextDialog:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 2f6d79148545e734887db2f811292a72, type: 2}

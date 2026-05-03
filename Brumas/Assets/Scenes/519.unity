@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 49825040}
   - component: {fileID: 49825039}
   m_Layer: 5
-  m_Name: Proximo519
+  m_Name: Proximo510
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 519
+          m_StringArgument: 510
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &49825040
@@ -325,8 +325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Seguir Caminho
-
+  m_text: 'Ir para o rio
 
 '
   m_isRightToLeft: 0
@@ -846,7 +845,7 @@ PrefabInstance:
     - target: {fileID: 2199147444492851571, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: dialog
       value: 
-      objectReference: {fileID: 11400000, guid: 71a06ae57f7e51a42bc2d95fab596b57, type: 2}
+      objectReference: {fileID: 11400000, guid: 426806f32e78e2b49a6740be0cdc7847, type: 2}
     - target: {fileID: 2199147444492851571, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: UiExtra
       value: 

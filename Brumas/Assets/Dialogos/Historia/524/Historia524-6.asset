@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia524-6
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Uma voz o responde: _ Eu continuaria seguindo a mula e o cachorro, homem
+    branco\u2026 Se afaste do rio. "
+  nextDialog:
+  - {fileID: 11400000, guid: 89e1717b0e732fd4daa228db7490ee48, type: 2}
+  - {fileID: 11400000, guid: 8ba932828116d0a4d97e0ca5ef7e1e7e, type: 2}

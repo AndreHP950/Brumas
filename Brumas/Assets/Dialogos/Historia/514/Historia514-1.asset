@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia514-1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Chegando com a mulinha no local, h\xE1 alguns tocos de madeira para amarr\xE1-la.
+    Ben\xEDcio encara a sua companheira, pensando se deveria ou n\xE3o prend\xEA-la
+    a um toco desses."
+  nextDialog:
+  - {fileID: 11400000, guid: 795643063ea1045439509e871ea0fb20, type: 2}
+  - {fileID: 11400000}

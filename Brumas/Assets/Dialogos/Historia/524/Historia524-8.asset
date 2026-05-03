@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Historia524-8
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "_ Olha\u2026 N\xE3o ia pescar nada que estivesse amea\xE7ado, viu? Minha
+    pesca \xE9 como a de voc\xEAs, s\xF3 para comer mesmo. N\xE3o se preocupe\u2026 "
+  nextDialog:
+  - {fileID: 11400000, guid: 1635e26e7566b514c9a41c91b65acd67, type: 2}
+  - {fileID: 11400000, guid: 89e1717b0e732fd4daa228db7490ee48, type: 2}
