@@ -17,6 +17,11 @@ public class DialogoManager : MonoBehaviour
     float tempoPorLetra = 0.05f;
 
     private LTDescr tweenAtual;
+    private void Start()
+    {
+        AlgoAberto = true;
+        MostrarTextoAnimado(dialog.text);
+    }
     public void Iniciar(int dialogo)
     {
         dialog = iniciar[dialogo];
