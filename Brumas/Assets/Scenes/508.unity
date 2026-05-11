@@ -257,6 +257,63 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2575300358384609124, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
   m_PrefabInstance: {fileID: 8907050581416149982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1509729734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5109584204005269503, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594371716628219205, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
+      propertyPath: m_Name
+      value: EstradaBrumas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 715fa49d6dbfe74498783a9729b5cf8f, type: 3}
 --- !u!114 &1697890734 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2199147444492851571, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
@@ -547,7 +604,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -572,8 +629,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034824211}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.08545979, y: -0.88921446, z: 0.18563235, w: -0.4093104}
+  m_LocalPosition: {x: -13.7444, y: 7.883548, z: 2.7503014}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -714,13 +771,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117589694}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.83291495, y: -0.29344153, z: 0.38701126, w: 0.2652681}
+  m_LocalPosition: {x: -9.86, y: 9.29, z: -1.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 41.992, y: -221.143, z: -157.577}
 --- !u!114 &2117589697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,3 +939,4 @@ SceneRoots:
   - {fileID: 2117589696}
   - {fileID: 8907050581416149982}
   - {fileID: 1986264538}
+  - {fileID: 1509729734}
