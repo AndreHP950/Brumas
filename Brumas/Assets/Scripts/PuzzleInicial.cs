@@ -5,6 +5,7 @@ public class PuzzleInicial : MonoBehaviour
     DialogoManager controller;
     int chaveObtida;
     public GameObject proximoHistoria;
+    public GameObject chave;
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
@@ -24,6 +25,7 @@ public class PuzzleInicial : MonoBehaviour
         }
         else
         {
+            chave.SetActive(false);
             proximoHistoria.SetActive(true);  
             controller.Iniciar(6);
         }
@@ -34,6 +36,7 @@ public class PuzzleInicial : MonoBehaviour
         {
             controller.Iniciar(3);
             chaveObtida = 1;
+            chave.SetActive(true);
         }
         else
         {
