@@ -14,7 +14,7 @@ public class DialogoManager : MonoBehaviour
     public GameObject Panel;
     public bool AlgoAberto;
     public bool Sodialogo;
-    float tempoPorLetra = 0.05f;
+    float tempoPorLetra = 0.02f;
 
     private LTDescr tweenAtual;
     private void Start()
@@ -34,6 +34,7 @@ public class DialogoManager : MonoBehaviour
         {
             if (Sodialogo)
             {
+                Panel.SetActive(false);
                 Botoes.SetActive(false);
                 UiExtra.SetActive(true);
             }
@@ -47,7 +48,7 @@ public class DialogoManager : MonoBehaviour
         else
         {
             dialog = dialog.nextDialog[0];
-            MostrarTextoAnimado(dialog.text);
+            MostrarTextoAnimado (dialog.text);
         }
     }
 
@@ -116,7 +117,7 @@ public class DialogoManager : MonoBehaviour
         while (tempo < duracao)
         {
             tempo += Time.deltaTime;
-            float offsetY = Mathf.Sin((tempo / duracao) * Mathf.PI) * 10f;
+            float offsetY = Mathf.Sin((tempo / duracao) * Mathf.PI) * 16.67f;
             for (int i = 0; i < 4; i++)
             {
                 vertices[vertexIndex + i] += new Vector3(0, offsetY, 0);

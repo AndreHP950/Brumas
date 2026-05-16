@@ -7,7 +7,6 @@ public class ObjetoClicavel : MonoBehaviour
     DialogoManager controller;
     void Start()
     {
-        Debug.Log("ta funfando");
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
     }
     void Update()
