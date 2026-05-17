@@ -15,4 +15,4 @@ MonoBehaviour:
   text: "O pensamento do Ben\xEDcio foi interrompido por um latido. "
   nextDialog:
   - {fileID: 11400000, guid: 06652b9aa777f274ba941f8cb2dae824, type: 2}
-  - {fileID: 11400000, guid: 7256e5d7e62813c4cbf4da22416b9a12, type: 2}
+  - {fileID: 11400000, guid: d476809a55c0d444aae0cdf02c38ffeb, type: 2}

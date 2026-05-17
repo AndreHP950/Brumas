@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia504-2
+  m_Name: FalhaArvore
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: Acho que eu posso catar algumas e sentar na sombra da goiabeira para comer.
+  text: "Essa \xE1rvore \xE9 alta demais! vou precisar de algo pra poder pegar essa
+    goiaba"
   nextDialog:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 10f55f12b386fa746a2bffe3cbcb8166, type: 2}
+  - {fileID: 11400000}

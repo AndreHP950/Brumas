@@ -24,6 +24,8 @@ public class DialogoManager : MonoBehaviour
     }
     public void Iniciar(int dialogo)
     {
+        Botoes.SetActive(true);
+        Panel.SetActive(true);
         dialog = iniciar[dialogo];
         MostrarTextoAnimado(dialog.text);
     }
