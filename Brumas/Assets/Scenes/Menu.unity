@@ -711,6 +711,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 154472049482351661, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 54af79c558e41994492bd798a5c1da8a, type: 2}
+    - target: {fileID: 2813442170842193739, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      propertyPath: m_Intensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972369983862645265, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 54af79c558e41994492bd798a5c1da8a, type: 2}
     - target: {fileID: 4726356773174351817, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
       propertyPath: m_Name
       value: CenaQuarto
