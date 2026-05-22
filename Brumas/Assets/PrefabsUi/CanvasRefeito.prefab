@@ -8,9 +8,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2293841145947439449}
     m_Modifications:
+    - target: {fileID: 2170423273355836616, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8186652834265332576}
+    - target: {fileID: 2170423273355836616, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Voltar
+      objectReference: {fileID: 0}
     - target: {fileID: 3674663016784424644, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8186652834265332576}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Proximo
       objectReference: {fileID: 0}
     - target: {fileID: 5169179151665295858, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_Pivot.x
@@ -91,6 +107,18 @@ PrefabInstance:
     - target: {fileID: 5169179151665295858, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7461182227490915697, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_Name
@@ -560,6 +588,10 @@ PrefabInstance:
     - target: {fileID: 1695618488311201677, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: m_Name
       value: CanvasRefeito
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695618488311201677, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
+      propertyPath: m_TagString
+      value: Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 2036737821950583783, guid: 6c877223f169dcd4492f1afe35adda4e, type: 3}
       propertyPath: m_Pivot.x

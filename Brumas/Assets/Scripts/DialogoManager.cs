@@ -14,7 +14,7 @@ public class DialogoManager : MonoBehaviour
     public GameObject Panel;
     public bool AlgoAberto;
     public bool Sodialogo;
-    float tempoPorLetra = 0.02f;
+    float tempoPorLetra = 0.03f;
 
     private LTDescr tweenAtual;
     private void Start()
