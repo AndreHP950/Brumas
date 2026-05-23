@@ -33,7 +33,8 @@ public class TreeWind : MonoBehaviour
     {
         if (leavesTransform == null)
         {
-            leavesTransform = FindLeavesLOD0(transform);
+            //leavesTransform = FindLeavesLOD0(transform);
+            leavesTransform = transform;
         }
 
         if (leavesTransform == null)

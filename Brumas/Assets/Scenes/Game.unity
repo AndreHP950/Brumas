@@ -570,11 +570,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
---- !u!1 &478775284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1444711562115624501, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-  m_PrefabInstance: {fileID: 2081169850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &705514130 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2293841145947439449, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
@@ -1167,7 +1162,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1461742917}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -1570,11 +1565,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1848945354}
   m_SourcePrefab: {fileID: 100100000, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
---- !u!1 &1461742917 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4443473277381043291, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-  m_PrefabInstance: {fileID: 2081169850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1472535677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,17 +2140,6 @@ RectTransform:
   m_AnchoredPosition: {x: 825, y: -2}
   m_SizeDelta: {x: -1822, y: -86.5256}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1650186818 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 461342024127717504, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-  m_PrefabInstance: {fileID: 2081169850}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &1657539435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2613,7 +2592,7 @@ PrefabInstance:
     - target: {fileID: 270124815627165465, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1461742917}
+      objectReference: {fileID: 0}
     - target: {fileID: 270124815627165465, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -3141,15 +3120,15 @@ PrefabInstance:
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Panel
       value: 
-      objectReference: {fileID: 478775284}
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: texto
       value: 
-      objectReference: {fileID: 1650186818}
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Botoes
       value: 
-      objectReference: {fileID: 1461742917}
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: dialog
       value: 
