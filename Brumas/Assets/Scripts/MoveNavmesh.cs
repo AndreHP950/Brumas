@@ -72,7 +72,7 @@ public class MoveNavmesh : MonoBehaviour
         }
     }
 
-    private void MoveToPoint(Vector3 destination)
+    public void MoveToPoint(Vector3 destination)
     {
         NavMeshHit navHit;
         if (NavMesh.SamplePosition(destination, out navHit, 2f, NavMesh.AllAreas))

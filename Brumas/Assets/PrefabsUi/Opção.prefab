@@ -76,6 +76,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7006570373484532023, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_ChildScaleWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006570373484532023, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006570373484532023, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_ChildForceExpandWidth
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_margin.x
       value: 43.945282
@@ -84,9 +96,25 @@ PrefabInstance:
       propertyPath: m_margin.z
       value: 49.318726
       objectReference: {fileID: 0}
+    - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
+    - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5592794105238541465, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
+    - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_Name
       value: "Op\xE7\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_Pivot.x

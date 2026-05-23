@@ -36,7 +36,6 @@ public class DialogoManager : MonoBehaviour
         {
             if (Sodialogo)
             {
-                Panel.SetActive(false);
                 Botoes.SetActive(false);
                 UiExtra.SetActive(true);
             }
@@ -44,7 +43,6 @@ public class DialogoManager : MonoBehaviour
             {
                 AlgoAberto = false;
                 Botoes.SetActive(false);
-                Panel.SetActive(false);
             }
         }
         else

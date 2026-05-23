@@ -5,9 +5,11 @@ public class ObjetoClicavel : MonoBehaviour
 {
     public GameObject UI;
     DialogoManager controller;
+    MoveNavmesh Mover;
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
+        Mover = GameObject.FindGameObjectWithTag("Player").GetComponent<MoveNavmesh>();
     }
     void Update()
     {
@@ -19,6 +21,7 @@ public class ObjetoClicavel : MonoBehaviour
         {
             UI.SetActive(true);
             controller.AlgoAberto = true;
+            Mover.MoveToPoint(transform.position);
         }
     }
 }

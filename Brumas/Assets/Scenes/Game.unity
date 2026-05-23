@@ -212,6 +212,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &55476626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4093937560101219279, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 2081169850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &61702655
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +580,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2293841145947439449, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
   m_PrefabInstance: {fileID: 2081169850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &783607156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7900687835979104378, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 2081169850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +905,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90e344fb503c7428f4888f63609439, type: 3}
+--- !u!114 &1225016016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6305200182435869046, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 2081169850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1310799724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,15 +3141,15 @@ PrefabInstance:
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Panel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 783607156}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: texto
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1225016016}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Botoes
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 55476626}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: dialog
       value: 
@@ -3537,6 +3558,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4582367766127202111, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4726356773174351817, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
       propertyPath: m_Name
       value: CenaQuarto

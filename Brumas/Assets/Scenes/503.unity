@@ -286,6 +286,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 522
       objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2383383577981672457, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -307,6 +323,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2383383577981672457, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -341,6 +373,10 @@ PrefabInstance:
     - target: {fileID: 4818656557320634741, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_LayoutPriority
       value: 517
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755560642800364642, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Panel
