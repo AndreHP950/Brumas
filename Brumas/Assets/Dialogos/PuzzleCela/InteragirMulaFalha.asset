@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: InteragirGaveta
+  m_Name: InteragirMulaFalha
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "Parece que n\xE3o tem nada dentro da gaveta, acho que vou procurar em outro
-    lugar..."
+  text: "N\xE3o tem como eu montar na mula sem cela uai!"
   nextDialog:
   - {fileID: 0}
   - {fileID: 11400000}
