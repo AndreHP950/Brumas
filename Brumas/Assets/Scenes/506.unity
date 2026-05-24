@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5589825870401926393, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.9151001
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: dialog
       value: 
@@ -431,6 +435,10 @@ PrefabInstance:
     - target: {fileID: 6883219716828707919, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_fontSize
       value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 6883219716828707919, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278228194
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
