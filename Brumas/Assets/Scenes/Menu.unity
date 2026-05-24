@@ -462,6 +462,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149588990}
   m_CullTransparentMesh: 1
+--- !u!1 &156745281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 156745282}
+  - component: {fileID: 156745284}
+  - component: {fileID: 156745283}
+  m_Layer: 5
+  m_Name: Creditos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &156745282
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156745281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1101543326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_SizeDelta: {x: 700, y: 350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &156745283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156745281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2088763853, guid: bde3af8dc74382043828ba9d764fd676, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &156745284
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156745281}
+  m_CullTransparentMesh: 1
 --- !u!1 &180832065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,143 +1916,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2043fa5daffe8174c9beefc3ef305575, type: 3}
---- !u!1 &854022216
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 854022217}
-  - component: {fileID: 854022219}
-  - component: {fileID: 854022218}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &854022217
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854022216}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1539825284}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 3.699997}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &854022218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854022216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Voltar
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3d5f663272814b048af926120aab2504, type: 2}
-  m_sharedMaterial: {fileID: 6736038227670991906, guid: 3d5f663272814b048af926120aab2504, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4280424795
-  m_fontColor: {r: 0.35686275, g: 0.09803922, b: 0.13333334, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &854022219
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854022216}
-  m_CullTransparentMesh: 1
 --- !u!1 &861523065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8450836290756464556, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
@@ -2374,6 +2312,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1066316797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066316798}
+  - component: {fileID: 1066316800}
+  - component: {fileID: 1066316799}
+  m_Layer: 5
+  m_Name: Creditos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1066316798
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066316797}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1101543326}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1066316799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066316797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2088763853, guid: bde3af8dc74382043828ba9d764fd676, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1066316800
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066316797}
+  m_CullTransparentMesh: 1
 --- !u!1 &1088053344
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,6 +2462,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088053344}
   m_CullTransparentMesh: 1
+--- !u!1 &1101543325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101543326}
+  - component: {fileID: 1101543327}
+  m_Layer: 5
+  m_Name: Animacao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1101543326
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101543325}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1066316798}
+  - {fileID: 156745282}
+  m_Father: {fileID: 1442739286}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -700, y: -350}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1101543327
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101543325}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 39781ed6340c01644ab604d6c4635090, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1218664667
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,7 +2689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1442739286
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2629,6 +2702,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1101543326}
   - {fileID: 1935409162}
   - {fileID: 1539825284}
   m_Father: {fileID: 346035390}
@@ -2781,14 +2855,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 854022217}
+  m_Children: []
   m_Father: {fileID: 1442739286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.15289363}
-  m_AnchoredPosition: {x: -278.00003, y: 0}
-  m_SizeDelta: {x: -632.8771, y: -7.2547}
+  m_AnchorMax: {x: 1, y: 0.29956383}
+  m_AnchoredPosition: {x: -322.4, y: 3.5}
+  m_SizeDelta: {x: -696.8158, y: -66.1818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539825285
 MonoBehaviour:
@@ -2866,7 +2939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a379262c1d25ccd488a7a50c1ba18a5d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f372d54b42717ff4491685200293cee9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3170,6 +3243,81 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!1 &1703482768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703482769}
+  - component: {fileID: 1703482771}
+  - component: {fileID: 1703482770}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1703482769
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703482768}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1935409162}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.0000010729}
+  m_SizeDelta: {x: -350.8341, y: 199.5755}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1703482770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703482768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 27f32f9167cd2c744ad53f6bcfa4be69, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1703482771
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703482768}
+  m_CullTransparentMesh: 1
 --- !u!1 &1746113769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,13 +3818,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1703482769}
   m_Father: {fileID: 1442739286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 1.813797}
-  m_SizeDelta: {x: -391.842, y: -3.6276}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.00051116943, y: 0}
+  m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935409163
 MonoBehaviour:
@@ -3698,7 +3847,118 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cr\xE9ditos"
+  m_text: "Cr\xE9ditos\nEm Homenagem a:\n\nAdail dos Santos Junior\n\r\nAdair Cust\xF3dio
+    Rodrigues\n\r\nAdemario Bispo\n\r\nAdilson Saturnino de Souza\n\r\nAdnilson Silva
+    Nascimento\n\r\nAdriano Aguiar Lamounier\n\nAdriano Caldeira do Amaral\r\n\nAdriano
+    Gon\xE7alves dos Anjos\r\n\nAdriano Junio Braga\r\n\nAdriano Ribeiro da Silva\r\n\nAdriano
+    Wagner da Cruz de Oliveira\r\n\nAla\xE9rcio L\xFAcio Ferreira\r\n\nAlano Reis
+    Teixeira\r\n\nAlex M\xE1rio Moraes Bispo\r\n\nAlex Rafael Piedade\r\n\nAlexis
+    Adriano da Silva\r\n\nAlexis C\xE9sar Jesus Costa\r\n\nAlisson Martins de Souza\r\n\nAlisson
+    Pessoa Damasceno\r\n\nAmanda de Ara\xFAjo Silva\r\n\nAmarina de Lourdes Ferreira\r\n\nAmauri
+    Geraldo da Cruz\r\n\nAnailde Souza Pereira\r\n\nAnderson Luiz da Silva\r\n\nAndre
+    Luiz Almeida Santos\r\n\nAndr\xE9a Lima Cunha\r\n\nAng\xE9lica Aparecida \xC1vila\r\n\nAngelita
+    Cristiane Freitas de Assis\r\n\n\xC2ngelo Gabriel da Silva Lemos\r\n\nAn\xEDzio
+    Coelho dos Santos\r\n\nAntonio Fernandes Ribas\r\n\nArmando da Silva Raggi Grossi\r\n\nAroldo
+    Ferreira de Oliveira\r\n\nBruna L\xE9lis de Campos\r\n\nBruno Eduardo Gomes\r\n\nBruno
+    Rocha Rodrigues\r\n\nCamila Aparecida da Fonseca Silva\r\n\nCamila Santos de
+    Faria\r\n\nCamila Taliberti Ribeiro da Silva\r\n\nCamilo de Lelis do Amaral\r\n\nCarla
+    Borges Pereira\r\n\nCarlos Augusto dos Santos Pereira\r\n\nCarlos Eduardo de
+    Souza\r\n\nCarlos Eduardo Faria\r\n\nCarlos Henrique de Faria\r\n\nCarlos Roberto
+    da Silva\r\n\nCarlos Roberto da Silveira\r\n\nCarlos Roberto Deusdedit\r\n\nCarlos
+    Roberto Pereira\r\n\nC\xE1ssia Regina Santos Souza\r\n\nC\xE1ssio Cruz Silva
+    Pereira\r\n\nCl\xE1udio Jos\xE9 Dias Rezende\r\n\nClaudio Leandro Rodrigues Martins\r\n\nCl\xE1udio
+    M\xE1rcio dos Santos\r\n\nCl\xE1udio Pereira Silva\r\n\nCleidson Aparecido Moreira\r\n\nCleiton
+    Luiz Moreira Silva\r\n\nCleosane Coelho Mascarenhas\r\n\nCristiane Antunes Campos\r\n\nCristiano
+    Braz Dias\r\n\nCristiano Jorge Dias\r\n\nCristiano Serafim Ferreira\r\n\nCristiano
+    Vin\xEDcius Oliveira de Almeida\r\n\nCristina Paula da Cruz Ara\xFAjo\r\n\nDaiana
+    Caroline Silva Santos\r\n\nDaniel Guimar\xE3es Almeida Abdalla\r\n\nDavid Marlon
+    Gomes Santana\r\n\nDavyson Christian Neves\r\n\nDenilson Rodrigues\r\n\nDennis
+    Augusto da Silva\r\n\nDiego Ant\xF4nio de Oliveira\r\n\nDiomar Cust\xF3dia dos
+    Santos Silva\r\n\nDjener Paulo Las Casas Melo\r\n\nDuane Moreira de Souza\r\n\nEdeni
+    do Nascimento\r\n\nEdgar Carvalho Santos\r\n\nEdimar da Concei\xE7ao de Melo
+    Sales\r\n\nEdi\xF4nio Jos\xE9 dos Reis\r\n\nEdirley Ant\xF4nio Campos\r\n\nEdnilson
+    dos Santos Cruz\r\n\nEdson Rodrigues dos Santos\r\n\nEdymayra Samara Rodrigues
+    Coelho\r\n\nEgilson Pereira de Almeida\r\n\nEliandro Batista de Passos\r\n\nEliane
+    de Oliveira Melo\r\n\nEliane Nunes Passos\r\n\nElis Marina Costa\r\n\nEliveltom
+    Mendes Santos\r\n\nElizabete de Oliveira Esp\xEDndola Reis\r\n\nElizeu Caranjo
+    de Freitas\r\n\nEmerson Jos\xE9 da Silva Augusto\r\n\nEridio Dias\r\n\nEudes
+    Jos\xE9 de Souza Cardoso\r\n\nEva Maria de Matos\r\n\nEvandro Luiz dos Santos\r\n\nEverton
+    Guilherme Ferreira Gomes\r\n\nEverton Lopes Ferreira\r\n\nFabricio Henriques
+    da Silva\r\n\nFabr\xEDcio L\xFAcio Faria\r\n\nFauller Douglas da Silva Miranda\r\n\nFernanda
+    Batista do Nascimento\r\n\nFernanda Damian de Almeida\r\n\nFlaviano Fialho\r\n\nFrancis
+    Erick Soares Silva\r\n\nFrancis Marques da Silva\r\n\nGeorge Concei\xE7\xE3o
+    de Oliveira\r\n\nGeraldo de Medeiro Filho\r\n\nGilmar Jos\xE9 da Silva\r\n\nGiovani
+    Paulo da Costa\r\n\nGisele Moreira da Cunha\r\n\nGislene Concei\xE7\xE3o Amaral\r\n\nGlayson
+    Leandro da Silva\r\n\nGustavo Andri\xEA Xavier\r\n\nGustavo Sousa Junior\r\n\nHelbert
+    Vilhena Santos\r\n\nHerminio Ribeiro Lima Filho\r\n\nHugo Maxs Barbosa\r\n\n\xCDcaro
+    Douglas Alves\r\n\nIzabela Barroso C\xE2mara Pinto\r\n\nJanice Helena do Nascimento\r\n\nJhobert
+    Donadonne Gon\xE7alves Mendes\r\n\nJo\xE3o Marcos Ferreira da Silva\r\n\nJo\xE3o
+    Paulo Altino\r\n\nJo\xE3o Paulo de Almeida Borges\r\n\nJo\xE3o Paulo Ferreira
+    de Amorim Valad\xE3o\r\n\nJo\xE3o Paulo Pizzani Valadares Mattar\r\n\nJo\xE3o
+    Tomaz de Oliveira\r\n\nJoiciane F\xE1tima dos Santos\r\n\nJonatas Lima Nascimento\r\n\nJonis
+    Andr\xE9 Nunes\r\n\nJorge Luiz Ferreira\r\n\nJosiane de Souza Santos\r\n\nJosu\xE9
+    Oliveira da Silva\r\n\nJuliana Creizimar de Resende Silva\r\n\nJuliana Esteves
+    da Cruz Aguiar\r\n\nJuliana Parreiras Lopes\r\n\nJ\xFAlio C\xE9sar Teixeira Santiago\r\n\nJussara
+    Ferreira dos Passos\r\n\nK\xE1tia Aparecida da Silva\r\n\nK\xE1tia Gisele Mendes\r\n\nLays
+    Gabrielle de Souza Soares\r\n\nLeandro Ant\xF4nio Silva\r\n\nLecilda de Oliveira\r\n\nLenilda
+    Cavalcante Andrade\r\n\nLenilda Martins Cardoso Diniz\r\n\nLeonardo Alves Diniz\r\n\nLeonardo
+    da Silva Godoy\r\n\nLeonardo Pires de Souza\r\n\nLet\xEDcia Mara An\xEDzio de
+    Almeida\r\n\nLet\xEDcia Rosa Ferreira Arrudas\r\n\nLevi Gon\xE7alves da Silva\r\n\nLorenzo
+    Almeida Taliberti\r\n\nLourival Dias da Rocha\r\n\nLuciana Ferreira Alves\r\n\nLuciano
+    de Almeida Rocha\r\n\nL\xFAcio Rodrigues Mendanha\r\n\nLu\xEDs Felipe Alves\r\n\nLu\xEDs
+    Paulo Caetano\r\n\nLuiz Carlos Silva Reis\r\n\nLuiz Cordeiro Pereira\r\n\nLuiz
+    de Oliveira Silva\r\n\nLuiz Taliberti Ribeiro da Silva\r\n\nManoel Messias Sousa
+    Araujo\r\n\nMarcelle Porto Cangussu\r\n\nMarcelo Alves de Oliveira\r\n\nMarciel
+    de Oliveira Arantes\r\n\nMarcileia da Silva Prado\r\n\nM\xE1rcio Coelho Barbosa
+    Mascarenhas\r\n\nM\xE1rcio de Freitas Grilo\r\n\nM\xE1rcio Fl\xE1vio da Silva\r\n\nM\xE1rcio
+    Fl\xE1vio da Silveira Filho\r\n\nM\xE1rcio Paulo Barbosa Pena Mascarenhas\r\n\nMarco
+    Aur\xE9lio Santos Barcelos\r\n\nMarcus Tadeu Ventura do Carmo\r\n\nMaria de Lurdes
+    da Costa Bueno\r\n\nMaria Elisa Melo\r\n\nMarlon Rodrigues Gon\xE7alves\r\n\nMartinho
+    Ribas\r\n\nMaur\xEDcio Lauro de Lemos\r\n\nMax Elias de Medeiros\r\n\nMilton
+    Xisto de Jesus\r\n\nMiraceibel Rosa\r\n\nMiramar Ant\xF4nio Sobrinho\r\n\nMois\xE9s
+    Moreira de Sales\r\n\nNat\xE1lia Fernanda da Silva Andrade\r\n\nNath\xE1lia de
+    Oliveira Porto Ara\xFAjo\r\n\nNilson Dilermando Pinto\r\n\nNo\xE9 San\xE7\xE3o
+    Rodrigues\r\n\nNoel Borges de Oliveira\r\n\nOlavo Henrique Coelho\r\n\nOl\xEDmpio
+    Gomes Pinto\r\n\nPaulo Geovane dos Santos\r\n\nPaulo Natanael de Oliveira\r\n\nPeterson
+    Firmino Nunes Ribeiro\r\n\nPriscila Elen Silva\r\n\nRafael Mateus de Oliveira\r\n\nRamon
+    J\xFAnior Pinto\r\n\nRangel do Carmo Janu\xE1rio\r\n\nReginaldo da Silva\r\n\nReinaldo
+    Fernandes Guimar\xE3es\r\n\nReinaldo Gon\xE7alves\r\n\nReinaldo Sim\xE3o de Oliveira\r\n\nRenato
+    Eust\xE1quio de Sousa\r\n\nRenato Rodrigues da Silva\r\n\nRenato Rodrigues Maia\r\n\nRenato
+    Vieira Caldeira\r\n\nRenildo Aparecido do Nascimento\r\n\nRicardo Eduardo da
+    Silva\r\n\nRobert Ruan Oliveira Teodoro\r\n\nRodney Sander Paulino Oliveira\r\n\nRodrigo
+    Henrique de Oliveira\r\n\nRodrigo Miranda dos Santos\r\n\nRodrigo Monteiro Costa\r\n\nRog\xE9rio
+    Ant\xF4nio dos Santos\r\n\nRoliston Teds Pereira\r\n\nRonnie Von Olair da Costa\r\n\nRos\xE1ria
+    Dias da Cunha\r\n\nRos\xE9lia Alves Rodrigues Silva\r\n\nRosiane Sales Souza
+    Ferreira\r\n\nRosilene Oz\xF3rio Pizzani Mattar\r\n\nRuberlan Ant\xF4nio Sobrinho\r\n\nSamara
+    Cristina dos Santos Souza\r\n\nSamuel da Silva Barbosa\r\n\nSandro Andrade Gon\xE7alves\r\n\nSebasti\xE3o
+    Divino Santana\r\n\nSergio Carlos Rodrigues\r\n\nSirlei de Brito Ribeiro\r\n\nSueli
+    de F\xE1tima Marcos\r\n\nThiago Leandro Valentim\r\n\nThiago Mateus Costa\r\n\nTiago
+    Augusto Favarini\r\n\nTiago Barbosa da Silva\r\n\nTiago Coutinho do Carmo\r\n\nTiago
+    Tadeu Mendes da Silva\r\n\nUberlandio Ant\xF4nio da Silva\r\n\nVagner Nascimento
+    da Silva\r\n\nValdeci de Sousa Medeiros\r\n\nVin\xEDcius Henrique Leite Ferreira\r\n\nWagner
+    Valmir Miranda\r\n\nW\xE1laci J\xFAnhior C\xE2ndido da Silva\r\n\nWalisson Eduardo
+    Paix\xE3o\r\n\nWanderson Carlos Pereira\r\n\nWanderson de Oliveira Valeriano\r\n\nWanderson
+    Paulo da Silva\r\n\nWanderson Soares Mota\r\n\nWarley Gomes Marques\r\n\nWarley
+    Lopes Moreira\r\n\nWeberth Ferreira Sabino\r\n\nWellington Alvarenga Benigno\r\n\nWellington
+    Campos Rodrigues\r\n\nWenderson Ferreira Passos\r\n\nWeslei Ant\xF4nio Belo\r\n\nWesley
+    Ant\xF4nio das Chagas\r\n\nWesley Eduardo de Assis\r\n\nWillian Jorge Felizardo
+    Alves\r\n\nWilson Jos\xE9 da Silva\r\n\nWiryslan Vinicius Andrade de Souza\r\n\nZilber
+    Lage de Oliveira\n\nDesenvolvedores \r\nArthur Doff\xE9mond Colares - Programador
+    principal\n\r\nAntonio Araujo Euzebio De Sousa - Designer, e modelador\n\r\nAndr\xE9
+    Henriques Parrera - Designer, modelador principal, programador secundario\n\r\nLaura
+    Alairce Andrade Martins - Modeladora, designer.\r\n\n\r\nAgradecimento aos professores:\r\nRoque
+    Anderson Saldanha Teixeira - Orientador\n\r\nMarcelo La Carretta Enrique Lopez
+    da Cunha Pereira - Escritor da hist\xF3ria de Ben\xEDcio \n\nCreditos aos sons
+    de terceiros:\n\r\nTypeWriter - Sound Effect(Final Cut): https://www.youtube.com/watch?v=PqCfH6dv948\r\nConcrete
+    Footstep, Wood Footstep: Impact Sounds (1.0)\r\n\r\n    Created/distributed by
+    Kenney (www.kenney.nl)\r\n    Creation date: 19-12-2019\r\n\r\nCalm River: https://www.chosic.com/free-music/all/\r\n\r\nVillage
+    pond with bird sounds and natural background by Garuda1982 -- https://freesound.org/s/759738/
+    -- License: Creative Commons 0\r\n\r\nGrass Walking (1 & 2): mco_walk_h03.wav
+    by Fantozzi -- https://freesound.org/s/166305/ -- License: Creative Commons 0\r\n\r\nForest
+    Ambience: sfx_amb_forest_spring_afternoon-01.wav by bajko -- https://freesound.org/s/385280/
+    -- License: Creative Commons 0\r\n\r\nOppening Door: Creaky door open - https://mixkit.co/free-sound-effects/doors/\n\nWind
+    Transition (1, 2 & 3) - https://mixkit.co/free-sound-effects/wind/\n\nSub Urban
+    Bird Ambience - https://mixkit.co/free-sound-effects/public-places/\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3725,15 +3985,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 31
+  m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -3777,7 +4037,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935409161}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!95 &1935409165
 Animator:
   serializedVersion: 7
@@ -4341,6 +4601,10 @@ PrefabInstance:
     - target: {fileID: 8109846695727421118, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450836290756464556, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
