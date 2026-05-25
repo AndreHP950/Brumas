@@ -496,7 +496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 700, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &156745283
@@ -705,7 +705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &229649381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -798,7 +798,7 @@ RectTransform:
   m_Father: {fileID: 985193385}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1136,43 +1136,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3142335309199944404, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
   m_PrefabInstance: {fileID: 8210416110384290252}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &475292995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475292996}
-  m_Layer: 5
-  m_Name: Fill Area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &475292996
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475292995}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 548376481}
-  m_Father: {fileID: 1806032511}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &505479311
+--- !u!1001 &431839382
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1184,17 +1148,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: CenaRio
       objectReference: {fileID: 0}
-    - target: {fileID: 7996056615101619679, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3817.2188
       objectReference: {fileID: 0}
     - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: -377.0176
       objectReference: {fileID: 0}
     - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1231,11 +1191,44 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1920873440443210222, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 793692396}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+--- !u!1 &475292995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475292996}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &475292996
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475292995}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 548376481}
+  m_Father: {fileID: 1806032511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &537660100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1330,7 +1323,7 @@ RectTransform:
   m_Father: {fileID: 475292996}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1405,7 +1398,7 @@ RectTransform:
   m_Father: {fileID: 796993001}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1481,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.09771332, y: 0.67023766}
   m_AnchorMax: {x: 0.90229344, y: 0.90300006}
-  m_AnchoredPosition: {x: 4.3552856, y: 0}
+  m_AnchoredPosition: {x: 4.3552246, y: 0}
   m_SizeDelta: {x: -136.99, y: -27.1084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &734707222
@@ -1728,35 +1721,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5651762188851408693, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
   m_PrefabInstance: {fileID: 8210416110384290252}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &793692393 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1920873440443210222, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
-  m_PrefabInstance: {fileID: 505479311}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &793692394 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3894142173847925570, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
-  m_PrefabInstance: {fileID: 505479311}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &793692396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793692393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 280431fef374f3b4daf3084d0fdced0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TreeWind
-  leavesTransform: {fileID: 793692394}
-  swayAmount: 0.3
-  swaySpeed: 0.4
-  gustStrength: 0.15
-  gustSpeed: 0.1
-  scaleAmount: 0.005
-  scaleSpeed: 0.3
 --- !u!1 &796993000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,9 +2024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '   Musica
-
-'
+  m_text: "   M\xFAsica\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
   m_sharedMaterial: {fileID: 5592794105238541465, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
@@ -2430,7 +2392,7 @@ RectTransform:
   m_Father: {fileID: 2008206059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2565,7 +2527,7 @@ RectTransform:
   m_Father: {fileID: 2020537282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2793,7 +2755,7 @@ RectTransform:
   m_Father: {fileID: 2013889353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2870,8 +2832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.29956383}
-  m_AnchoredPosition: {x: -322.4, y: 3.5}
-  m_SizeDelta: {x: -696.8158, y: -66.1818}
+  m_AnchoredPosition: {x: -336.7312, y: 3.5}
+  m_SizeDelta: {x: -725.4781, y: -66.1818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539825285
 MonoBehaviour:
@@ -3816,15 +3778,16 @@ MonoBehaviour:
     Campos Rodrigues\r\n\nWenderson Ferreira Passos\r\n\nWeslei Ant\xF4nio Belo\r\n\nWesley
     Ant\xF4nio das Chagas\r\n\nWesley Eduardo de Assis\r\n\nWillian Jorge Felizardo
     Alves\r\n\nWilson Jos\xE9 da Silva\r\n\nWiryslan Vinicius Andrade de Souza\r\n\nZilber
-    Lage de Oliveira\n\nDesenvolvedores \r\nArthur Doff\xE9mond Colares - Programador
-    principal\n\r\nAntonio Araujo Euzebio De Sousa - Designer, e modelador\n\r\nAndr\xE9
-    Henriques Parrera - Designer, modelador principal, programador secundario\n\r\nLaura
-    Alairce Andrade Martins - Modeladora, designer.\r\n\n\r\nAgradecimento aos professores:\r\nRoque
-    Anderson Saldanha Teixeira - Orientador\n\r\nMarcelo La Carretta Enrique Lopez
-    da Cunha Pereira - Escritor da hist\xF3ria de Ben\xEDcio \n\nCreditos aos sons
-    de terceiros:\n\r\nTypeWriter - Sound Effect(Final Cut): https://www.youtube.com/watch?v=PqCfH6dv948\r\nConcrete
-    Footstep, Wood Footstep: Impact Sounds (1.0)\r\n\r\n    Created/distributed by
-    Kenney (www.kenney.nl)\r\n    Creation date: 19-12-2019\r\n\r\nCalm River: https://www.chosic.com/free-music/all/\r\n\r\nVillage
+    Lage de Oliveira\n\nDesenvolvedores \n\nAndre Henriques Parreiras - Gerente,
+    Designer, Modelador principal, programador secundario\n\r\nArthur Doff\xE9mond
+    Colares - Programador principal\n\r\nAntonio Araujo Euzebio De Sousa - Designer,
+    e modelador\n\n\r\nLaura Alairce Andrade Martins - Modeladora, designer.\r\n\n\r\nAgradecimento
+    aos professores:\r\nRoque Anderson Saldanha Teixeira - Orientador\n\r\nMarcelo
+    La Carretta Enrique Lopez da Cunha Pereira - Escritor da hist\xF3ria de Ben\xEDcio
+    \n\nCreditos aos sons de terceiros:\n\r\nTypeWriter - Sound Effect(Final Cut):
+    https://www.youtube.com/watch?v=PqCfH6dv948\r\nConcrete Footstep, Wood Footstep:
+    Impact Sounds (1.0)\r\n\r\n    Created/distributed by Kenney (www.kenney.nl)\r\n   
+    Creation date: 19-12-2019\r\n\r\nCalm River: https://www.chosic.com/free-music/all/\r\n\r\nVillage
     pond with bird sounds and natural background by Garuda1982 -- https://freesound.org/s/759738/
     -- License: Creative Commons 0\r\n\r\nGrass Walking (1 & 2): mco_walk_h03.wav
     by Fantozzi -- https://freesound.org/s/166305/ -- License: Creative Commons 0\r\n\r\nForest
@@ -4556,5 +4519,5 @@ SceneRoots:
   - {fileID: 846707413}
   - {fileID: 1573966885}
   - {fileID: 206554064}
-  - {fileID: 505479311}
   - {fileID: 537660100}
+  - {fileID: 431839382}

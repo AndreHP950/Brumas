@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6305200182435869046, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_margin.w
+      value: 43.381058
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Panel
       value: 
