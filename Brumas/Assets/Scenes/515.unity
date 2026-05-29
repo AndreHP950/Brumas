@@ -131,6 +131,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 524
       objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 410.21536
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -107.1577
+      objectReference: {fileID: 0}
     - target: {fileID: 2383383577981672457, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -155,9 +171,29 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 410.21536
+      objectReference: {fileID: 0}
+    - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -305.64868
+      objectReference: {fileID: 0}
     - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_text
       value: Tenta conter os animais
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_fontSize
+      value: 45.8
       objectReference: {fileID: 0}
     - target: {fileID: 4422316178986979973, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -187,9 +223,17 @@ PrefabInstance:
       propertyPath: m_text
       value: "Continua como est\xE1"
       objectReference: {fileID: 0}
+    - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_fontSize
+      value: 56.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 511
+      objectReference: {fileID: 0}
+    - target: {fileID: 6755560642800364642, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: dialog

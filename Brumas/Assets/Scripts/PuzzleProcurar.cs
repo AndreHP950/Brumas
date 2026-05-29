@@ -24,8 +24,6 @@ public class PuzzleProcurar : MonoBehaviour
     }
     public void conferir()
     {
-        if (controller.dialog.nextDialog[0] == null)
-        {
             if (objeto1 == true && objeto2 == true && objeto3 == true && objeto4 == true)
             {
                 controller.AlgoAberto = true;
@@ -34,8 +32,8 @@ public class PuzzleProcurar : MonoBehaviour
                 controller.Sodialogo = true;
                 controller.Iniciar(8);
                 objeto4 = false;
+            objeto3 = false;
             }
-        }
     }
     //interagir com os objetos
     // 0 = interagir, 1 = observar
@@ -45,6 +43,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(0);
             objeto1 = true;
+            conferir();
         }
         else
         {
@@ -57,6 +56,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(2);
             objeto2 = true;
+            conferir();
         }
         else
         {
@@ -69,6 +69,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(4);
             objeto3 = true;
+            conferir();
         }
         else
         {
@@ -82,6 +83,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(6);
             objeto4 = true;
+            conferir();
         }
         else
         {

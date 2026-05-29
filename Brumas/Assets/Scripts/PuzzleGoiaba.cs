@@ -26,6 +26,7 @@ public class PuzzleGoiaba : MonoBehaviour
         else
         {
             goiabacenario.SetActive(false);
+
             GravetoUI.SetActive(false);
             GoiabaUI.SetActive(true);
             controller.Iniciar(2);

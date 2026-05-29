@@ -14,33 +14,59 @@ public class DialogoManager : MonoBehaviour
     public GameObject Panel;
     public bool AlgoAberto;
     public bool Sodialogo;
+
     float tempoPorLetra = 0.03f;
 
     private LTDescr tweenAtual;
+
+    bool animandoTexto;
+    string textoAtualCompleto;
+
     private void Start()
     {
         AlgoAberto = true;
         MostrarTextoAnimado(dialog.text);
+        if (dialog.nextDialog[0] == null)
+        {
+            AlgoAberto = false;
+            Botoes.SetActive(false);
+        }
     }
+
     public void Iniciar(int dialogo)
     {
         Botoes.SetActive(true);
         Panel.SetActive(true);
         dialog = iniciar[dialogo];
         MostrarTextoAnimado(dialog.text);
+        if (dialog.nextDialog[0] == null)
+        {
+            AlgoAberto = false;
+            Botoes.SetActive(false);
+        }
     }
 
     public void Proximo()
     {
-        if (dialog.nextDialog[0] == null)
+        if (animandoTexto)
+        {
+            MostrarTextoInstantaneo();
+            return;
+        }
+
+        if (dialog.nextDialog[0].nextDialog[0] == null)
         {
             if (Sodialogo)
             {
+                dialog = dialog.nextDialog[0];
+                MostrarTextoAnimado(dialog.text);
                 Botoes.SetActive(false);
                 UiExtra.SetActive(true);
             }
             else
             {
+                dialog = dialog.nextDialog[0];
+                MostrarTextoAnimado(dialog.text);
                 AlgoAberto = false;
                 Botoes.SetActive(false);
             }
@@ -48,49 +74,86 @@ public class DialogoManager : MonoBehaviour
         else
         {
             dialog = dialog.nextDialog[0];
-            MostrarTextoAnimado (dialog.text);
+            MostrarTextoAnimado(dialog.text);
         }
     }
 
     public void Voltar()
     {
+        if (animandoTexto)
+        {
+            MostrarTextoInstantaneo();
+            return;
+        }
+
         dialog = dialog.nextDialog[1];
         MostrarTextoAnimado(dialog.text);
     }
+
     public void TrocarCena(string Cena)
     {
         SceneManager.LoadScene($"{Cena}");
     }
+
     void MostrarTextoAnimado(string novoTexto)
     {
         if (tweenAtual != null)
         {
             LeanTween.cancel(gameObject);
         }
+
         StopAllCoroutines();
+
+        textoAtualCompleto = novoTexto;
+        animandoTexto = true;
+
         texto.text = novoTexto;
         texto.maxVisibleCharacters = 0;
 
         int totalCaracteres = novoTexto.Length;
         float duracao = totalCaracteres * tempoPorLetra;
+
         tweenAtual = LeanTween.value(gameObject, 0, totalCaracteres, duracao)
             .setEase(LeanTweenType.linear)
             .setOnUpdate((float valor) =>
             {
                 int letrasVisiveis = Mathf.FloorToInt(valor);
 
-                // Só executa quando uma nova letra realmente aparece
                 if (letrasVisiveis != texto.maxVisibleCharacters)
                 {
                     texto.maxVisibleCharacters = letrasVisiveis;
 
-                    // Faz a última letra exibida dar o pulinho
                     if (letrasVisiveis > 0)
                     {
-                        StartCoroutine(PularLetra(letrasVisiveis-1));
+                        StartCoroutine(PularLetra(letrasVisiveis - 1));
                     }
                 }
+            })
+            .setOnComplete(() =>
+            {
+                animandoTexto = false;
+                texto.maxVisibleCharacters = totalCaracteres;
+                texto.ForceMeshUpdate();
+                texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
             });
+    }
+
+    void MostrarTextoInstantaneo()
+    {
+        if (tweenAtual != null)
+        {
+            LeanTween.cancel(gameObject);
+        }
+
+        StopAllCoroutines();
+
+        animandoTexto = false;
+
+        texto.text = textoAtualCompleto;
+        texto.maxVisibleCharacters = textoAtualCompleto.Length;
+
+        texto.ForceMeshUpdate();
+        texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
 
     public IEnumerator PularLetra(int index)
@@ -106,10 +169,17 @@ public class DialogoManager : MonoBehaviour
             yield break;
 
         TMP_CharacterInfo charInfo = textInfo.characterInfo[index];
+
         int materialIndex = charInfo.materialReferenceIndex;
         int vertexIndex = charInfo.vertexIndex;
 
         Vector3[] vertices = textInfo.meshInfo[materialIndex].vertices;
+        Vector3[] originalVertices = new Vector3[4];
+
+        for (int i = 0; i < 4; i++)
+        {
+            originalVertices[i] = vertices[vertexIndex + i];
+        }
 
         float duracao = tempoPorLetra;
         float tempo = 0f;
@@ -117,19 +187,24 @@ public class DialogoManager : MonoBehaviour
         while (tempo < duracao)
         {
             tempo += Time.deltaTime;
+
             float offsetY = Mathf.Sin((tempo / duracao) * Mathf.PI) * 16.67f;
+
             for (int i = 0; i < 4; i++)
             {
-                vertices[vertexIndex + i] += new Vector3(0, offsetY, 0);
+                vertices[vertexIndex + i] =
+                    originalVertices[i] + new Vector3(0, offsetY, 0);
             }
 
             texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
-            for (int i = 0; i < 4; i++)
-            {
-                vertices[vertexIndex + i] -= new Vector3(0, offsetY, 0);
-            }
 
             yield return null;
         }
+        for (int i = 0; i < 4; i++)
+        {
+            vertices[vertexIndex + i] = originalVertices[i];
+        }
+
+        texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
 }

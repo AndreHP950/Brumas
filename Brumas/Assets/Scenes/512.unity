@@ -330,6 +330,10 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 11400000, guid: b90bd92954df03f49aec5996e1442957, type: 2}
+    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: UiExtra
+      value: 
+      objectReference: {fileID: 1509904284}
     - target: {fileID: 8312474826427564532, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -423,6 +427,11 @@ PrefabInstance:
       addedObject: {fileID: 1576842048}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+--- !u!1 &1509904284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+  m_PrefabInstance: {fileID: 1576842047}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1576842047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -441,11 +450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 691771528330087813, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 411.34006
       objectReference: {fileID: 0}
     - target: {fileID: 691771528330087813, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -304.6637
       objectReference: {fileID: 0}
     - target: {fileID: 1994802659726833511, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_text
@@ -533,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138065681761237371, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 411.34006
       objectReference: {fileID: 0}
     - target: {fileID: 4138065681761237371, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -620,6 +629,10 @@ PrefabInstance:
     - target: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_Name
       value: "Op\xE7\xF5es"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_Pivot.x
