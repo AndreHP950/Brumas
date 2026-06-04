@@ -547,6 +547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180832066}
   - component: {fileID: 180832067}
+  - component: {fileID: 180832068}
   m_Layer: 5
   m_Name: SliderMusica
   m_TagString: Untagged
@@ -620,13 +621,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 1511770362}
   m_HandleRect: {fileID: 1088053345}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 180832068}
+        m_TargetAssemblyTypeName: MudaVolume, Assembly-CSharp
+        m_MethodName: MudarVolume
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &180832068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180832065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843d051c5c3617469ff203b499efe0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MudaVolume
+  mixer: {fileID: 24100000, guid: a13721c799181dd4ea58e02df2863987, type: 2}
 --- !u!1001 &206554064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1440,6 +1466,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553532109}
   m_CullTransparentMesh: 1
+--- !u!1001 &651737892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 773.4573
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 614.5862
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651388352136311056, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306484585539391377, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 27e81d949cd0d5f4ab172fe7c222b08b, type: 3}
 --- !u!1 &734707220
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,6 +3385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806032511}
   - component: {fileID: 1806032512}
+  - component: {fileID: 1806032513}
   m_Layer: 5
   m_Name: Slidergeral
   m_TagString: Untagged
@@ -3375,13 +3459,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 548376481}
   m_HandleRect: {fileID: 553532110}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1806032513}
+        m_TargetAssemblyTypeName: MudaVolume, Assembly-CSharp
+        m_MethodName: MudarVolume
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1806032513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806032510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843d051c5c3617469ff203b499efe0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MudaVolume
+  mixer: {fileID: 24100000, guid: a13721c799181dd4ea58e02df2863987, type: 2}
 --- !u!1 &1807951177
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,6 +3652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1917440480}
   - component: {fileID: 1917440481}
+  - component: {fileID: 1917440482}
   m_Layer: 5
   m_Name: SliderEfeitosSonoros
   m_TagString: Untagged
@@ -3616,13 +3726,38 @@ MonoBehaviour:
   m_FillRect: {fileID: 1218664668}
   m_HandleRect: {fileID: 236919521}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 20
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917440482}
+        m_TargetAssemblyTypeName: MudaVolume, Assembly-CSharp
+        m_MethodName: MudarVolume
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1917440482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917440479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2843d051c5c3617469ff203b499efe0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MudaVolume
+  mixer: {fileID: 24100000, guid: a13721c799181dd4ea58e02df2863987, type: 2}
 --- !u!1 &1935409161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,3 +4656,4 @@ SceneRoots:
   - {fileID: 206554064}
   - {fileID: 537660100}
   - {fileID: 431839382}
+  - {fileID: 651737892}

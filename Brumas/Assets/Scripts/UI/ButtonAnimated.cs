@@ -3,8 +3,8 @@ using UnityEngine.UI;
 using TMPro;
 
 /// <summary>
-/// Animações de botão estilo cozy / literário (What Remains of Edith Finch).
-/// Adicione ao GameObject do botão e configure o preset no Inspector.
+/// Animaï¿½ï¿½es de botï¿½o estilo cozy / literï¿½rio (What Remains of Edith Finch).
+/// Adicione ao GameObject do botï¿½o e configure o preset no Inspector.
 /// Para som: arraste os AudioClips nos campos opcionais.
 /// </summary>
 public class ButtonAnimated : MonoBehaviour
@@ -14,16 +14,16 @@ public class ButtonAnimated : MonoBehaviour
     // ?????????????????????????????????????????????
     public enum ButtonPreset
     {
-        /// Sutil — escala mínima, fade suave. Ideal para botões de menu principal.
+        /// Sutil ï¿½ escala mï¿½nima, fade suave. Ideal para botï¿½es de menu principal.
         Gentle,
 
-        /// Levemente expressivo — pequena rotação + brilho no texto. Ideal para seleção de itens.
+        /// Levemente expressivo ï¿½ pequena rotaï¿½ï¿½o + brilho no texto. Ideal para seleï¿½ï¿½o de itens.
         Warm,
 
-        /// Quase invisível — só opacidade muda. Ideal para botões secundários / HUD.
+        /// Quase invisï¿½vel ï¿½ sï¿½ opacidade muda. Ideal para botï¿½es secundï¿½rios / HUD.
         Whisper,
 
-        /// Aparece como se fosse digitado/escrito. Ideal para botões de diálogo.
+        /// Aparece como se fosse digitado/escrito. Ideal para botï¿½es de diï¿½logo.
         Ink
     }
 
@@ -33,13 +33,13 @@ public class ButtonAnimated : MonoBehaviour
     [Header("Preset")]
     public ButtonPreset preset = ButtonPreset.Gentle;
 
-    [Header("Referências (opcional — busca automática se vazio)")]
+    [Header("Referï¿½ncias (opcional ï¿½ busca automï¿½tica se vazio)")]
     [SerializeField] private Image targetImage;
     [SerializeField] private TextMeshProUGUI targetText;
 
     [Header("Cores do Texto")]
     [SerializeField] private Color textColorNormal  = new Color(0.92f, 0.88f, 0.82f, 1f); // creme
-    [SerializeField] private Color textColorHover   = new Color(1f,    0.93f, 0.78f, 1f); // âmbar suave
+    [SerializeField] private Color textColorHover   = new Color(1f,    0.93f, 0.78f, 1f); // ï¿½mbar suave
     [SerializeField] private Color textColorClick   = new Color(1f,    1f,    1f,    1f); // branco puro
 
     [Header("Sons (opcional)")]
@@ -85,17 +85,17 @@ public class ButtonAnimated : MonoBehaviour
 
     private void OnEnable()
     {
-        // Anima entrada toda vez que o botão for ativado
+        // Anima entrada toda vez que o botï¿½o for ativado
         PlayAppear();
     }
 
     // ?????????????????????????????????????????????
-    //  PÚBLICOS — conecte nos EventTrigger / Button
+    //  Pï¿½BLICOS ï¿½ conecte nos EventTrigger / Button
     // ?????????????????????????????????????????????
     public void OnHoverEnter()
     {
         LeanTween.cancel(rt);
-        PlaySound(soundHoverEnter);
+        AudioManager.PlaySound(1);
 
         switch (preset)
         {
@@ -127,7 +127,7 @@ public class ButtonAnimated : MonoBehaviour
     public void OnHoverExit()
     {
         LeanTween.cancel(rt);
-        PlaySound(soundHoverExit);
+        AudioManager.PlaySound(2);
 
         switch (preset)
         {
@@ -159,9 +159,9 @@ public class ButtonAnimated : MonoBehaviour
     public void OnClick()
     {
         LeanTween.cancel(rt);
-        PlaySound(soundClick);
+        AudioManager.PlaySound(0);
 
-        // Squish suave — comprime levemente e volta, sem bounce agressivo
+        // Squish suave ï¿½ comprime levemente e volta, sem bounce agressivo
         LeanTween.scale(rt, baseScale * 0.92f, 0.08f)
             .setEase(LeanTweenType.easeInSine)
             .setOnComplete(() =>
@@ -183,7 +183,7 @@ public class ButtonAnimated : MonoBehaviour
     //  APARECER
     // ?????????????????????????????????????????????
 
-    /// <summary>Chame manualmente para reanimar a entrada do botão.</summary>
+    /// <summary>Chame manualmente para reanimar a entrada do botï¿½o.</summary>
     public void PlayAppear()
     {
         LeanTween.cancel(rt);
@@ -200,7 +200,7 @@ public class ButtonAnimated : MonoBehaviour
                 break;
 
             case ButtonPreset.Whisper:
-                // Aparece só com fade, escala neutra
+                // Aparece sï¿½ com fade, escala neutra
                 SetAlpha(0f);
                 LeanTween.value(rt.gameObject, SetAlpha, 0f, 0.55f, 0.6f);
                 break;
@@ -272,9 +272,9 @@ public class ButtonAnimated : MonoBehaviour
         }
     }
 
-    private void PlaySound(AudioClip clip)
+    /*private void PlaySound(AudioClip clip)
     {
         if (audioSource != null && clip != null)
             audioSource.PlayOneShot(clip);
-    }
+    }*/
 }
