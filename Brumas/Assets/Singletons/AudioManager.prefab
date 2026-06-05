@@ -47,9 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   mixer: {fileID: 24100000, guid: a13721c799181dd4ea58e02df2863987, type: 2}
   clip:
-  - {fileID: 8300000, guid: 3915b9629de33cd48836fed780523cc9, type: 3}
-  - {fileID: 8300000, guid: 593ecc4e573ed7c48b1bd3bc389974b2, type: 3}
-  - {fileID: 8300000, guid: 03e7668aa4d33d449ba187020b836520, type: 3}
+  - {fileID: 8300000, guid: 8ccb4386c13a0b54d95f6bde5c6f5c69, type: 3}
+  - {fileID: 8300000, guid: e5546ba5ac4d4424b9c5460cbe808804, type: 3}
+  - {fileID: 0}
 --- !u!82 &90483061995187476
 AudioSource:
   m_ObjectHideFlags: 0
