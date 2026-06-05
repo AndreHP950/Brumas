@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 75a10f09d60040140982e3b1042fa30c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -140,45 +140,6 @@ MonoBehaviour:
   objeto2: 0
   objeto3: 0
   objeto4: 0
---- !u!1 &304579982 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1141375205255451239, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-  m_PrefabInstance: {fileID: 803867030}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &304579984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304579982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed50d559e66fe31468f515523f0406d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjetoClicavel
-  UI: {fileID: 357501499}
---- !u!65 &304579985
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304579982}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.05644078, y: 0.029449333, z: 0.041980077}
-  m_Center: {x: 0, y: 0.0046191774, z: 0.021218805}
 --- !u!1001 &357501498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1017,45 +978,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
   m_PrefabInstance: {fileID: 513680864}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &569236055 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1163992679637007625, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-  m_PrefabInstance: {fileID: 803867030}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &569236057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569236055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed50d559e66fe31468f515523f0406d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjetoClicavel
-  UI: {fileID: 954645178}
---- !u!65 &569236058
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 569236055}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.05013479, y: 0.053645246, z: 0.03217916}
-  m_Center: {x: -0.00016199848, y: -0.06553749, z: 0.016040094}
 --- !u!1001 &727803071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1455,31 +1377,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7743570050000349003, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1773916935}
-    - targetCorrespondingSourceObject: {fileID: 7743570050000349003, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1773916934}
-    - targetCorrespondingSourceObject: {fileID: 4805489235628194801, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1475194429}
-    - targetCorrespondingSourceObject: {fileID: 4805489235628194801, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1475194428}
-    - targetCorrespondingSourceObject: {fileID: 1163992679637007625, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 569236058}
-    - targetCorrespondingSourceObject: {fileID: 1163992679637007625, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 569236057}
-    - targetCorrespondingSourceObject: {fileID: 1141375205255451239, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 304579985}
-    - targetCorrespondingSourceObject: {fileID: 1141375205255451239, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 304579984}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
 --- !u!1001 &954645176
 PrefabInstance:
@@ -2319,84 +2217,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
   m_PrefabInstance: {fileID: 1400022092}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1475194426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4805489235628194801, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-  m_PrefabInstance: {fileID: 803867030}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1475194428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475194426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed50d559e66fe31468f515523f0406d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjetoClicavel
-  UI: {fileID: 1400022094}
---- !u!65 &1475194429
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1475194426}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.032920834, y: 0.0349307, z: 0.06758176}
-  m_Center: {x: -0.04991989, y: 0.0035154105, z: 0.034900546}
---- !u!1 &1773916932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7743570050000349003, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
-  m_PrefabInstance: {fileID: 803867030}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1773916934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773916932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed50d559e66fe31468f515523f0406d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjetoClicavel
-  UI: {fileID: 513680866}
---- !u!65 &1773916935
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773916932}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.033605445, y: 0.033505764, z: 0.033902872}
-  m_Center: {x: 0.049732715, y: 0.0030876424, z: 0.017919611}
 --- !u!224 &1852448392 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2293841145947439449, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
