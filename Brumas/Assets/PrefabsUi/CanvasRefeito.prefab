@@ -116,22 +116,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
-      propertyPath: m_fontSize
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
-      propertyPath: m_margin.w
-      value: 37.037575
-      objectReference: {fileID: 0}
-    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
-      propertyPath: m_fontSizeMax
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
-      propertyPath: m_fontSizeMin
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6806852087705804045, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_SizeDelta.x
       value: 623.1107
