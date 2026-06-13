@@ -14,6 +14,7 @@ public class DialogoManager : MonoBehaviour
     public GameObject Panel;
     public bool AlgoAberto;
     public bool Sodialogo;
+    AudioManager controller;
 
     float tempoPorLetra = 0.03f;
 
@@ -22,8 +23,9 @@ public class DialogoManager : MonoBehaviour
     bool animandoTexto;
     string textoAtualCompleto;
 
-    private void Start()
+    public void Start()
     {
+        controller = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
         AlgoAberto = true;
         MostrarTextoAnimado(dialog.text);
         if (dialog.nextDialog[0] == null)
@@ -48,6 +50,7 @@ public class DialogoManager : MonoBehaviour
 
     public void Proximo()
     {
+        controller.PlaySoundButton(0, 1f);
         if (animandoTexto)
         {
             MostrarTextoInstantaneo();
@@ -80,6 +83,7 @@ public class DialogoManager : MonoBehaviour
 
     public void Voltar()
     {
+        controller.PlaySoundButton(0, 1f);
         if (animandoTexto)
         {
             MostrarTextoInstantaneo();
@@ -125,6 +129,8 @@ public class DialogoManager : MonoBehaviour
 
                     if (letrasVisiveis > 0)
                     {
+                        int somAleatorio = Random.Range(0, 3);
+                        controller.PlaySoundButton(somAleatorio, 0.2f);
                         StartCoroutine(PularLetra(letrasVisiveis - 1));
                     }
                 }

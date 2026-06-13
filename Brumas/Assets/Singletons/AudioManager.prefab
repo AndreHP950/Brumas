@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 90483061995187476}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   clip:
   - {fileID: 8300000, guid: 8ccb4386c13a0b54d95f6bde5c6f5c69, type: 3}
   - {fileID: 8300000, guid: e5546ba5ac4d4424b9c5460cbe808804, type: 3}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 98a3b76fa5ea6f042b713f98d9b47b9c, type: 3}
 --- !u!82 &90483061995187476
 AudioSource:
   m_ObjectHideFlags: 0

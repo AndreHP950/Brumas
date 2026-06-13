@@ -24,5 +24,9 @@ public class AudioManager : MonoBehaviour
     {
         Instance.audioSource.PlayOneShot(Instance.clip[i]);
     }
-    
+    public void PlaySoundButton(int i, float volume)
+    {
+            audioSource.PlayOneShot(Instance.clip[i], volume);
+    }
+
 }
