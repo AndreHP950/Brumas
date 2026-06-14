@@ -16,4 +16,4 @@ MonoBehaviour:
     Deve dar muito peixe."
   nextDialog:
   - {fileID: 11400000, guid: ac43c32d83fb12549b3f756901290311, type: 2}
-  - {fileID: 11400000, guid: ce5f60aea2d212e4eaa554c6d5eb24ba, type: 2}
+  - {fileID: 11400000, guid: a515ff74aae16754fbd6bcb9dd3f84d7, type: 2}

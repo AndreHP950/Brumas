@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
   m_Name: Historia510-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "O grande Rio Paraopeba reluzia o c\xE9u claro do lindo dia; o ar fresco
-    e o cheiro revigorante limpava os seus velhos pulm\xF5es e o enchia de vida."
+  text: "O grande Rio Paraopeba reluzia o c\xE9u claro do lindo dia. "
   nextDialog:
-  - {fileID: 11400000, guid: d8a3cf2635da6cd40b2bf64a675164e6, type: 2}
+  - {fileID: 11400000, guid: 9c132ea3640769340bfad38699b86dc8, type: 2}
   - {fileID: 11400000}

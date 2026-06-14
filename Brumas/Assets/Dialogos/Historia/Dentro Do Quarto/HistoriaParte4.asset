@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: HistoriaParte4
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Enquanto abotoava sua camisa, pensava: Acho que eu posso levar o fogareiro
-    pra esquentar os peixes l\xE1, na hora! O problema \xE9 que eu n\xE3o fa\xE7o
-    ideia de onde eu o guardei na \xFAltima vez."
+    pra esquentar os peixes l\xE1, na hora!"
   nextDialog:
-  - {fileID: 11400000, guid: b50ea65846b471346806086c40fb5e9b, type: 2}
+  - {fileID: 11400000, guid: 07ccb96899f1b3146bf621602ad44dcb, type: 2}
   - {fileID: 11400000, guid: 7c44805a3ee89b4409648422d30d60a8, type: 2}

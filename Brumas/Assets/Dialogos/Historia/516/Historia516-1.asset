@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Historia516-1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "A mula sai desembestada\u2026 E ela nunca fez isso!  Ben\xEDcio sai correndo
-    pela mata, na imin\xEAncia de buscar a mula, que deve estar por perto. Na correria,
-    praguejando \"Diacho\" em um ritmo fren\xE9tico, nem percebe um homem que olhava
-    pra ele; podia ter pedido uma ajuda."
+    pela mata, na imin\xEAncia de buscar a mula, que deve estar por perto."
   nextDialog:
-  - {fileID: 11400000, guid: 90ab8312cbc47ae4e893ffb170135b67, type: 2}
+  - {fileID: 11400000, guid: c7f3ca234ad25cf4aa320e415fde80db, type: 2}
   - {fileID: 11400000}

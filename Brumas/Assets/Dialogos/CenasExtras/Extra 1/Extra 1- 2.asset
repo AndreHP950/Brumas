@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Extra 1- 2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ben\xEDcio:  \u2014 Mais cedo que o sol, \xE0s vezes."
+  nextDialog:
+  - {fileID: 11400000, guid: 8b26b3b7a5b644f408f34b7f14f05fbf, type: 2}
+  - {fileID: 11400000, guid: 3af460f00afe0e9499de0ec8645ca32a, type: 2}
