@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Extra10- 4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ben\xEDcio:  \u2014 Ent\xE3o talvez seja o suficiente. "
+  nextDialog:
+  - {fileID: 11400000, guid: 85966e8fbc98b4b4a8ec6361ddfd76b9, type: 2}
+  - {fileID: 11400000, guid: e6e82384e1fb58e43b3699ac4f96fd21, type: 2}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Extra 1- 7
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Ben\xEDcio ri. \u2014 Dorme sim. S\xF3 n\xE3o tem cama. "
+  nextDialog:
+  - {fileID: 11400000, guid: 2777804e8a6a2c24b9eea7c615628186, type: 2}
+  - {fileID: 11400000, guid: dbe497db365b51b47ab220c6b3d23635, type: 2}

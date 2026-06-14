@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
+  m_Name: Extra5- 5
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
+  text: "Neto:  \u2014 Igual pessoas n\xE9? "
+  nextDialog:
+  - {fileID: 11400000, guid: 3104f739bb00e2e4ca63dae6b94bd7a7, type: 2}
+  - {fileID: 11400000, guid: a18bc118d5058834c980897fcf8f6f0f, type: 2}

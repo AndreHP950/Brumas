@@ -15,4 +15,4 @@ MonoBehaviour:
   text: "Ent\xE3o t\xE1 tenho que sair do meu quarto antes..."
   nextDialog:
   - {fileID: 0}
-  - {fileID: 11400000, guid: ac43c32d83fb12549b3f756901290311, type: 2}
+  - {fileID: 11400000, guid: 07ccb96899f1b3146bf621602ad44dcb, type: 2}

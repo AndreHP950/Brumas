@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Historia510-2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Seu lugar de costume parecia j\xE1 arrumado, e por todos os caminhos que
-    ambos - velho e rio - j\xE1 trilharam, um parecia conhecer bem o outro. Ben\xEDcio
-    chega \xE0s margens do rio, instalando-se no lugar de costume. "
+    ambos - velho e rio - j\xE1 trilharam, um parecia conhecer bem o outro."
   nextDialog:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 963f818ee6b5fb9409668d12c56bf505, type: 2}
+  - {fileID: 11400000, guid: acf086b022d0ea74aa79ae126978f72d, type: 2}
+  - {fileID: 11400000, guid: 9c132ea3640769340bfad38699b86dc8, type: 2}

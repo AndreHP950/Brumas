@@ -399,7 +399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 515
+      value: CenaExtra6
       objectReference: {fileID: 0}
     - target: {fileID: 5592669381388027767, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_Pivot.x

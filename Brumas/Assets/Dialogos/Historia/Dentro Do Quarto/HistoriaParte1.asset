@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: HistoriaParte1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Ben\xEDcio Dias \xE9 um homem de 65 anos que mora com a esposa, Raquel Correia
-    Dias, de 60 anos. Eles possuem uma vida simples, em uma ch\xE1cara, h\xE1 mais
-    de 30 anos."
+    Dias, de 60 anos."
   nextDialog:
-  - {fileID: 11400000, guid: ce5f60aea2d212e4eaa554c6d5eb24ba, type: 2}
+  - {fileID: 11400000, guid: a7304b2d7b78ed34295ec6a0eeab9328, type: 2}
   - {fileID: 11400000}

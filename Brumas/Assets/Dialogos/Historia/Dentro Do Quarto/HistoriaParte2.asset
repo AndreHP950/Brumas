@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: HistoriaParte2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Criavam galinhas e cachorros, pescavam, cultivavam hortas, pomares e mem\xF3rias.
-    No dia 25 de janeiro, Ben\xEDcio acorda cinco da manh\xE3. Ainda meio com sono,
-    mas ansioso, e se levanta e olha para o calend\xE1rio no criadinho."
+    No dia 25 de janeiro, Ben\xEDcio acorda cinco da manh\xE3."
   nextDialog:
-  - {fileID: 11400000, guid: 7c44805a3ee89b4409648422d30d60a8, type: 2}
-  - {fileID: 11400000, guid: c27637ecc2456e741850021f365c8446, type: 2}
+  - {fileID: 11400000, guid: a515ff74aae16754fbd6bcb9dd3f84d7, type: 2}
+  - {fileID: 11400000, guid: a7304b2d7b78ed34295ec6a0eeab9328, type: 2}
