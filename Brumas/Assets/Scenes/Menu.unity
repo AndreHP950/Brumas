@@ -4906,6 +4906,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3940893707235072811, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940893707235072811, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.533
+      objectReference: {fileID: 0}
+    - target: {fileID: 3940893707235072811, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.465
+      objectReference: {fileID: 0}
     - target: {fileID: 4255739548723443274, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
       propertyPath: m_Name
       value: CenaSala
@@ -4913,6 +4925,10 @@ PrefabInstance:
     - target: {fileID: 4255739548723443274, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872685572629795008, guid: 42450c90445eef14f8d25167cea42b28, type: 3}
+      propertyPath: field of view
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
