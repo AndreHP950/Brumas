@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SkyBox
+  m_Name: SkyBox(FLORESTAVERDEAZULADO)
   m_Shader: {fileID: -6465566751694194690, guid: 853de50815417d44abeedcefb9a5765f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -46,8 +46,8 @@ Material:
     - _Rotacao: 0
     m_Colors:
     - _Cor_Estrela: {r: 0.94833726, g: 0.9303578, b: 0.9528302, a: 0}
-    - _Cor_de_baixo: {r: 1, g: 0.913059, b: 0.4481132, a: 0}
-    - _Cor_de_cima: {r: 0.990566, g: 0.7258891, b: 0.3504361, a: 0}
+    - _Cor_de_baixo: {r: 0.464572, g: 0.73, b: 0.43508, a: 0}
+    - _Cor_de_cima: {r: 0.21987364, g: 0.5754717, b: 0.5023977, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &333656848759317233

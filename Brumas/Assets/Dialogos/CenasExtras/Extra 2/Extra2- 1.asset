@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Neto:  \u2014 Vov\xF4, hoje eu briguei com um menino na escola."
   nextDialog:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 2c25da63334d61547bcddbbf3875dd57, type: 2}
   - {fileID: 11400000}
