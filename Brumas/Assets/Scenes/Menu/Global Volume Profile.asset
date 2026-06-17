@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.ColorAdjustments
-  active: 0
+  active: 1
   postExposure:
     m_OverrideState: 1
     m_Value: 0
   contrast:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 8
   colorFilter:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: -37.2
+    m_Value: 0
 --- !u!114 &-4361629946732663510
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -52,13 +52,13 @@ MonoBehaviour:
     m_Value: 1.27
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.44
   clamp:
     m_OverrideState: 1
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.9219984, b: 0, a: 1}
+    m_Value: {r: 0.9168272, g: 1, b: 0, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 0
@@ -284,7 +284,7 @@ MonoBehaviour:
     m_Value: 0
   gaussianEnd:
     m_OverrideState: 1
-    m_Value: 18.96
+    m_Value: 2.6
   gaussianMaxRadius:
     m_OverrideState: 1
     m_Value: 0.5
@@ -340,10 +340,10 @@ MonoBehaviour:
   active: 0
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.8606823, y: 0.94356555, z: 1, w: 0}
+    m_Value: {x: 0.9692079, y: 1, z: 0.97023684, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
+    m_Value: {x: 0.9669249, y: 1, z: 0.9663953, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.9058641, y: 0.9280152, z: 1, w: 0}
+    m_Value: {x: 1, y: 1, z: 1, w: 0}

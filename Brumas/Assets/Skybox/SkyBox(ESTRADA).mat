@@ -46,8 +46,8 @@ Material:
     - _Rotacao: 0
     m_Colors:
     - _Cor_Estrela: {r: 0.94833726, g: 0.9303578, b: 0.9528302, a: 0}
-    - _Cor_de_baixo: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 0}
-    - _Cor_de_cima: {r: 0.9056604, g: 0.8411672, b: 0.40583837, a: 0}
+    - _Cor_de_baixo: {r: 0.85660374, g: 0.7102777, b: 0.5996226, a: 0}
+    - _Cor_de_cima: {r: 0.93207544, g: 0.8888937, b: 0.39920965, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &333656848759317233
