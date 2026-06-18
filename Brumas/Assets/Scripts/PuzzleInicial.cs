@@ -5,6 +5,7 @@ public class PuzzleInicial : MonoBehaviour
     DialogoManager controller;
     int chaveObtida;
     public GameObject chave;
+    public GameObject Objetivo;
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
@@ -40,6 +41,13 @@ public class PuzzleInicial : MonoBehaviour
         else
         {
             controller.Iniciar(4);
+        }
+    }
+    public void conferir()
+    {
+        if (controller.dialog.nextDialog[0] == null)
+        {
+            Objetivo.SetActive(true);
         }
     }
 }

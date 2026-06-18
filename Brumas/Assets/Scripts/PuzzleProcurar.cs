@@ -8,6 +8,10 @@ public class PuzzleProcurar : MonoBehaviour
     public bool objeto2;
     public bool objeto3;
     public bool objeto4;
+    public GameObject obj1;
+    public GameObject obj2;
+    public GameObject obj3;
+    public GameObject obj4;
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
@@ -43,6 +47,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(0);
             objeto1 = true;
+            // RemoverOutline(obj1);
             conferir();
         }
         else
@@ -56,6 +61,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(2);
             objeto2 = true;
+            //RemoverOutline(obj2);
             conferir();
         }
         else
@@ -69,6 +75,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(4);
             objeto3 = true;
+            //RemoverOutline(obj3);
             conferir();
         }
         else
@@ -83,6 +90,7 @@ public class PuzzleProcurar : MonoBehaviour
         {
             controller.Iniciar(6);
             objeto4 = true;
+            //RemoverOutline(obj4);
             conferir();
         }
         else
@@ -91,4 +99,15 @@ public class PuzzleProcurar : MonoBehaviour
         }
 
     }
+    /*void RemoverOutline(GameObject obj)
+    {
+        MeshRenderer renderer = obj.GetComponent<MeshRenderer>();
+
+        Material[] mats = renderer.materials;
+
+        if (mats.Length > 1)
+        {
+            renderer.materials = new Material[] { mats[0] };
+        }
+    }*/
 }

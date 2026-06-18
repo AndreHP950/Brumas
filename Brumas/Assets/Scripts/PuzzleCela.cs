@@ -7,10 +7,18 @@ public class PuzzleCela : MonoBehaviour
     public bool cela;
     public GameObject celaMula;
     public GameObject celaUI;
+    public GameObject Objetivo;
     void Start()
     {
         controller = GameObject.FindGameObjectWithTag("Canvas").GetComponent<DialogoManager>();
         cela = false;
+    }
+    private void Update()
+    {
+        if (controller.Sodialogo == true)
+        {
+            Objetivo.SetActive(false);
+        }
     }
     public void InteragirCela()
     {
