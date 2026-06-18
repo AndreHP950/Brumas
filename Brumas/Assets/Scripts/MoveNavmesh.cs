@@ -1,10 +1,11 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class MoveNavmesh : MonoBehaviour
 {
-    [Header("Configuração")]
+    [Header("Configuraï¿½ï¿½o")]
     [SerializeField] private LayerMask walkableLayer;
     [SerializeField] private Camera sceneCamera;
 
@@ -13,7 +14,7 @@ public class MoveNavmesh : MonoBehaviour
     [SerializeField] private float indicatorDuration = 0.6f;
 
     [Header("Bloqueio de Movimento")]
-    [Tooltip("Impede o movimento enquanto algum painel/diálogo estiver aberto")]
+    [Tooltip("Impede o movimento enquanto algum painel/diï¿½logo estiver aberto")]
     [SerializeField] private bool blockWhileDialogOpen = true;
 
     private NavMeshAgent agent;
@@ -28,7 +29,7 @@ public class MoveNavmesh : MonoBehaviour
             sceneCamera = Camera.main;
 
         if (sceneCamera == null)
-            Debug.LogError("[MoveNavmesh] Nenhuma câmera encontrada! Arraste a câmera no Inspector.");
+            Debug.LogError("[MoveNavmesh] Nenhuma cï¿½mera encontrada! Arraste a cï¿½mera no Inspector.");
 
         if (blockWhileDialogOpen)
             dialogoManager = GameObject.FindGameObjectWithTag("Canvas")
@@ -41,7 +42,7 @@ public class MoveNavmesh : MonoBehaviour
 
         if (IsDialogOpen())
         {
-            Debug.Log("[MoveNavmesh] Bloqueado: diálogo aberto.");
+            Debug.Log("[MoveNavmesh] Bloqueado: diï¿½logo aberto.");
             return;
         }
 
@@ -66,9 +67,9 @@ public class MoveNavmesh : MonoBehaviour
         {
             // Debug: testa sem filtro de layer para identificar o problema
             if (Physics.Raycast(ray, out RaycastHit hitAny, Mathf.Infinity))
-                Debug.LogWarning($"[MoveNavmesh] Raycast acertou '{hitAny.collider.name}' (layer: {LayerMask.LayerToName(hitAny.collider.gameObject.layer)}) mas NÃO está na walkableLayer configurada.");
+                Debug.LogWarning($"[MoveNavmesh] Raycast acertou '{hitAny.collider.name}' (layer: {LayerMask.LayerToName(hitAny.collider.gameObject.layer)}) mas Nï¿½O estï¿½ na walkableLayer configurada.");
             else
-                Debug.LogWarning("[MoveNavmesh] Raycast não acertou nenhum objeto.");
+                Debug.LogWarning("[MoveNavmesh] Raycast nï¿½o acertou nenhum objeto.");
         }
     }
 
@@ -81,7 +82,7 @@ public class MoveNavmesh : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[MoveNavmesh] Ponto clicado não está próximo do NavMesh.");
+            Debug.LogWarning("[MoveNavmesh] Ponto clicado nï¿½o estï¿½ prï¿½ximo do NavMesh.");
         }
     }
 

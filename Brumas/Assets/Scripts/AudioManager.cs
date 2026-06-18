@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioMixer mixer;
-    [SerializeField] AudioClip[] clip;
+    [SerializeField] AudioClip[] UI, Walk;
     private AudioSource audioSource;
     public static AudioManager Instance { get; private set; }
 
@@ -22,11 +22,15 @@ public class AudioManager : MonoBehaviour
     }
     public static void PlaySound(int i)
     {
-        Instance.audioSource.PlayOneShot(Instance.clip[i]);
+        Instance.audioSource.PlayOneShot(Instance.UI[i]);
     }
     public void PlaySoundButton(int i, float volume)
     {
-            audioSource.PlayOneShot(Instance.clip[i], volume);
+            audioSource.PlayOneShot(Instance.UI[i], volume);
+    }
+    public static void WalkSound(int i)
+    {
+        Instance.audioSource.PlayOneShot(Instance.Walk[i]);
     }
 
 }
