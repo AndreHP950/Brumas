@@ -1235,6 +1235,10 @@ PrefabInstance:
       value: Ir selar a Mula
       objectReference: {fileID: 0}
     - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_fontSize
+      value: 66.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
@@ -1268,11 +1272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_text
-      value: "Ficar mais um pouco e tomar caf\xE9"
+      value: "Tomar Caf\xE9\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_fontSize
-      value: 68.55
+      value: 70.7
       objectReference: {fileID: 0}
     - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_hasFontAssetChanged

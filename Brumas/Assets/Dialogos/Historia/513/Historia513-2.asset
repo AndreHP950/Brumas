@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
   m_Name: Historia513-2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "Quanto mais cedo eu ir, mais tempo posso passar na volta com a Dona Raquel,
-    que fica cabreira se demoro muito. Mas talvez, se eu tomar um caf\xE9 direito,
-    as ideias clareiam..."
+  text: 'Quanto mais cedo eu ir, mais tempo posso passar na volta com a Dona Raquel,
+    que fica cabreira se demoro muito. '
   nextDialog:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: aefe15aa860782044a92cb56616f7a44, type: 2}
+  - {fileID: 11400000, guid: 44a12a1cc2d086f4fa1296882d98f7b0, type: 2}
+  - {fileID: 11400000, guid: 9849ab0488beb69439f91eacca5059a5, type: 2}

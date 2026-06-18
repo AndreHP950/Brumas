@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia513-1
+  m_Name: Historia513-2 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "Diacho, nada de encontrar esse fogareiro\u2026 Desisto!  Achei que tinha
-    deixado a cela na mula\u2026"
+  text: "Mas talvez, se eu tomar um caf\xE9 direito, as ideias clareiam..."
   nextDialog:
-  - {fileID: 11400000, guid: 9849ab0488beb69439f91eacca5059a5, type: 2}
-  - {fileID: 11400000}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: aefe15aa860782044a92cb56616f7a44, type: 2}
