@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 597107980}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -93,8 +93,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 3e01654160edec648944ba1d916c4109, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 6de1fa3c3097fdd4e93dfc563868d629, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -321,6 +321,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2043fa5daffe8174c9beefc3ef305575, type: 3}
+--- !u!108 &597107980 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7836606560895278263, guid: 2043fa5daffe8174c9beefc3ef305575, type: 3}
+  m_PrefabInstance: {fileID: 597107979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1126212645
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -44,10 +44,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Rotacao: 0
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _Cor_Estrela: {r: 0.94833726, g: 0.9303578, b: 0.9528302, a: 0}
     - _Cor_de_baixo: {r: 0.464572, g: 0.73, b: 0.43508, a: 0}
-    - _Cor_de_cima: {r: 0.21987364, g: 0.5754717, b: 0.5023977, a: 0}
+    - _Cor_de_cima: {r: 0.43734425, g: 0.7924528, b: 0.7183092, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &333656848759317233
