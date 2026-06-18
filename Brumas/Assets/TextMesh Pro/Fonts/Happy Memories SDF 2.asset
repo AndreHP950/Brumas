@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Happy Memories SDF
+  m_Name: Happy Memories SDF 2
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_FontAsset
   m_Version: 1.1.0
   m_FaceInfo:
@@ -25037,7 +25037,7 @@ Material:
     - _ReceiveShadows: 1
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.73125
+    - _ScaleRatioC: 0.72400993
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -25055,9 +25055,9 @@ Material:
     - _Surface: 0
     - _TextureHeight: 1024
     - _TextureWidth: 1024
-    - _UnderlayDilate: 0.164
-    - _UnderlayOffsetX: 0.511
-    - _UnderlayOffsetY: -0.306
+    - _UnderlayDilate: 0.01
+    - _UnderlayOffsetX: 1
+    - _UnderlayOffsetY: -1
     - _UnderlaySoftness: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
