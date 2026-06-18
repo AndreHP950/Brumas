@@ -1,11 +1,10 @@
-using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class MoveNavmesh : MonoBehaviour
 {
-    [Header("Configura��o")]
+    [Header("Configuração")]
     [SerializeField] private LayerMask walkableLayer;
     [SerializeField] private Camera sceneCamera;
 
@@ -14,7 +13,7 @@ public class MoveNavmesh : MonoBehaviour
     [SerializeField] private float indicatorDuration = 0.6f;
 
     [Header("Bloqueio de Movimento")]
-    [Tooltip("Impede o movimento enquanto algum painel/di�logo estiver aberto")]
+    [Tooltip("Impede o movimento enquanto algum painel/diálogo estiver aberto")]
     [SerializeField] private bool blockWhileDialogOpen = true;
 
     private NavMeshAgent agent;
@@ -29,20 +28,23 @@ public class MoveNavmesh : MonoBehaviour
             sceneCamera = Camera.main;
 
         if (sceneCamera == null)
-            Debug.LogError("[MoveNavmesh] Nenhuma c�mera encontrada! Arraste a c�mera no Inspector.");
+            Debug.LogError("[MoveNavmesh] Nenhuma câmera encontrada! Arraste a câmera no Inspector.");
 
-        if (blockWhileDialogOpen)
-            dialogoManager = GameObject.FindGameObjectWithTag("Canvas")
-                                       ?.GetComponent<DialogoManager>();
+        // Sempre busca o DialogoManager — necessário para checar Sodialogo nas cenas de puzzle
+        dialogoManager = GameObject.FindGameObjectWithTag("Canvas")
+                                   ?.GetComponent<DialogoManager>();
+
+        if (dialogoManager == null)
+            Debug.LogWarning("[MoveNavmesh] DialogoManager não encontrado na cena.");
     }
 
     private void Update()
     {
         if (!Input.GetMouseButtonDown(0)) return;
 
-        if (IsDialogOpen())
+        if (IsMovementBlocked())
         {
-            Debug.Log("[MoveNavmesh] Bloqueado: di�logo aberto.");
+            Debug.Log("[MoveNavmesh] Bloqueado: diálogo aberto ou cena em modo só-diálogo.");
             return;
         }
 
@@ -56,7 +58,6 @@ public class MoveNavmesh : MonoBehaviour
 
         Ray ray = sceneCamera.ScreenPointToRay(Input.mousePosition);
 
-        // Tenta primeiro na walkableLayer configurada
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, walkableLayer))
         {
             Debug.Log($"[MoveNavmesh] Destino: {hit.point} | Objeto: {hit.collider.name}");
@@ -65,11 +66,10 @@ public class MoveNavmesh : MonoBehaviour
         }
         else
         {
-            // Debug: testa sem filtro de layer para identificar o problema
             if (Physics.Raycast(ray, out RaycastHit hitAny, Mathf.Infinity))
-                Debug.LogWarning($"[MoveNavmesh] Raycast acertou '{hitAny.collider.name}' (layer: {LayerMask.LayerToName(hitAny.collider.gameObject.layer)}) mas N�O est� na walkableLayer configurada.");
+                Debug.LogWarning($"[MoveNavmesh] Raycast acertou '{hitAny.collider.name}' (layer: {LayerMask.LayerToName(hitAny.collider.gameObject.layer)}) mas NÃO está na walkableLayer configurada.");
             else
-                Debug.LogWarning("[MoveNavmesh] Raycast n�o acertou nenhum objeto.");
+                Debug.LogWarning("[MoveNavmesh] Raycast não acertou nenhum objeto.");
         }
     }
 
@@ -82,13 +82,17 @@ public class MoveNavmesh : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[MoveNavmesh] Ponto clicado n�o est� pr�ximo do NavMesh.");
+            Debug.LogWarning("[MoveNavmesh] Ponto clicado não está próximo do NavMesh.");
         }
     }
 
-    private bool IsDialogOpen()
+    // Bloqueia se: algum painel aberto (AlgoAberto) OU cena em modo só-diálogo (Sodialogo)
+    // Sodialogo == false → player pode andar (momento certo liberado pelo DialogoManager)
+    private bool IsMovementBlocked()
     {
-        return blockWhileDialogOpen && dialogoManager != null && dialogoManager.AlgoAberto;
+        if (!blockWhileDialogOpen || dialogoManager == null) return false;
+
+        return dialogoManager.AlgoAberto || dialogoManager.Sodialogo;
     }
 
     private bool IsPointerOverUI()
