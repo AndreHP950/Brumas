@@ -12,9 +12,15 @@ public class DialogoManager : MonoBehaviour
     public GameObject Botoes;
     public GameObject UiExtra;
     public GameObject Panel;
+    public GameObject FadePanel;
+
+
     public bool AlgoAberto;
     public bool Sodialogo;
+
     AudioManager controller;
+    PanelFader _fade;
+    public float color;
 
     float tempoPorLetra = 0.03f;
 
@@ -25,7 +31,11 @@ public class DialogoManager : MonoBehaviour
 
     public void Start()
     {
+        FadePanel.SetActive(true);
+        _fade = FadePanel.GetComponent<PanelFader>();
+        _fade.Fade();
         controller = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+
         AlgoAberto = true;
         MostrarTextoAnimado(dialog.text);
         if (dialog.nextDialog[0] == null)
@@ -96,6 +106,7 @@ public class DialogoManager : MonoBehaviour
 
     public void TrocarCena(string Cena)
     {
+        _fade.Fade();
         SceneManager.LoadScene($"{Cena}");
     }
 
@@ -213,4 +224,5 @@ public class DialogoManager : MonoBehaviour
 
         texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
+
 }
