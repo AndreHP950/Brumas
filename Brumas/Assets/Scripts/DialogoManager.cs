@@ -42,6 +42,11 @@ public class DialogoManager : MonoBehaviour
         {
             AlgoAberto = false;
             Botoes.SetActive(false);
+            if (Sodialogo)
+            {
+                Botoes.SetActive(false);
+                UiExtra.SetActive(true);
+            }
         }
     }
 
