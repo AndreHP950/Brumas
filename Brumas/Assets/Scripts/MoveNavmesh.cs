@@ -16,6 +16,10 @@ public class MoveNavmesh : MonoBehaviour
     [Tooltip("Impede o movimento enquanto algum painel/diálogo estiver aberto")]
     [SerializeField] private bool blockWhileDialogOpen = true;
 
+    // animacao
+    public Animator animator;
+    bool estavaAndando = false;
+
     private NavMeshAgent agent;
     private DialogoManager dialogoManager;
     private GameObject currentIndicator;
@@ -40,6 +44,7 @@ public class MoveNavmesh : MonoBehaviour
 
     private void Update()
     {
+        AtualizarAnimacao();
         if (!Input.GetMouseButtonDown(0)) return;
 
         if (IsMovementBlocked())
@@ -110,5 +115,25 @@ public class MoveNavmesh : MonoBehaviour
 
         currentIndicator = Instantiate(clickIndicatorPrefab, position + Vector3.up * 0.01f, Quaternion.identity);
         Destroy(currentIndicator, indicatorDuration);
+    }
+    private void AtualizarAnimacao()
+    {
+        //Debug.Log($"Funfou animacao");
+        //Debug.Log($"Velocidade: {agent.velocity.magnitude}");
+        bool estaAndando = agent.velocity.magnitude > 0.8f;
+
+        // Começou a andar
+        if (estaAndando == true && estavaAndando==false)
+        {
+            animator.SetFloat("Andando", Random.Range(0.1f, 1f));
+        }
+
+        // Parou de andar
+        if (estaAndando==false && estavaAndando==true)
+        {
+            animator.SetFloat("Andando", 0f);
+        }
+
+        estavaAndando = estaAndando;
     }
 }
