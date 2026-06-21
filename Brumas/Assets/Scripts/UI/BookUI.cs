@@ -22,6 +22,8 @@ public class BookController : MonoBehaviour
     public event System.Action OnPaginaViradaProximo;
     public event System.Action OnPaginaViradaVoltar;
 
+    private GameObject _panelOriginal;
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -30,14 +32,17 @@ public class BookController : MonoBehaviour
             return;
         }
         Instance = this;
+
+        _panelOriginal = GameObject.Find("Panel");
+
+        if (_panelOriginal == null)
+            Debug.LogWarning("[BookController] Panel original não encontrado. Verifique o nome 'Panel'.");
     }
 
     void Start()
     {
-        // Aplica a RenderTexture no material da página com texto
         if (rendererPagina != null && renderTexture != null)
         {
-            // Cria uma instância do material para não afetar outros objetos
             Material matPagina = rendererPagina.material;
             matPagina.mainTexture = renderTexture;
         }
@@ -46,10 +51,14 @@ public class BookController : MonoBehaviour
             livro3D.SetActive(false);
     }
 
+    // ─── Livro ────────────────────────────────────────────────────────────
     public void AbrirLivro()
     {
         if (livro3D != null)
             livro3D.SetActive(true);
+
+        if (_panelOriginal != null)
+            _panelOriginal.SetActive(false);
 
         string cenaAtual = SceneManager.GetActiveScene().name;
 
@@ -71,8 +80,12 @@ public class BookController : MonoBehaviour
 
         if (livro3D != null)
             livro3D.SetActive(false);
+
+        if (_panelOriginal != null)
+            _panelOriginal.SetActive(true);
     }
 
+    // ─── Páginas ──────────────────────────────────────────────────────────
     public void VirarProximaPagina()
     {
         animatorLivro.SetTrigger("ProximaPagina");
@@ -81,6 +94,20 @@ public class BookController : MonoBehaviour
     public void VirarPaginaAnterior()
     {
         animatorLivro.SetTrigger("PaginaAnterior");
+    }
+
+    // ─── Botões 3D ────────────────────────────────────────────────────────
+    public void SetBotoesAtivos(bool ativo)
+    {
+        // Copia a lista antes de iterar para evitar modificação durante o loop
+        // (SetActive dispara OnDisable/OnEnable que poderiam alterar a lista)
+        BookPageButton3D[] snapshot = BookPageButton3D.Todos.ToArray();
+
+        foreach (BookPageButton3D botao in snapshot)
+        {
+            if (botao == null) continue;
+            botao.gameObject.SetActive(ativo);
+        }
     }
 
     // ─── Animation Events ─────────────────────────────────────────────────

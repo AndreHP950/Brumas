@@ -1,4 +1,4 @@
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,6 +6,8 @@ using System.Collections;
 
 public class DialogoManager : MonoBehaviour
 {
+    public static DialogoManager Instance { get; private set; }
+
     public TMP_Text texto;
     public DialogoBase dialog;
     public DialogoBase[] iniciar;
@@ -17,6 +19,13 @@ public class DialogoManager : MonoBehaviour
     public bool AlgoAberto;
     public bool Sodialogo;
 
+    [Header("Tutorial (só ativa na cena 'Game')")]
+    [Tooltip("Arraste o GameObject do GIF/animação de tutorial aqui")]
+    public GameObject gifTutorial;
+
+    [Tooltip("Segundos após o player andar pela primeira vez para esconder o GIF")]
+    [SerializeField] private float tempoAteEsconderGif = 3f;
+
     AudioManager controller;
     PanelFader _fade;
     public float color;
@@ -25,10 +34,21 @@ public class DialogoManager : MonoBehaviour
 
     private LTDescr tweenAtual;
 
-    bool animandoTexto;
+    public bool animandoTexto;
     string textoAtualCompleto;
 
     bool virandoPagina = false;
+    bool _gifJaDesativado = false;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+    }
 
     public void Start()
     {
@@ -37,9 +57,11 @@ public class DialogoManager : MonoBehaviour
         _fade.Fade();
         controller = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 
+        if (gifTutorial != null)
+            gifTutorial.SetActive(false);
+
         if (BookController.Instance != null)
         {
-            // Esconde apenas o visual do Panel, mantendo Botoes vis�veis
             EsconderVisualPanel();
             BookController.Instance.AbrirLivro();
             BookController.Instance.OnPaginaViradaProximo += AplicarProximoTexto;
@@ -52,17 +74,17 @@ public class DialogoManager : MonoBehaviour
         if (dialog.nextDialog[0] == null)
         {
             AlgoAberto = false;
-            Botoes.SetActive(false);
+            SetBotoes(false);
+
             if (Sodialogo)
-            {
-                Botoes.SetActive(false);
                 UiExtra.SetActive(true);
-            }
         }
     }
 
     void OnDestroy()
     {
+        if (Instance == this) Instance = null;
+
         if (BookController.Instance != null)
         {
             BookController.Instance.OnPaginaViradaProximo -= AplicarProximoTexto;
@@ -70,27 +92,54 @@ public class DialogoManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Esconde apenas a imagem de fundo do Panel e o texto,
-    /// mantendo os Botoes (Voltar/Proximo) vis�veis para reposicionar.
-    /// </summary>
+    // ─── Helper central de botões ──────────────────────────────────────────
+    private void SetBotoes(bool ativo)
+    {
+        Botoes.SetActive(ativo);
+        BookController.Instance?.SetBotoesAtivos(ativo);
+
+        if (gifTutorial != null)
+        {
+            bool naCenaGame = SceneManager.GetActiveScene().name == "Game";
+            bool deveAtivar = !ativo && naCenaGame && !_gifJaDesativado;
+            gifTutorial.SetActive(deveAtivar);
+        }
+    }
+
+    // ─── Tutorial GIF ──────────────────────────────────────────────────────
+    public void NotificarPlayerAndou()
+    {
+        if (gifTutorial == null || !gifTutorial.activeSelf || _gifJaDesativado) return;
+
+        _gifJaDesativado = true;
+        StartCoroutine(EsconderGifAposDelay());
+    }
+
+    private IEnumerator EsconderGifAposDelay()
+    {
+        yield return new WaitForSeconds(tempoAteEsconderGif);
+
+        if (gifTutorial != null)
+            gifTutorial.SetActive(false);
+    }
+
+    // ─── Visual Panel ──────────────────────────────────────────────────────
     void EsconderVisualPanel()
     {
         if (Panel == null) return;
 
-        // Esconde o fundo do Panel
         Image imgPanel = Panel.GetComponent<Image>();
         if (imgPanel != null)
             imgPanel.color = new Color(0, 0, 0, 0);
 
-        // Esconde o texto original (o TextMirror mostra no livro)
         if (texto != null)
             texto.color = new Color(texto.color.r, texto.color.g, texto.color.b, 0f);
     }
 
+    // ─── Iniciar ───────────────────────────────────────────────────────────
     public void Iniciar(int dialogo)
     {
-        Botoes.SetActive(true);
+        SetBotoes(true);
         Panel.SetActive(true);
         dialog = iniciar[dialogo];
 
@@ -102,20 +151,24 @@ public class DialogoManager : MonoBehaviour
         if (dialog.nextDialog[0] == null)
         {
             AlgoAberto = false;
-            Botoes.SetActive(false);
+            SetBotoes(false);
         }
     }
 
+    // ─── Navegação ─────────────────────────────────────────────────────────
     public void Proximo()
     {
-        controller.PlaySoundButton(0, 1f);
-
+        // Texto animando: termina instantaneamente, SEM som, SEM virar página
         if (animandoTexto)
         {
             MostrarTextoInstantaneo();
             return;
         }
 
+        // Som só toca quando de fato vai virar página
+        controller.PlaySoundButton(0, 1f);
+
+        if (!Botoes.activeSelf) return;
         if (virandoPagina) return;
         virandoPagina = true;
 
@@ -127,14 +180,17 @@ public class DialogoManager : MonoBehaviour
 
     public void Voltar()
     {
-        controller.PlaySoundButton(0, 1f);
-
+        // Texto animando: termina instantaneamente, SEM som, SEM virar página
         if (animandoTexto)
         {
             MostrarTextoInstantaneo();
             return;
         }
 
+        // Som só toca quando de fato vai virar página
+        controller.PlaySoundButton(0, 1f);
+
+        if (!Botoes.activeSelf) return;
         if (virandoPagina) return;
         virandoPagina = true;
 
@@ -150,19 +206,18 @@ public class DialogoManager : MonoBehaviour
 
         if (dialog.nextDialog[0].nextDialog[0] == null)
         {
+            dialog = dialog.nextDialog[0];
+            MostrarTextoAnimado(dialog.text);
+
             if (Sodialogo)
             {
-                dialog = dialog.nextDialog[0];
-                MostrarTextoAnimado(dialog.text);
-                Botoes.SetActive(false);
+                SetBotoes(false);
                 UiExtra.SetActive(true);
             }
             else
             {
-                dialog = dialog.nextDialog[0];
-                MostrarTextoAnimado(dialog.text);
                 AlgoAberto = false;
-                Botoes.SetActive(false);
+                SetBotoes(false);
             }
         }
         else
@@ -188,6 +243,7 @@ public class DialogoManager : MonoBehaviour
         SceneManager.LoadScene($"{Cena}");
     }
 
+    // ─── Texto ─────────────────────────────────────────────────────────────
     void MostrarTextoAnimado(string novoTexto)
     {
         if (tweenAtual != null)
@@ -251,14 +307,10 @@ public class DialogoManager : MonoBehaviour
 
         TMP_TextInfo textInfo = texto.textInfo;
 
-        if (index >= textInfo.characterCount)
-            yield break;
-
-        if (!textInfo.characterInfo[index].isVisible)
-            yield break;
+        if (index >= textInfo.characterCount) yield break;
+        if (!textInfo.characterInfo[index].isVisible) yield break;
 
         TMP_CharacterInfo charInfo = textInfo.characterInfo[index];
-
         int materialIndex = charInfo.materialReferenceIndex;
         int vertexIndex = charInfo.vertexIndex;
 

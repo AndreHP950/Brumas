@@ -16,7 +16,6 @@ public class MoveNavmesh : MonoBehaviour
     [Tooltip("Impede o movimento enquanto algum painel/diálogo estiver aberto")]
     [SerializeField] private bool blockWhileDialogOpen = true;
 
-    // animacao
     public Animator animator;
     bool estavaAndando = false;
 
@@ -34,7 +33,6 @@ public class MoveNavmesh : MonoBehaviour
         if (sceneCamera == null)
             Debug.LogError("[MoveNavmesh] Nenhuma câmera encontrada! Arraste a câmera no Inspector.");
 
-        // Sempre busca o DialogoManager — necessário para checar Sodialogo nas cenas de puzzle
         dialogoManager = GameObject.FindGameObjectWithTag("Canvas")
                                    ?.GetComponent<DialogoManager>();
 
@@ -68,6 +66,9 @@ public class MoveNavmesh : MonoBehaviour
             Debug.Log($"[MoveNavmesh] Destino: {hit.point} | Objeto: {hit.collider.name}");
             MoveToPoint(hit.point);
             ShowIndicator(hit.point);
+
+            // Avisa o DialogoManager que o player andou (para esconder o GIF tutorial)
+            DialogoManager.Instance?.NotificarPlayerAndou();
         }
         else
         {
@@ -91,12 +92,9 @@ public class MoveNavmesh : MonoBehaviour
         }
     }
 
-    // Bloqueia se: algum painel aberto (AlgoAberto) OU cena em modo só-diálogo (Sodialogo)
-    // Sodialogo == false → player pode andar (momento certo liberado pelo DialogoManager)
     private bool IsMovementBlocked()
     {
         if (!blockWhileDialogOpen || dialogoManager == null) return false;
-
         return dialogoManager.AlgoAberto || dialogoManager.Sodialogo;
     }
 
@@ -116,23 +114,16 @@ public class MoveNavmesh : MonoBehaviour
         currentIndicator = Instantiate(clickIndicatorPrefab, position + Vector3.up * 0.01f, Quaternion.identity);
         Destroy(currentIndicator, indicatorDuration);
     }
+
     private void AtualizarAnimacao()
     {
-        //Debug.Log($"Funfou animacao");
-        //Debug.Log($"Velocidade: {agent.velocity.magnitude}");
         bool estaAndando = agent.velocity.magnitude > 0.8f;
 
-        // Começou a andar
-        if (estaAndando == true && estavaAndando==false)
-        {
+        if (estaAndando && !estavaAndando)
             animator.SetFloat("Andando", Random.Range(0.1f, 1f));
-        }
 
-        // Parou de andar
-        if (estaAndando==false && estavaAndando==true)
-        {
+        if (!estaAndando && estavaAndando)
             animator.SetFloat("Andando", 0f);
-        }
 
         estavaAndando = estaAndando;
     }

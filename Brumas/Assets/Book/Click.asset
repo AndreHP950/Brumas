@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6940cdda447048efa58605bd546f9920, type: 3}
+  m_Name: Click
+  m_EditorClassIdentifier: GifForUnity::GifImporter.Gif
+  Frames:
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: 6ec5672828cc1c747a5c353d135a62e8, type: 3}
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: 581abfe4897004d43b982d5c1e00b730, type: 3}
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: 0176f8515bb4dae42bb70d8285a8579d, type: 3}
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: ce3c21667bf149843b1542bab0844319, type: 3}
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: 3077909704c95bf4e892f70a33e6949f, type: 3}
+  - DelayInMs: 140
+    Sprite: {fileID: 21300000, guid: 109671d5d8c937b4e8e4fd932d5b5ec6, type: 3}
+  - DelayInMs: 280
+    Sprite: {fileID: 21300000, guid: a55e63faf77dcfc47b6cfbbc53212b6b, type: 3}

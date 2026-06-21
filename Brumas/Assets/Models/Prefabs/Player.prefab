@@ -50,7 +50,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   sceneCamera: {fileID: 0}
-  clickIndicatorPrefab: {fileID: 7925434597852476349, guid: 1a9690a895a7fae49981c6f8a761533d, type: 3}
+  clickIndicatorPrefab: {fileID: 983550119996348820, guid: 9e475ae93f8bd8943805e650058d5d30, type: 3}
   indicatorDuration: 2
   blockWhileDialogOpen: 0
   animator: {fileID: 4988169349180895008}
