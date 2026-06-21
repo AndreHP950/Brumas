@@ -1,21 +1,23 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BookController : MonoBehaviour
 {
     public static BookController Instance { get; private set; }
 
-    [Header("Refer�ncias")]
+    [Header("Referências")]
     public Animator animatorLivro;
     public GameObject livro3D;
 
     [Header("Render Texture")]
-    public Renderer rendererPagina;
+    [Tooltip("SkinnedMeshRenderer da página que exibe o texto")]
+    public SkinnedMeshRenderer rendererPagina;
     public RenderTexture renderTexture;
 
-    [Header("Configura��es")]
-    [Tooltip("Tempo em segundos at� trocar o texto no meio da virada da p�gina")]
-    public float tempoEsperaFlip = 0.3f;
+    [Header("Configurações")]
+    [Tooltip("Nome da cena onde a animação de abrir deve tocar")]
+    public string cenaComAnimacaoAbrir = "Menu";
 
     public event System.Action OnPaginaViradaProximo;
     public event System.Action OnPaginaViradaVoltar;
@@ -32,8 +34,13 @@ public class BookController : MonoBehaviour
 
     void Start()
     {
+        // Aplica a RenderTexture no material da página com texto
         if (rendererPagina != null && renderTexture != null)
-            rendererPagina.material.mainTexture = renderTexture;
+        {
+            // Cria uma instância do material para não afetar outros objetos
+            Material matPagina = rendererPagina.material;
+            matPagina.mainTexture = renderTexture;
+        }
 
         if (livro3D != null)
             livro3D.SetActive(false);
@@ -44,7 +51,12 @@ public class BookController : MonoBehaviour
         if (livro3D != null)
             livro3D.SetActive(true);
 
-        animatorLivro.SetTrigger("Abrir");
+        string cenaAtual = SceneManager.GetActiveScene().name;
+
+        if (cenaAtual == cenaComAnimacaoAbrir)
+            animatorLivro.SetTrigger("Abrir");
+        else
+            animatorLivro.Play("Idle");
     }
 
     public void FecharLivro()
@@ -55,8 +67,7 @@ public class BookController : MonoBehaviour
 
     private IEnumerator DesativarAposFechar()
     {
-        AnimatorStateInfo stateInfo = animatorLivro.GetCurrentAnimatorStateInfo(0);
-        yield return new WaitForSeconds(stateInfo.length);
+        yield return new WaitForSeconds(animatorLivro.GetCurrentAnimatorStateInfo(0).length);
 
         if (livro3D != null)
             livro3D.SetActive(false);
@@ -65,18 +76,21 @@ public class BookController : MonoBehaviour
     public void VirarProximaPagina()
     {
         animatorLivro.SetTrigger("ProximaPagina");
-        StartCoroutine(CallbackNoMeioDaAnimacao(OnPaginaViradaProximo));
     }
 
     public void VirarPaginaAnterior()
     {
         animatorLivro.SetTrigger("PaginaAnterior");
-        StartCoroutine(CallbackNoMeioDaAnimacao(OnPaginaViradaVoltar));
     }
 
-    private IEnumerator CallbackNoMeioDaAnimacao(System.Action callback)
+    // ─── Animation Events ─────────────────────────────────────────────────
+    public void AnimEvent_TrocaTextoProximo()
     {
-        yield return new WaitForSeconds(tempoEsperaFlip);
-        callback?.Invoke();
+        OnPaginaViradaProximo?.Invoke();
+    }
+
+    public void AnimEvent_TrocaTextoAnterior()
+    {
+        OnPaginaViradaVoltar?.Invoke();
     }
 }

@@ -14,7 +14,6 @@ public class DialogoManager : MonoBehaviour
     public GameObject Panel;
     public GameObject FadePanel;
 
-
     public bool AlgoAberto;
     public bool Sodialogo;
 
@@ -29,6 +28,8 @@ public class DialogoManager : MonoBehaviour
     bool animandoTexto;
     string textoAtualCompleto;
 
+    bool virandoPagina = false;
+
     public void Start()
     {
         FadePanel.SetActive(true);
@@ -36,8 +37,18 @@ public class DialogoManager : MonoBehaviour
         _fade.Fade();
         controller = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 
+        if (BookController.Instance != null)
+        {
+            // Esconde apenas o visual do Panel, mantendo Botoes visíveis
+            EsconderVisualPanel();
+            BookController.Instance.AbrirLivro();
+            BookController.Instance.OnPaginaViradaProximo += AplicarProximoTexto;
+            BookController.Instance.OnPaginaViradaVoltar += AplicarVoltarTexto;
+        }
+
         AlgoAberto = true;
         MostrarTextoAnimado(dialog.text);
+
         if (dialog.nextDialog[0] == null)
         {
             AlgoAberto = false;
@@ -50,12 +61,44 @@ public class DialogoManager : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        if (BookController.Instance != null)
+        {
+            BookController.Instance.OnPaginaViradaProximo -= AplicarProximoTexto;
+            BookController.Instance.OnPaginaViradaVoltar -= AplicarVoltarTexto;
+        }
+    }
+
+    /// <summary>
+    /// Esconde apenas a imagem de fundo do Panel e o texto,
+    /// mantendo os Botoes (Voltar/Proximo) visíveis para reposicionar.
+    /// </summary>
+    void EsconderVisualPanel()
+    {
+        if (Panel == null) return;
+
+        // Esconde o fundo do Panel
+        Image imgPanel = Panel.GetComponent<Image>();
+        if (imgPanel != null)
+            imgPanel.color = new Color(0, 0, 0, 0);
+
+        // Esconde o texto original (o TextMirror mostra no livro)
+        if (texto != null)
+            texto.color = new Color(texto.color.r, texto.color.g, texto.color.b, 0f);
+    }
+
     public void Iniciar(int dialogo)
     {
         Botoes.SetActive(true);
         Panel.SetActive(true);
         dialog = iniciar[dialogo];
+
+        if (BookController.Instance != null)
+            BookController.Instance.AbrirLivro();
+
         MostrarTextoAnimado(dialog.text);
+
         if (dialog.nextDialog[0] == null)
         {
             AlgoAberto = false;
@@ -66,11 +109,44 @@ public class DialogoManager : MonoBehaviour
     public void Proximo()
     {
         controller.PlaySoundButton(0, 1f);
+
         if (animandoTexto)
         {
             MostrarTextoInstantaneo();
             return;
         }
+
+        if (virandoPagina) return;
+        virandoPagina = true;
+
+        if (BookController.Instance != null)
+            BookController.Instance.VirarProximaPagina();
+        else
+            AplicarProximoTexto();
+    }
+
+    public void Voltar()
+    {
+        controller.PlaySoundButton(0, 1f);
+
+        if (animandoTexto)
+        {
+            MostrarTextoInstantaneo();
+            return;
+        }
+
+        if (virandoPagina) return;
+        virandoPagina = true;
+
+        if (BookController.Instance != null)
+            BookController.Instance.VirarPaginaAnterior();
+        else
+            AplicarVoltarTexto();
+    }
+
+    private void AplicarProximoTexto()
+    {
+        virandoPagina = false;
 
         if (dialog.nextDialog[0].nextDialog[0] == null)
         {
@@ -96,21 +172,18 @@ public class DialogoManager : MonoBehaviour
         }
     }
 
-    public void Voltar()
+    private void AplicarVoltarTexto()
     {
-        controller.PlaySoundButton(0, 1f);
-        if (animandoTexto)
-        {
-            MostrarTextoInstantaneo();
-            return;
-        }
-
+        virandoPagina = false;
         dialog = dialog.nextDialog[1];
         MostrarTextoAnimado(dialog.text);
     }
 
     public void TrocarCena(string Cena)
     {
+        if (BookController.Instance != null)
+            BookController.Instance.FecharLivro();
+
         _fade.Fade();
         SceneManager.LoadScene($"{Cena}");
     }
@@ -118,9 +191,7 @@ public class DialogoManager : MonoBehaviour
     void MostrarTextoAnimado(string novoTexto)
     {
         if (tweenAtual != null)
-        {
             LeanTween.cancel(gameObject);
-        }
 
         StopAllCoroutines();
 
@@ -163,17 +234,13 @@ public class DialogoManager : MonoBehaviour
     void MostrarTextoInstantaneo()
     {
         if (tweenAtual != null)
-        {
             LeanTween.cancel(gameObject);
-        }
 
         StopAllCoroutines();
 
         animandoTexto = false;
-
         texto.text = textoAtualCompleto;
         texto.maxVisibleCharacters = textoAtualCompleto.Length;
-
         texto.ForceMeshUpdate();
         texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
@@ -199,9 +266,7 @@ public class DialogoManager : MonoBehaviour
         Vector3[] originalVertices = new Vector3[4];
 
         for (int i = 0; i < 4; i++)
-        {
             originalVertices[i] = vertices[vertexIndex + i];
-        }
 
         float duracao = tempoPorLetra;
         float tempo = 0f;
@@ -213,21 +278,15 @@ public class DialogoManager : MonoBehaviour
             float offsetY = Mathf.Sin((tempo / duracao) * Mathf.PI) * 16.67f;
 
             for (int i = 0; i < 4; i++)
-            {
-                vertices[vertexIndex + i] =
-                    originalVertices[i] + new Vector3(0, offsetY, 0);
-            }
+                vertices[vertexIndex + i] = originalVertices[i] + new Vector3(0, offsetY, 0);
 
             texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
-
             yield return null;
         }
+
         for (int i = 0; i < 4; i++)
-        {
             vertices[vertexIndex + i] = originalVertices[i];
-        }
 
         texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
     }
-
 }
