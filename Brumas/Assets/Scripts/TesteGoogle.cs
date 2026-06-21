@@ -176,15 +176,15 @@ public class TesteGoogle : MonoBehaviour
     IEnumerator EnviarDadosCoroutine()
     {
         WWWForm form = new WWWForm();
-        form.AddField("entry.1285887200", respostaCena1);
-        form.AddField("entry.1400570944", respostaCena3);
-        form.AddField("entry.1025152679", respostaCena4);
-        form.AddField("entry.1690388609", respostaCena7);
-        form.AddField("entry.XXXXXXXXXX", respostaCena9);   // substitua o ID correto
-        form.AddField("entry.XXXXXXXXXX", respostaCena12);  // substitua o ID correto
-        form.AddField("entry.XXXXXXXXXX", respostaCena13);  // substitua o ID correto
-        form.AddField("entry.XXXXXXXXXX", respostaCena15);  // substitua o ID correto
-        form.AddField("entry.XXXXXXXXXX", respostaCena20);  // substitua o ID correto
+        form.AddField("entry.1400570944", respostaCena1);
+        form.AddField("entry.1025152679", respostaCena3);
+        form.AddField("entry.1690388609", respostaCena4);
+        form.AddField("entry.1257797676", respostaCena7);
+        form.AddField("entry.484831130", respostaCena9); 
+        form.AddField("entry.208368808", respostaCena12); 
+        form.AddField("entry.2074157192", respostaCena13);  
+        form.AddField("entry.421536143", respostaCena15);  
+        form.AddField("entry.201561213", respostaCena20);  
 
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         yield return www.SendWebRequest();
