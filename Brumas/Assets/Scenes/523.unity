@@ -160,12 +160,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 471814380}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: TrocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogoManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
