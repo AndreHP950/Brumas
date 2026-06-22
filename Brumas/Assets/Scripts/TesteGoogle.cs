@@ -13,30 +13,51 @@ public class TesteGoogle : MonoBehaviour
     private string url = "https://docs.google.com/forms/d/e/1FAIpQLSdINiVVyvpuckTvWS9IA7qYTx0i8IG43rg7Bgk4I2DykBksgA/formResponse";
 
     // Respostas das cenas específicas
-    public string respostaCena1 = "";
-    public string respostaCena3 = "";
-    public string respostaCena4 = "";
-    public string respostaCena7 = "";
-    public string respostaCena9 = "";
-    public string respostaCena12 = "";
-    public string respostaCena13 = "";
-    public string respostaCena15 = "";
-    public string respostaCena20 = "";
+    public string respostaCena1 = "n/a";
+    public string respostaCena3 = "n/a";
+    public string respostaCena4 = "n/a";
+    public string respostaCena7 = "n/a";
+    public string respostaCena9 = "n/a";
+    public string respostaCena12 = "n/a";
+    public string respostaCena13 = "n/a";
+    public string respostaCena15 = "n/a";
+    public string respostaCena20 = "n/a";
 
     void Awake()
     {
         // Verifica se já existe uma instância
         if (Instance != null && Instance != this)
         {
-            Debug.Log("[TesteGoogle] Já existe uma instância, destruindo duplicata");
-            Destroy(gameObject);
+            // Copia os valores da instância antiga para esta
+            respostaCena1 = Instance.respostaCena1;
+            respostaCena3 = Instance.respostaCena3;
+            respostaCena4 = Instance.respostaCena4;
+            respostaCena7 = Instance.respostaCena7;
+            respostaCena9 = Instance.respostaCena9;
+            respostaCena12 = Instance.respostaCena12;
+            respostaCena13 = Instance.respostaCena13;
+            respostaCena15 = Instance.respostaCena15;
+            respostaCena20 = Instance.respostaCena20;
+
+            // Destrói a instância antiga
+            Destroy(Instance.gameObject);
+
+            // Esta passa a ser a instância principal
+            Instance = this;
+
+            if (transform.parent != null)
+            {
+                transform.SetParent(null);
+            }
+
+            DontDestroyOnLoad(gameObject);
+
+            Debug.Log("[TesteGoogle] Dados copiados da instância antiga.");
             return;
         }
 
         Instance = this;
 
-        // IMPORTANTE: Move para a raiz da hierarquia antes de aplicar DontDestroyOnLoad
-        // Se estiver dentro do Canvas, isso vai tirá-lo de lá
         if (transform.parent != null)
         {
             Debug.Log($"[TesteGoogle] Movendo objeto de '{transform.parent.name}' para a raiz");
@@ -175,6 +196,7 @@ public class TesteGoogle : MonoBehaviour
 
     IEnumerator EnviarDadosCoroutine()
     {
+        ImprimirTodasRespostas();
         WWWForm form = new WWWForm();
         form.AddField("entry.1400570944", respostaCena1);
         form.AddField("entry.1025152679", respostaCena3);
