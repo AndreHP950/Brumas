@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f00234519c02a479a53fc1bceb285e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonAnimated
-  preset: 2
+  preset: 1
   targetImage: {fileID: 0}
   targetText: {fileID: 0}
   textColorNormal: {r: 0.92, g: 0.88, b: 0.82, a: 1}
@@ -759,7 +759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f00234519c02a479a53fc1bceb285e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonAnimated
-  preset: 2
+  preset: 1
   targetImage: {fileID: 0}
   targetText: {fileID: 0}
   textColorNormal: {r: 0.92, g: 0.88, b: 0.82, a: 1}
