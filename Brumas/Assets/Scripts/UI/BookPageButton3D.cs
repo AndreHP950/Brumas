@@ -4,16 +4,13 @@ using UnityEngine;
 
 /// <summary>
 /// Botão 3D para o livro físico.
-/// - Este GameObject: Collider
-/// - Filho direto: SpriteRenderer com a imagem do botão
+/// - Funciona tanto na cena de jogo (DialogoManager) quanto no Menu (MenuLivroController).
 /// </summary>
 [RequireComponent(typeof(Collider))]
 public class BookPageButton3D : MonoBehaviour
 {
     // ─────────────────────────────────────────────
     //  REGISTRO ESTÁTICO
-    //  Remove APENAS no OnDestroy — nunca no OnDisable,
-    //  para que SetBotoesAtivos(true) consiga reativar.
     // ─────────────────────────────────────────────
     public static readonly List<BookPageButton3D> Todos = new List<BookPageButton3D>();
 
@@ -62,17 +59,10 @@ public class BookPageButton3D : MonoBehaviour
     // ─────────────────────────────────────────────
     private void Awake()
     {
-        // Registra uma única vez no Awake
-        if (!Todos.Contains(this))
-            Todos.Add(this);
+        if (!Todos.Contains(this)) Todos.Add(this);
 
         _sr = GetComponentInChildren<SpriteRenderer>();
-
-        if (_sr == null)
-        {
-            Debug.LogWarning($"[BookPageButton3D] Nenhum SpriteRenderer nos filhos de '{name}'.");
-            return;
-        }
+        if (_sr == null) { Debug.LogWarning($"[BookPageButton3D] SpriteRenderer não encontrado em '{name}'."); return; }
 
         _imagemTransform = _sr.transform;
         _escalaOriginal  = _imagemTransform.localScale;
@@ -81,7 +71,6 @@ public class BookPageButton3D : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Só remove da lista quando o objeto é destruído de vez
         Todos.Remove(this);
     }
 
@@ -110,33 +99,44 @@ public class BookPageButton3D : MonoBehaviour
     {
         AplicarCor(_hover ? corHover : corBase);
 
-        if (DialogoManager.Instance == null)
+        // ── Cena de jogo: DialogoManager ─────────────────
+        if (DialogoManager.Instance != null)
         {
-            Debug.LogWarning("[BookPageButton3D] DialogoManager.Instance não encontrado!");
+            // Texto animando → só finaliza, sem som nem bounce
+            if (DialogoManager.Instance.animandoTexto)
+            {
+                if (acao == TipoAcao.Proximo) DialogoManager.Instance.Proximo();
+                else                          DialogoManager.Instance.Voltar();
+                return;
+            }
+
+            // Botões do Canvas desativados (puzzle) → bloqueia silenciosamente
+            if (!DialogoManager.Instance.Botoes.activeSelf) return;
+
+            TocarSom(somClick);
+            StartCoroutine(AnimacaoBounce());
+            if (acao == TipoAcao.Proximo) DialogoManager.Instance.Proximo();
+            else                          DialogoManager.Instance.Voltar();
             return;
         }
 
-        // Texto animando: só termina a animação, sem som nem bounce
-        if (DialogoManager.Instance.animandoTexto)
+        // ── Cena de menu: MenuLivroController ────────────
+        if (MenuLivroController.Instance != null)
         {
-            if (acao == TipoAcao.Proximo)
-                DialogoManager.Instance.Proximo();
-            else
-                DialogoManager.Instance.Voltar();
+            bool pode = acao == TipoAcao.Proximo
+                ? MenuLivroController.Instance.PodeProximo()
+                : MenuLivroController.Instance.PodeVoltar();
+
+            if (!pode) return;
+
+            TocarSom(somClick);
+            StartCoroutine(AnimacaoBounce());
+            if (acao == TipoAcao.Proximo) MenuLivroController.Instance.Proximo();
+            else                          MenuLivroController.Instance.Voltar();
             return;
         }
 
-        // Botões do Canvas desativados (puzzle): bloqueia silenciosamente
-        if (!DialogoManager.Instance.Botoes.activeSelf) return;
-
-        // Som + bounce apenas ao virar página de fato
-        TocarSom(somClick);
-        StartCoroutine(AnimacaoBounce());
-
-        if (acao == TipoAcao.Proximo)
-            DialogoManager.Instance.Proximo();
-        else
-            DialogoManager.Instance.Voltar();
+        Debug.LogWarning("[BookPageButton3D] Nenhum manager encontrado (DialogoManager / MenuLivroController).");
     }
 
     // ─────────────────────────────────────────────

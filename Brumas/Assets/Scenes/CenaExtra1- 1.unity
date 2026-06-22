@@ -370,6 +370,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3488052922399700590, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: preset
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4471768910167784713, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -469,8 +473,44 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1367935356}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1367935355}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SalvarResposta
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: TrocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TesteGoogle, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PanelFader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 513
+      objectReference: {fileID: 0}
+    - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6077990217872152582, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.x
@@ -726,6 +766,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+--- !u!114 &1367935355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 1367935354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87b4fe4f519921a438289f08c3ec5a4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoManager
+--- !u!114 &1367935356 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 921842175522926279, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 1367935354}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef566b0e4bc666c48bed636caa2ab3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TesteGoogle
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

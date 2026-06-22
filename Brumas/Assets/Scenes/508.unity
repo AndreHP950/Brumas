@@ -1401,15 +1401,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Coloque a cela na mula
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
-  m_sharedMaterial: {fileID: 5592794105238541465, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bd49ce3a0945e064a8b2b0f6928c79d1, type: 2}
+  m_sharedMaterial: {fileID: 5592794105238541465, guid: bd49ce3a0945e064a8b2b0f6928c79d1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 2499805183
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.5803922}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 5
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1854,7 +1854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4284792, y: 0.66925925}
   m_AnchorMax: {x: 0.98385423, y: 1}
-  m_AnchoredPosition: {x: -224.98999, y: 0.00012207031}
+  m_AnchoredPosition: {x: 253, y: -652}
   m_SizeDelta: {x: -449.9818, y: -207.1717}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1757529495
