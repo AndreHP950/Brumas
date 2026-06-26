@@ -25670,7 +25670,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _OutlineSoftness: 0
-    - _OutlineWidth: 0.16
+    - _OutlineWidth: 0.209
     - _Parallax: 0.005
     - _PerspectiveFilter: 0.875
     - _QueueOffset: 0

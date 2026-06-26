@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia524-10
+  m_Name: Historia524-10 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "_ N\xE3o precisa dizer nada _ Indaga o \xEDndio. _ N\xF3s dois sabemos o
-    que pode ser ou n\xE3o terr\xEDvel para o nosso rio. "
+  text: "E, no momento, voc\xEA j\xE1 deve saber que est\xE1 vindo em nossa dire\xE7\xE3o
+    um rio de lama, que ir\xE1 substituir esse Paraopeba em breve, no m\xE1ximo,
+    amanh\xE3. "
   nextDialog:
-  - {fileID: 11400000, guid: f1dd238c90901f2449aaa107febc5ea8, type: 2}
-  - {fileID: 11400000, guid: 1635e26e7566b514c9a41c91b65acd67, type: 2}
+  - {fileID: 11400000, guid: 65518c50623dad94bb2f87dc5c89e6ae, type: 2}
+  - {fileID: 11400000, guid: 4b0829360f7d8444592c0e592fa4336f, type: 2}

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia524-10
+  m_Name: Historia524-7 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "_ N\xE3o precisa dizer nada _ Indaga o \xEDndio. _ N\xF3s dois sabemos o
-    que pode ser ou n\xE3o terr\xEDvel para o nosso rio. "
+  text: "Ben\xEDcio tinha entrado dentro da reserva deles, com mula, vara de pescar,
+    cachorro e tudo. "
   nextDialog:
-  - {fileID: 11400000, guid: f1dd238c90901f2449aaa107febc5ea8, type: 2}
-  - {fileID: 11400000, guid: 1635e26e7566b514c9a41c91b65acd67, type: 2}
+  - {fileID: 11400000, guid: 8a01c249775dc274f9a09abfef1ac56c, type: 2}
+  - {fileID: 11400000, guid: 89e1717b0e732fd4daa228db7490ee48, type: 2}

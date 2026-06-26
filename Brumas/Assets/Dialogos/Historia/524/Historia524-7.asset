@@ -14,8 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
   text: "Ben\xEDcio vira-se, surpreso. Um \xEDndio o observa. A tribo Na\xF4 Xoh\xE3
     vive \xE0s margens do rio Paraopeba j\xE1 tem uns dois anos, e n\xE3o costumam
-    gostar muito da presen\xE7a de pescadores (sobretudo na Piracema).Ben\xEDcio
-    tinha entrado dentro da reserva deles, com mula, vara de pescar, cachorro e tudo. "
+    gostar muito da presen\xE7a de pescadores (sobretudo na Piracema). "
   nextDialog:
-  - {fileID: 11400000, guid: 8a01c249775dc274f9a09abfef1ac56c, type: 2}
+  - {fileID: 11400000, guid: 606557d9e895ea643aaa99de1104df08, type: 2}
   - {fileID: 11400000, guid: 3586c7401f378a94fa64a176b50e3aba, type: 2}

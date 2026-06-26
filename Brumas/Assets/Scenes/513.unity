@@ -351,15 +351,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Procure o fogareiro
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bd49ce3a0945e064a8b2b0f6928c79d1, type: 2}
-  m_sharedMaterial: {fileID: 5592794105238541465, guid: bd49ce3a0945e064a8b2b0f6928c79d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
+  m_sharedMaterial: {fileID: 5592794105238541465, guid: 7f7fcd5a1f6dac04c888641556527aa3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 2130706431
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.49411765}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -376,8 +376,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.59
-  m_fontSizeBase: 76.59
+  m_fontSize: 88.51
+  m_fontSizeBase: 88.51
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
