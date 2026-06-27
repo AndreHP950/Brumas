@@ -179,11 +179,76 @@ PrefabInstance:
       propertyPath: m_Name
       value: CenaFloresta
       objectReference: {fileID: 0}
+    - target: {fileID: 8218303341652893687, guid: 7e81d7e3a2fd105438e7837174c66b16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e81d7e3a2fd105438e7837174c66b16, type: 3}
+--- !u!1001 &1847520221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2459159124505818958, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9e50b64790fe42e40aed2189789e7c37, type: 2}
+    - target: {fileID: 7996056615101619679, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_Name
+      value: CenaRio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 558
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1736.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156138829351393468, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 69112499aa66db542a97201ba9173fb0, type: 3}
 --- !u!1001 &3713534560315592417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -363,3 +428,4 @@ SceneRoots:
   - {fileID: 3713534560315592417}
   - {fileID: 6901465337114494933}
   - {fileID: 8119642375010136971}
+  - {fileID: 1847520221}
