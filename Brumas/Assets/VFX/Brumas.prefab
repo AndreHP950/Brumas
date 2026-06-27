@@ -169,7 +169,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
+      scalar: 0.04
       minScalar: 0.03
       maxCurve:
         serializedVersion: 2
@@ -222,8 +222,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 1, g: 1, b: 1, a: 0.09019608}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.1254902}
+      minColor: {r: 1, g: 1, b: 1, a: 0.12156863}
+      maxColor: {r: 1, g: 1, b: 1, a: 0.0627451}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -604,7 +604,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 300
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -672,7 +672,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.82, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -987,7 +987,7 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0
+          value: 0.1692276
           inSlope: 5.778106
           outSlope: 5.778106
           tangentMode: 0
@@ -995,17 +995,17 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.16877174
         - serializedVersion: 3
-          time: 0.67402405
-          value: 0.9312054
-          inSlope: -0.18041228
-          outSlope: -0.18041228
+          time: 0.49480784
+          value: 1
+          inSlope: 0.12281729
+          outSlope: 0.12281729
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
-          outWeight: 0.58727527
+          inWeight: 0.30289638
+          outWeight: 0.24795268
         - serializedVersion: 3
           time: 1
-          value: 0.15384674
+          value: 0.19999695
           inSlope: -6.042925
           outSlope: -6.042925
           tangentMode: 0
