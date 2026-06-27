@@ -22,6 +22,7 @@ public class TesteGoogle : MonoBehaviour
     public string respostaCena13 = "n/a";
     public string respostaCena15 = "n/a";
     public string respostaCena20 = "n/a";
+    public string FinalPego = "se vc ta vendo essa string deu algum erro";
 
     void Awake()
     {
@@ -38,6 +39,7 @@ public class TesteGoogle : MonoBehaviour
             respostaCena13 = Instance.respostaCena13;
             respostaCena15 = Instance.respostaCena15;
             respostaCena20 = Instance.respostaCena20;
+            FinalPego = Instance.FinalPego;
 
             // Destrói a instância antiga
             Destroy(Instance.gameObject);
@@ -77,6 +79,10 @@ public class TesteGoogle : MonoBehaviour
             Debug.Log("[TesteGoogle] Instância sendo destruída");
             Instance = null;
         }
+    }
+    public void SalvarFinal(string final)
+    {
+        FinalPego = final;
     }
 
     /// <summary>
@@ -206,7 +212,8 @@ public class TesteGoogle : MonoBehaviour
         form.AddField("entry.208368808", respostaCena12); 
         form.AddField("entry.2074157192", respostaCena13);  
         form.AddField("entry.421536143", respostaCena15);  
-        form.AddField("entry.201561213", respostaCena20);  
+        form.AddField("entry.201561213", respostaCena20);
+        form.AddField("entry.1331821094", FinalPego);
 
         UnityWebRequest www = UnityWebRequest.Post(url, form);
         yield return www.SendWebRequest();

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia502-3
+  m_Name: Historia502-2 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "O pensamento do Ben\xEDcio foi interrompido por um latido. "
+  text: "Quem sabe, um Dourado gigante! Ou um\u2026 Au!?"
   nextDialog:
-  - {fileID: 11400000, guid: 8ff4e8b86a530484498ad25f22d24e57, type: 2}
-  - {fileID: 11400000, guid: cacf59dcba7dd414fb5648d09d651e00, type: 2}
+  - {fileID: 11400000, guid: b2d8dd1c81ae167488dd3beb61117b13, type: 2}
+  - {fileID: 11400000, guid: 9a6731f24e5c72d4cb7c45693382fa63, type: 2}

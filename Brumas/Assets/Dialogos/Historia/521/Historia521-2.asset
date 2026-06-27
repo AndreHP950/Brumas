@@ -17,4 +17,4 @@ MonoBehaviour:
     Ser\xE1 que ele j\xE1 est\xE1 acordado? "
   nextDialog:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 3d83cfbe541b52345bc9c53900595fc6, type: 2}
+  - {fileID: 11400000, guid: 18345ceaabde4064b941a93f6ed41712, type: 2}

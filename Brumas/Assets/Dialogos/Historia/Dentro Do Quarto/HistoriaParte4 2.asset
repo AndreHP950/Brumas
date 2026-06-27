@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
-  m_Name: Historia502-3
+  m_Name: HistoriaParte4 2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "O pensamento do Ben\xEDcio foi interrompido por um latido. "
+  text: "E daqui a pouco chega o menino da Ana tamb\xE9m. Primeiro neto da fam\xEDlia...
+    Agora sim eu t\xF4 ficando velho."
   nextDialog:
-  - {fileID: 11400000, guid: 8ff4e8b86a530484498ad25f22d24e57, type: 2}
-  - {fileID: 11400000, guid: cacf59dcba7dd414fb5648d09d651e00, type: 2}
+  - {fileID: 11400000, guid: b50ea65846b471346806086c40fb5e9b, type: 2}
+  - {fileID: 11400000, guid: 07ccb96899f1b3146bf621602ad44dcb, type: 2}

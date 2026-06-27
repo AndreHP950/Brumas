@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56125dd1455489e4382a286177ec37c9, type: 3}
   m_Name: Historia502-2
   m_EditorClassIdentifier: Assembly-CSharp::DialogoBase
-  text: "_ Raquel n\xE3o aprova, mas ela vai gostar se eu chegar em casa com um peix\xE3o\u2026
-    Quem sabe, um Dourado gigante! Ou um\u2026 Au!?"
+  text: "_ Raquel n\xE3o aprova, mas ela vai gostar se eu chegar em casa com um peix\xE3o,
+    e a Ana tamb\xE9m. Diz ela que gr\xE1vida sente vontade de comer de tudo."
   nextDialog:
-  - {fileID: 11400000, guid: b2d8dd1c81ae167488dd3beb61117b13, type: 2}
+  - {fileID: 11400000, guid: cacf59dcba7dd414fb5648d09d651e00, type: 2}
   - {fileID: 11400000, guid: 60382b1c27441b249a9ce611049e76df, type: 2}

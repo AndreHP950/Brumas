@@ -347,27 +347,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1797548018}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1797548016}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SalvarFinal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: TrocarCena
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DialogoManager, Assembly-CSharp
+      value: TesteGoogle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Final Cena 511
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
       value: CenaExtra11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5592669381388027767, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_Pivot.x
@@ -759,6 +783,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2293841145947439449, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
   m_PrefabInstance: {fileID: 1797548015}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1797548018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 921842175522926279, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+  m_PrefabInstance: {fileID: 1797548015}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef566b0e4bc666c48bed636caa2ab3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TesteGoogle
 --- !u!1 &1986264535
 GameObject:
   m_ObjectHideFlags: 0

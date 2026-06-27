@@ -15,5 +15,5 @@ MonoBehaviour:
   text: "O problema \xE9 que eu n\xE3o fa\xE7o ideia de onde eu o guardei na \xFAltima
     vez."
   nextDialog:
-  - {fileID: 11400000, guid: b50ea65846b471346806086c40fb5e9b, type: 2}
+  - {fileID: 11400000, guid: 56ef46c603c2efe408c757183fac7ba2, type: 2}
   - {fileID: 11400000, guid: ac43c32d83fb12549b3f756901290311, type: 2}
