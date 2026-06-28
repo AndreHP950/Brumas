@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -18,6 +19,8 @@ public class MoveNavmesh : MonoBehaviour
 
     public Animator animator;
     bool estavaAndando = false;
+    private float andandoTimer;
+    float intervalo = 1f;
 
     private NavMeshAgent agent;
     private DialogoManager dialogoManager;
@@ -42,7 +45,14 @@ public class MoveNavmesh : MonoBehaviour
 
     private void Update()
     {
+        andandoTimer += Time.deltaTime;
+        if (andandoTimer >= intervalo && estavaAndando)
+        {
+            andandoTimer = 0;
+            AudioManager.WalkSound(2);
+        }
         AtualizarAnimacao();
+
         if (!Input.GetMouseButtonDown(0)) return;
 
         if (IsMovementBlocked())
@@ -118,13 +128,17 @@ public class MoveNavmesh : MonoBehaviour
     private void AtualizarAnimacao()
     {
         bool estaAndando = agent.velocity.magnitude > 0.8f;
-
         if (estaAndando && !estavaAndando)
+        {
+
             animator.SetFloat("Andando", Random.Range(0.1f, 1f));
+        }
 
         if (!estaAndando && estavaAndando)
+        {
             animator.SetFloat("Andando", 0f);
 
+        }
         estavaAndando = estaAndando;
     }
 }
