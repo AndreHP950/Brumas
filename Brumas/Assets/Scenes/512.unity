@@ -766,19 +766,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 691771528330087813, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 411.34006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 691771528330087813, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -304.6637
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1994802659726833511, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_text
-      value: "Ir Ca\xE7ar la no z\xE9 da mercadoria. Talvez ele me de isca de gra\xE7a\u2026"
+      value: "Ca\xE7ar no z\xE9 da mercadoria"
       objectReference: {fileID: 0}
     - target: {fileID: 1994802659726833511, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_fontSize
-      value: 32.3
+      value: 39.85
       objectReference: {fileID: 0}
     - target: {fileID: 1994802659726833511, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_margin.w
@@ -914,7 +914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138065681761237371, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 411.34006
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4138065681761237371, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -934,13 +934,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_text
-      value: 'Procupar por goiaba no caminho para usar de isca
-
-'
+      value: Usar Goiaba Como Isca
       objectReference: {fileID: 0}
     - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_fontSize
-      value: 35.25
+      value: 47.1
       objectReference: {fileID: 0}
     - target: {fileID: 7494503718362338785, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_margin.w
@@ -1004,7 +1002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8099320740313460910, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_Pivot.x
