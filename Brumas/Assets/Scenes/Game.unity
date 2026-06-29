@@ -4828,6 +4828,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6318571364044610781}
     m_Modifications:
+    - target: {fileID: 982377035021398236, guid: 76b324b24b1aece40b1e15f4063fda93, type: 3}
+      propertyPath: panelFundo
+      value: 
+      objectReference: {fileID: 783607156}
     - target: {fileID: 1773547635787680288, guid: 76b324b24b1aece40b1e15f4063fda93, type: 3}
       propertyPath: audioSource
       value: 

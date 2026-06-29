@@ -6,29 +6,36 @@ public class BookController : MonoBehaviour
 {
     public static BookController Instance { get; private set; }
 
-    [Header("Referências")]
+    [Header("Referencias")]
     public Animator animatorLivro;
     public GameObject livro3D;
 
     [Header("Render Texture")]
-    [Tooltip("SkinnedMeshRenderer da página que exibe o texto")]
+    [Tooltip("SkinnedMeshRenderer da pagina que exibe o texto")]
     public SkinnedMeshRenderer rendererPagina;
     public RenderTexture renderTexture;
 
-    [Header("Configurações")]
-    [Tooltip("Nome da cena onde a animação de abrir deve tocar")]
+    [Header("Configuracoes")]
+    [Tooltip("Nome da cena onde a animacao de abrir deve tocar")]
     public string cenaComAnimacaoAbrir = "Menu";
+
+    [Header("Painel de fundo (opcional)")]
+    [Tooltip("Arraste aqui o GameObject 'Panel' do canvas do Menu.\n" +
+             "Deixe vazio para desativar o Find automatico que causava bugs.")]
+    [SerializeField] private GameObject panelFundo;
 
     public event System.Action OnPaginaViradaProximo;
     public event System.Action OnPaginaViradaVoltar;
-
-    private GameObject _panelOriginal;
 
     void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        _panelOriginal = GameObject.Find("Panel");
+
+        // Se nao foi atribuido no inspector, tenta encontrar pelo nome
+        // mas SOMENTE se o nome for suficientemente especifico para nao
+        // colidir com outros objetos (ex: "PainelFundoMenu")
+        // Deixamos panelFundo null por padrao para evitar o bug dos sliders.
     }
 
     void Start()
@@ -40,18 +47,15 @@ public class BookController : MonoBehaviour
             livro3D.SetActive(false);
     }
 
-    // ─── Livro ────────────────────────────────────────────────────────────
+    // ─── Livro ───────────────────────────────────────────────────────────
     public void AbrirLivro()
     {
         if (livro3D != null) livro3D.SetActive(true);
-        if (_panelOriginal != null) _panelOriginal.SetActive(false);
 
-        string cenaAtual = SceneManager.GetActiveScene().name;
+        // so desativa o painel de fundo se ele foi explicitamente atribuido
+        if (panelFundo != null) panelFundo.SetActive(false);
 
-        //if (cenaAtual == cenaComAnimacaoAbrir)
-        //    animatorLivro.SetTrigger("Abrir");
-        //else
-            animatorLivro.Play("Idle");
+        animatorLivro.Play("Idle");
     }
 
     public void FecharLivro()
@@ -63,15 +67,18 @@ public class BookController : MonoBehaviour
     private IEnumerator DesativarAposFechar()
     {
         yield return new WaitForSeconds(animatorLivro.GetCurrentAnimatorStateInfo(0).length);
+
         if (livro3D != null) livro3D.SetActive(false);
-        if (_panelOriginal != null) _panelOriginal.SetActive(true);
+
+        // so reativa o painel de fundo se ele foi explicitamente atribuido
+        if (panelFundo != null) panelFundo.SetActive(true);
     }
 
-    // ─── Páginas ──────────────────────────────────────────────────────────
+    // ─── Paginas ─────────────────────────────────────────────────────────
     public void VirarProximaPagina() => animatorLivro.SetTrigger("ProximaPagina");
     public void VirarPaginaAnterior() => animatorLivro.SetTrigger("PaginaAnterior");
 
-    // ─── Botões 3D ────────────────────────────────────────────────────────
+    // ─── Botoes 3D ───────────────────────────────────────────────────────
     public void SetBotoesAtivos(bool ativo)
     {
         BookPageButton3D[] snapshot = BookPageButton3D.Todos.ToArray();
@@ -79,7 +86,7 @@ public class BookController : MonoBehaviour
             if (botao != null) botao.gameObject.SetActive(ativo);
     }
 
-    // ─── Animation Events ─────────────────────────────────────────────────
+    // ─── Animation Events ────────────────────────────────────────────────
     public void AnimEvent_TrocaTextoProximo() => OnPaginaViradaProximo?.Invoke();
     public void AnimEvent_TrocaTextoAnterior() => OnPaginaViradaVoltar?.Invoke();
 }

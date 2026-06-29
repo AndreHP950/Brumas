@@ -4210,7 +4210,9 @@ PrefabInstance:
       propertyPath: duracao
       value: 2.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 991636539669121093, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
+    - {fileID: 8498045365571660532, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7003078327749691399, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
@@ -4406,6 +4408,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 335245631}
+        m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
+        m_MethodName: LimpaPai
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 304416991}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: LoadGameScene
@@ -6809,7 +6823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.29956383}
-  m_AnchoredPosition: {x: -336.7312, y: 3.5004883}
+  m_AnchoredPosition: {x: -336.7312, y: 3.5005112}
   m_SizeDelta: {x: -725.4781, y: -66.1818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539825285
@@ -9230,6 +9244,7 @@ MonoBehaviour:
   rendererPagina: {fileID: 0}
   renderTexture: {fileID: 8400000, guid: 7da0876ea3bf53e40b790763962feaa8, type: 2}
   cenaComAnimacaoAbrir: Menu
+  panelFundo: {fileID: 0}
 --- !u!4 &1665789133189150459
 Transform:
   m_ObjectHideFlags: 0
