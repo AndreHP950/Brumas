@@ -2270,7 +2270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &606374176
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3497,13 +3497,13 @@ MonoBehaviour:
     Nery\nProfessora\n\nSimone Nogueira\nProfessora\n\nGiovani Brito Antunes Junior\nCompositor
     Musical, e Play Tester\n\nJeovani Raimundo Antunes\nCompositor Musical\n\nEm
     mem\xF3ria das v\xEDtimas de Brumadinho\n\nA lista a seguir homenageia as v\xEDtimas
-    do rompimento da barragem ocorrido em 25 de janeiro de 2019.\n\nCr\xE9ditos\nEm
-    Homenagem a:\n\nAdail dos Santos Junior\n\nAdair Cust\xF3dio Rodrigues\n\nAdemario
-    Bispo\n\nAdilson Saturnino de Souza\n\nAdnilson Silva Nascimento\n\nAdriano Aguiar
-    Lamounier\n\nAdriano Caldeira do Amaral\n\nAdriano Gon\xE7alves dos Anjos\n\nAdriano
-    Junio Braga\n\nAdriano Ribeiro da Silva\n\nAdriano Wagner da Cruz de Oliveira\n\nAla\xE9rcio
-    L\xFAcio Ferreira\n\nAlano Reis Teixeira\n\nAlex M\xE1rio Moraes Bispo\n\nAlex
-    Rafael Piedade\n\nAlexis Adriano da Silva\n\nAlexis C\xE9sar Jesus Costa\n\nAlisson
+    do rompimento da barragem ocorrido em 25 de janeiro de 2019.\n\nEm Homenagem
+    a:\n\nAdail dos Santos Junior\n\nAdair Cust\xF3dio Rodrigues\n\nAdemario Bispo\n\nAdilson
+    Saturnino de Souza\n\nAdnilson Silva Nascimento\n\nAdriano Aguiar Lamounier\n\nAdriano
+    Caldeira do Amaral\n\nAdriano Gon\xE7alves dos Anjos\n\nAdriano Junio Braga\n\nAdriano
+    Ribeiro da Silva\n\nAdriano Wagner da Cruz de Oliveira\n\nAla\xE9rcio L\xFAcio
+    Ferreira\n\nAlano Reis Teixeira\n\nAlex M\xE1rio Moraes Bispo\n\nAlex Rafael
+    Piedade\n\nAlexis Adriano da Silva\n\nAlexis C\xE9sar Jesus Costa\n\nAlisson
     Martins de Souza\n\nAlisson Pessoa Damasceno\n\nAmanda de Ara\xFAjo Silva\n\nAmarina
     de Lourdes Ferreira\n\nAmauri Geraldo da Cruz\n\nAnailde Souza Pereira\n\nAnderson
     Luiz da Silva\n\nAndre Luiz Almeida Santos\n\nAndr\xE9a Lima Cunha\n\nAng\xE9lica
@@ -3865,7 +3865,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &932717483
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4203,6 +4203,10 @@ PrefabInstance:
     - target: {fileID: 8498045365571660532, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979743737283242493, guid: ca488b914b7ee5041b883ecb37952675, type: 3}
+      propertyPath: duracao
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9951,8 +9955,8 @@ MonoBehaviour:
     Especiais\n\nMarcelo La Carretta\nIdealizador do projeto Brumas\n\nAlessandra
     Oliveira\nOrientadora da Prefeitura de Brumadinho\n\nRoque Anderson Saldanha
     Teixeira\nProfessor Orientador \n\nDaniel Pinheiro Lima\nProfessor\n\nMichele
-    Nery\nProfessora\n\nSimone Nogueira\nProfessora\n\nGiovani Brito Antunes Junior\nCompositor
-    Musical, e Play Tester\n\nJeovani Raimundo Antunes\nCompositor Musical\n\nEm
+    Nery e Simone Nogueira\nProfessoras\n\nGiovani Brito Antunes Junior\nCompositor
+    Musical, e Play Tester\n\nJeovani Antunes e Ernane Parreiras\nCompositores Musicais\n\nEm
     mem\xF3ria das v\xEDtimas de Brumadinho\n\nA lista a seguir homenageia as v\xEDtimas
     do rompimento da barragem ocorrido em 25 de janeiro de 2019.\n\nCr\xE9ditos\nEm
     Homenagem a:\n\nAdail dos Santos Junior\n\nAdair Cust\xF3dio Rodrigues\n\nAdemario

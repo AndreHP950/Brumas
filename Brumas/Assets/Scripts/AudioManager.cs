@@ -99,12 +99,11 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // ── TODO: descomente quando a cutscene de CenaExtra11 estiver pronta ──
         // if (nomeCena == "CenaExtra11")
-        // {
-        //     TocarMusica(musicaFinal);
-        //     return;
-        // }
+        //{
+        //    TocarMusica(musicaFinal);
+        //    return;
+        //}
 
         if (nomeCena.Contains("CenaExtra"))
         {
