@@ -576,11 +576,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 618468267935902458fd009b27b5fe6a, type: 3}
   m_PrefabInstance: {fileID: 1657539435}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &338050143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1119187897449563416, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-  m_PrefabInstance: {fileID: 2081169850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &465367534 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3603007169124096349, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
@@ -2770,6 +2765,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2081169853}
@@ -2778,7 +2777,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 16003353}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 16003353}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
@@ -2790,11 +2797,19 @@ PrefabInstance:
       value: TrocarCena
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TrocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: TesteGoogle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogoManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: DialogoManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
@@ -2814,11 +2829,19 @@ PrefabInstance:
       value: CenaExtra1- 1
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: CenaExtra1- 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.UI.Button, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -4376,10 +4399,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1540639070}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-      propertyPath: FadePanel
-      value: 
-      objectReference: {fileID: 338050143}
-    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Sodialogo
       value: 0
       objectReference: {fileID: 0}
@@ -4391,6 +4410,10 @@ PrefabInstance:
       propertyPath: gifTutorial
       value: 
       objectReference: {fileID: 821485585}
+    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: fadeDuration
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: iniciar.Array.size
       value: 10
@@ -4540,7 +4563,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3352560817459412122, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 374286302258284880, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
     m_AddedGameObjects:
