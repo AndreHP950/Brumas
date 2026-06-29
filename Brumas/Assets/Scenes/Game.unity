@@ -576,11 +576,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 618468267935902458fd009b27b5fe6a, type: 3}
   m_PrefabInstance: {fileID: 1657539435}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &338050143 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1119187897449563416, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-  m_PrefabInstance: {fileID: 2081169850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &465367534 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3603007169124096349, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
@@ -2378,6 +2373,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1512098949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512098950}
+  m_Layer: 0
+  m_Name: CamPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1512098950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1512098949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.85, y: 1.378, z: 9.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6318571364044610781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1537172808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2708,11 +2734,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.24499512
+      value: 0.24511719
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.000061035156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8798608267925827289, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2739,6 +2765,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2081169853}
@@ -2747,7 +2777,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 16003353}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 16003353}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
@@ -2759,11 +2797,19 @@ PrefabInstance:
       value: TrocarCena
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: TrocarCena
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: TesteGoogle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogoManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: DialogoManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
@@ -2783,11 +2829,19 @@ PrefabInstance:
       value: CenaExtra1- 1
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: CenaExtra1- 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.UI.Button, UnityEngine.UI
       objectReference: {fileID: 0}
     - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098591388222810771, guid: 47dec5bc8053e7d488c4d920d3ad7df7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -3069,6 +3123,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713593857}
   m_CullTransparentMesh: 1
+--- !u!1 &1725842273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3346317978356865930, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+  m_PrefabInstance: {fileID: 6318571364044610779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1725842278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725842273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cb095151fb5f649949efeb22777d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraIntroAnimation
+  prefixoCena: 5
+  forcarAnimacao: 1
+  delayInicio: 0.3
+  duracao: 1.8
+  posicaoInicial: {fileID: 1512098950}
+  offsetPosicaoInicial: {x: 0, y: 9, z: 0}
+  rotacaoEulerInicial: {x: 0, y: 0, z: 0}
+  fovInicial: 0
+  curva:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bloquearPlayerDuranteAnimacao: 1
+  aoTerminar:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1737717709 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6755560642800364642, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
@@ -4292,10 +4399,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1540639070}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
-      propertyPath: FadePanel
-      value: 
-      objectReference: {fileID: 338050143}
-    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: Sodialogo
       value: 0
       objectReference: {fileID: 0}
@@ -4307,6 +4410,10 @@ PrefabInstance:
       propertyPath: gifTutorial
       value: 
       objectReference: {fileID: 821485585}
+    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: fadeDuration
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: iniciar.Array.size
       value: 10
@@ -4456,7 +4563,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 3352560817459412122, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects:
     - {fileID: 374286302258284880, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
     m_AddedGameObjects:
@@ -4881,10 +4988,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8444198472262461695, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6623723380551685993}
+    - targetCorrespondingSourceObject: {fileID: 8444198472262461695, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1512098950}
     - targetCorrespondingSourceObject: {fileID: 1254218748002269907, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 942936956}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3346317978356865930, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
+      insertIndex: 1
+      addedObject: {fileID: 1725842278}
   m_SourcePrefab: {fileID: 100100000, guid: 3356542c1337f7d44b4b41aa72ffbb3e, type: 3}
 --- !u!108 &6318571364044610780 stripped
 Light:

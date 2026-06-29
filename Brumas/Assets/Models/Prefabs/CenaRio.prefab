@@ -149,7 +149,39 @@ Transform:
   - {fileID: 6294565810919164821}
   - {fileID: 4645885028178971865}
   - {fileID: 8869008854977213507}
+  - {fileID: 2355650862665059018}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8585892818547249307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2355650862665059018}
+  m_Layer: 0
+  m_Name: CamPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2355650862665059018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8585892818547249307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.25, z: -29.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8156138829351393468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &946933713154721131
 PrefabInstance:
@@ -835,13 +867,69 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7414940169253207435, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5288375391352680550}
   m_SourcePrefab: {fileID: 100100000, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
 --- !u!4 &1582581605819786214 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2411525941590792568, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
   m_PrefabInstance: {fileID: 3783309030690929310}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5937480749165872917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414940169253207435, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
+  m_PrefabInstance: {fileID: 3783309030690929310}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5288375391352680550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5937480749165872917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cb095151fb5f649949efeb22777d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraIntroAnimation
+  prefixoCena: 5
+  forcarAnimacao: 1
+  delayInicio: 0.3
+  duracao: 1.8
+  posicaoInicial: {fileID: 2355650862665059018}
+  offsetPosicaoInicial: {x: 0, y: 0, z: 0}
+  rotacaoEulerInicial: {x: 0, y: -250, z: 0}
+  fovInicial: 0
+  curva:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bloquearPlayerDuranteAnimacao: 1
+  aoTerminar:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &7556716578511453889
 PrefabInstance:
   m_ObjectHideFlags: 0

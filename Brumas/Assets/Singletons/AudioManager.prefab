@@ -52,7 +52,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8ccb4386c13a0b54d95f6bde5c6f5c69, type: 3}
   - {fileID: 8300000, guid: 98a3b76fa5ea6f042b713f98d9b47b9c, type: 3}
   Walk:
-  - {fileID: 8300000, guid: 68a03dfc68d524040a4977e8f51f0dc0, type: 3}
+  - {fileID: 8300000, guid: 29baee33b3a6e0f4ba92b567048ec75c, type: 3}
   - {fileID: 8300000, guid: 2e389464bc763f248a913aac78a491f2, type: 3}
   - {fileID: 8300000, guid: ec0fe8a83d2a92f42b0eb46f61bd0a84, type: 3}
   musicaMenu: {fileID: 8300000, guid: ef273f85d25105c4b9c72d7de380b7cd, type: 3}

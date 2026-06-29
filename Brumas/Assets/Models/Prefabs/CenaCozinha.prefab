@@ -527,6 +527,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &7177770229603211959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 136263110614059731}
+  m_Layer: 0
+  m_Name: CamPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &136263110614059731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177770229603211959}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.74, y: 30.53, z: 23.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 779031819806375099}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9129810887374830634
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +917,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a19479757eb47f44095d712f2922a9d1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9027228635964800392}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a19479757eb47f44095d712f2922a9d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 136263110614059731}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19479757eb47f44095d712f2922a9d1, type: 3}
 --- !u!4 &779031819806375099 stripped
@@ -1595,8 +1629,64 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7414940169253207435, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8979743737283242493}
   m_SourcePrefab: {fileID: 100100000, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
+--- !u!1 &1296391425292927352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7414940169253207435, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
+  m_PrefabInstance: {fileID: 8582345684251720947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8979743737283242493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296391425292927352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cb095151fb5f649949efeb22777d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraIntroAnimation
+  prefixoCena: 5
+  forcarAnimacao: 1
+  delayInicio: 0.3
+  duracao: 1.8
+  posicaoInicial: {fileID: 0}
+  offsetPosicaoInicial: {x: 0, y: 0, z: 0}
+  rotacaoEulerInicial: {x: 60, y: 0, z: 0}
+  fovInicial: 0
+  curva:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  bloquearPlayerDuranteAnimacao: 1
+  aoTerminar:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &6227893329741653387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2411525941590792568, guid: 7ab4ed3119c40474cbd7ed0d92aa85c4, type: 3}
