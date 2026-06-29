@@ -184,12 +184,56 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1367935355}
     - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1367935355}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Proximo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ConferirCenaExtra
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: DialogoManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: 516
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140633621713134046, guid: ff29dbea75b4618478040572493fbe46, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5154363048856078254, guid: ff29dbea75b4618478040572493fbe46, type: 3}
       propertyPath: m_Type
@@ -629,11 +673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6322187787334808085, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.2475
+      value: 0.2475586
       objectReference: {fileID: 0}
     - target: {fileID: 6322187787334808085, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00050354
+      value: -0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 6755560642800364642, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_IsActive
@@ -655,6 +699,14 @@ PrefabInstance:
       propertyPath: dialog
       value: 
       objectReference: {fileID: 11400000, guid: 31a0c0b3572274e438198c2c8eee12ba, type: 2}
+    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: UiExtra
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186652834265332576, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: Sodialogo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8312474826427564532, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -743,6 +795,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 6782349877571109477, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
     - {fileID: 7900687835979104378, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+    - {fileID: 6755560642800364642, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2293841145947439449, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       insertIndex: 0

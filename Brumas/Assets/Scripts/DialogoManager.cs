@@ -177,6 +177,13 @@ public class DialogoManager : MonoBehaviour
         else
             AplicarProximoTexto();
     }
+    public void ConferirCenaExtra(string proximacena)
+    {
+        if (dialog.nextDialog[0] == null)
+        {
+            TrocarCena(proximacena);
+        }
+    }
 
     public void Voltar()
     {
@@ -343,6 +350,7 @@ public class DialogoManager : MonoBehaviour
     
         public IEnumerator IniciarFade(string Cena)
     {
+        yield return new WaitForSeconds(3f);
         _fade.Fade();
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene($"{Cena}");

@@ -4,7 +4,7 @@ using UnityEngine;
 public class PanelFader : MonoBehaviour
 {
     private bool faded = false;
-    public float duration = 0.4f;
+    public float duration = 2f;
     public void Fade()
     {
         var canvGroup = GetComponent<CanvasGroup>();
