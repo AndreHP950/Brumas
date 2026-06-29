@@ -239,8 +239,7 @@ public class DialogoManager : MonoBehaviour
         if (BookController.Instance != null)
             BookController.Instance.FecharLivro();
 
-        _fade.Fade();
-        SceneManager.LoadScene($"{Cena}");
+        StartCoroutine(IniciarFade(Cena));
     }
 
     // ─── Texto ─────────────────────────────────────────────────────────────
@@ -340,5 +339,12 @@ public class DialogoManager : MonoBehaviour
             vertices[vertexIndex + i] = originalVertices[i];
 
         texto.UpdateVertexData(TMP_VertexDataUpdateFlags.Vertices);
+    }
+    
+        public IEnumerator IniciarFade(string Cena)
+    {
+        _fade.Fade();
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene($"{Cena}");
     }
 }

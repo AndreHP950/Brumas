@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55e727bfebd58e49aeae0c2e5408265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanelFader
-  duration: 0.4
+  duration: 2
 --- !u!1 &8929594318397240766
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +150,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef566b0e4bc666c48bed636caa2ab3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TesteGoogle
+  respostaCena1: n/a
+  respostaCena3: n/a
+  respostaCena4: n/a
+  respostaCena7: n/a
+  respostaCena9: n/a
+  respostaCena12: n/a
+  respostaCena13: n/a
+  respostaCena15: n/a
+  respostaCena20: n/a
+  FinalPego: se vc ta vendo essa string deu algum erro
 --- !u!1001 &56824250395382071
 PrefabInstance:
   m_ObjectHideFlags: 0
