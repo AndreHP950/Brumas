@@ -84,7 +84,14 @@ public class DialogoManager : MonoBehaviour
         //    StartCoroutine(EsperarECarregar());
         //}
     }
-
+    void Update()
+    {
+        // Cheat: tecla 1 abre a cena de créditos
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TrocarCena("MenuCreditos");
+        }
+    }
     //private IEnumerator EsperarECarregar()
     //{
     //    yield return new WaitForSeconds(136f);
