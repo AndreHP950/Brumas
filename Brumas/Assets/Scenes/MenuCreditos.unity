@@ -1823,7 +1823,11 @@ MonoBehaviour:
   Canvas: {fileID: 1440613282}
   PauseButton: {fileID: 181082624}
   Book: {fileID: 1069365128}
+  botaoRetomar: {fileID: 0}
+  botaoExit: {fileID: 0}
   cenaMenu: Menu
+  cenasSemPause:
+  - MenuCreditos
   teclaPause: 27
   audioSource: {fileID: 0}
   somAbrirFechar: {fileID: 0}
@@ -10816,6 +10820,7 @@ MonoBehaviour:
   rendererPagina: {fileID: 0}
   renderTexture: {fileID: 8400000, guid: 7da0876ea3bf53e40b790763962feaa8, type: 2}
   cenaComAnimacaoAbrir: Menu
+  panelFundo: {fileID: 0}
 --- !u!4 &1665789133189150459
 Transform:
   m_ObjectHideFlags: 0
@@ -12313,6 +12318,10 @@ PrefabInstance:
     - target: {fileID: 3544923470946552248, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688012133417797390, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5039666739756753495, guid: 3c0003a77e165054eb2978c49799b83d, type: 3}
       propertyPath: m_AnchoredPosition.x

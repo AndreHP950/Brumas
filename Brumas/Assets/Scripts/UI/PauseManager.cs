@@ -26,6 +26,9 @@ public class PauseManager : MonoBehaviour
     [Header("Cena do Menu Principal")]
     [SerializeField] private string cenaMenu = "Menu";
 
+    [Tooltip("Cenas onde o pause e o botao ficam completamente desativados (alem do Menu)")]
+    [SerializeField] private string[] cenasSemPause = { "MenuCreditos" };
+
     [Header("Input — tecla de pause")]
     [SerializeField] private KeyCode teclaPause = KeyCode.Escape;
 
@@ -84,19 +87,25 @@ public class PauseManager : MonoBehaviour
             painelConfig.transform.SetParent(Canvas.transform, true);
     }
 
+    private bool CenaPermitePause()
+    {
+        string cena = SceneManager.GetActiveScene().name;
+        if (cena == cenaMenu) return false;
+        foreach (string bloqueada in cenasSemPause)
+            if (cena == bloqueada) return false;
+        return true;
+    }
+
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != cenaMenu)
-            if (Input.GetKeyDown(teclaPause))
-                AlternarPause();
+        if (CenaPermitePause() && Input.GetKeyDown(teclaPause))
+            AlternarPause();
     }
 
     private void FixedUpdate()
     {
         if (PauseButton == null) return;
-
-        bool emJogo = SceneManager.GetActiveScene().name != cenaMenu;
-        PauseButton.SetActive(emJogo && !_pausado);
+        PauseButton.SetActive(CenaPermitePause() && !_pausado);
     }
 
     // ─────────────────────────────────────────────

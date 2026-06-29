@@ -32,10 +32,15 @@ public class BookController : MonoBehaviour
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
 
-        // Se nao foi atribuido no inspector, tenta encontrar pelo nome
-        // mas SOMENTE se o nome for suficientemente especifico para nao
-        // colidir com outros objetos (ex: "PainelFundoMenu")
-        // Deixamos panelFundo null por padrao para evitar o bug dos sliders.
+        // Busca automatica do Panel — so executa se nao foi atribuido no inspector
+        // e somente na cena do Menu, para nao colidir com objetos de mesmo nome
+        // em outras cenas (o que causava o bug dos sliders).
+        if (panelFundo == null)
+        {
+            GameObject encontrado = GameObject.Find("Panel");
+            if (encontrado != null)
+                panelFundo = encontrado;
+        }
     }
 
     void Start()
