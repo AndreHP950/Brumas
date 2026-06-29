@@ -14,7 +14,7 @@ public class DialogoManager : MonoBehaviour
     public GameObject Botoes;
     public GameObject UiExtra;
     public GameObject Panel;
-    public GameObject FadePanel;
+    [SerializeField] public GameObject FadePanel;
 
     public bool AlgoAberto;
     public bool Sodialogo;
@@ -79,8 +79,17 @@ public class DialogoManager : MonoBehaviour
             if (Sodialogo)
                 UiExtra.SetActive(true);
         }
+        //if (SceneManager.GetActiveScene().name == "MenuCreditos")
+        //{
+        //    StartCoroutine(EsperarECarregar());
+        //}
     }
 
+    //private IEnumerator EsperarECarregar()
+    //{
+    //    yield return new WaitForSeconds(136f);
+    //    TrocarCena("Menu");
+    //}
     void OnDestroy()
     {
         if (Instance == this) Instance = null;

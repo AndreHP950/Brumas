@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using TMPro;
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class MenuLivroController : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class MenuLivroController : MonoBehaviour
     [Header("Painéis do Canvas original")]
     [SerializeField] private GameObject painelConfig;
     [SerializeField] private GameObject painelCreditos;
+    [SerializeField] public GameObject FadePanel;
 
     // ─────────────────────────────────────────────
     //  HISTÓRIAS — 2 painéis que você monta no editor
@@ -67,7 +69,7 @@ public class MenuLivroController : MonoBehaviour
     private List<string> _paginasCreditos = new List<string>();
     private Coroutine _autoAvancar;
     private bool _virandoPagina;
-
+    PanelFader _fade;
     // ─────────────────────────────────────────────
     //  LIFECYCLE
     // ─────────────────────────────────────────────
@@ -87,6 +89,8 @@ public class MenuLivroController : MonoBehaviour
 
         PreparaCreditos();
         DesativarPaineis();
+        if (SceneManager.GetActiveScene().name == "MenuCreditos") AbrirCreditos();
+        _fade = FadePanel.GetComponent<PanelFader>();
     }
 
     private void OnDestroy()
@@ -213,10 +217,35 @@ public class MenuLivroController : MonoBehaviour
             case ModoLivro.Creditos:
                 _paginaAtual++;
                 AtualizarPaginaCreditos();
+
+                // Se estiver na cena de créditos e chegou na última página,
+                // retorna automaticamente para o menu.
+                if (SceneManager.GetActiveScene().name == "MenuCreditos" &&
+                                                            _paginaAtual >= _paginasCreditos.Count - 1)
+                {
+                    StartCoroutine(FadeETrocarCena());
+                }
+
                 break;
         }
     }
+    private IEnumerator FadeETrocarCena()
+    {
+        _virandoPagina = true;
+        PararAutoAvancar();
 
+        if (_fade != null)
+        {
+            _fade.Fade();
+            yield return new WaitForSeconds(_fade.duration);
+        }
+        else
+        {
+            yield return null;
+        }
+
+        SceneManager.LoadScene("Menu");
+    }
     private void OnVoltar()
     {
         _virandoPagina = false;

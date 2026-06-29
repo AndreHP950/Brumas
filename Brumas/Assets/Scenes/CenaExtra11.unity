@@ -304,6 +304,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3674663016784424644, guid: ff29dbea75b4618478040572493fbe46, type: 3}
   m_PrefabInstance: {fileID: 1609453294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &807210224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 807210225}
+  - component: {fileID: 807210226}
+  m_Layer: 0
+  m_Name: AbrirCreditos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &807210225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807210224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1648.373, y: 0.00001, z: 430.84494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &807210226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807210224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9222c8da1ea665846a9070fada6b997a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!114 &907276611 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6750616731050603645, guid: ff29dbea75b4618478040572493fbe46, type: 3}
@@ -571,7 +615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: Menu
+      value: MenuCreditos
       objectReference: {fileID: 0}
     - target: {fileID: 6044590981479478879, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
@@ -1145,3 +1189,4 @@ SceneRoots:
   - {fileID: 84691028}
   - {fileID: 122317798}
   - {fileID: 2141896941}
+  - {fileID: 807210225}

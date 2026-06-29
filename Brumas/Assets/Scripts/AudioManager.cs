@@ -99,11 +99,11 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // if (nomeCena == "CenaExtra11")
-        //{
-        //    TocarMusica(musicaFinal);
-        //    return;
-        //}
+        if (nomeCena == "MenuCreditos")
+        {
+            TocarMusica(musicaFinal);
+            return;
+        }
 
         if (nomeCena.Contains("CenaExtra"))
         {
