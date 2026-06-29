@@ -466,22 +466,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 204.666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 204.666
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 959.9
       objectReference: {fileID: 0}
     - target: {fileID: 1498395762125645239, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -161.71204
+      value: -160.50339
       objectReference: {fileID: 0}
+    - target: {fileID: 3603007169124096349, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4a0206fcf3e17a849bf21609722caf2b, type: 3}
     - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_text
-      value: 'Continuar
-
-'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5019209820033190189, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_fontSize
-      value: 70.7
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5519818234057821691, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_ChildAlignment
