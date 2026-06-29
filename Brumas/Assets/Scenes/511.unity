@@ -1117,6 +1117,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2141684000 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4020142879785829122, guid: 7e81d7e3a2fd105438e7837174c66b16, type: 3}
+  m_PrefabInstance: {fileID: 5893713803775993111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5893713803775993111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1165,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5170288875288444475, guid: 7e81d7e3a2fd105438e7837174c66b16, type: 3}
+      propertyPath: posicaoInicial
+      value: 
+      objectReference: {fileID: 2141684000}
     - target: {fileID: 8218303341652893687, guid: 7e81d7e3a2fd105438e7837174c66b16, type: 3}
       propertyPath: m_Name
       value: CenaFloresta
