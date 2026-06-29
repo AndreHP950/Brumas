@@ -22,6 +22,10 @@ public class PauseManager : MonoBehaviour
 
     [SerializeField] private GameObject Book;
 
+
+    [SerializeField] private GameObject botaoRetomar;
+    [SerializeField] private GameObject botaoExit;
+
     [Header("Cena do Menu Principal")]
     [SerializeField] private string cenaMenu = "Menu";
 
@@ -63,16 +67,38 @@ public class PauseManager : MonoBehaviour
         DontDestroyOnLoad(painelConfig);
         DontDestroyOnLoad(Canvas);
         painelConfig.transform.SetParent(Canvas.transform, true);
+
+        // Procura automaticamente os botões caso não tenham sido atribuídos
+        if (botaoRetomar == null)
+        {
+            Transform t = transform.Find("Despause");
+            if (t != null)
+                botaoRetomar = t.gameObject;
+        }
+
+        if (botaoExit == null)
+        {
+            Transform t = transform.Find("Exit");
+            if (t != null)
+                botaoExit = t.gameObject;
+        }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(teclaPause))
+        if (SceneManager.GetActiveScene().name != "Menu")
+            if (Input.GetKeyDown(teclaPause))
             AlternarPause();
     }
     private void FixedUpdate()
     {
-        if(SceneManager.GetActiveScene().name != "Menu") PauseButton.SetActive(true);
+        if (PauseButton == null)
+            return;
+
+        if (SceneManager.GetActiveScene().name != "Menu")
+            PauseButton.SetActive(!_pausado);
+        else
+            PauseButton.SetActive(false);
     }
 
     // ─────────────────────────────────────────────
@@ -96,14 +122,24 @@ public class PauseManager : MonoBehaviour
 
         TocarSom();
 
-        // abre o livro 3D como fundo visual, sem navegacao de paginas
-        if (Book != null)
-        {
-            Book.SetActive(true);
-        }
+        // esconde o botão de abrir o pause
+        if (PauseButton != null)
+            PauseButton.SetActive(false);
 
-        // exibe o painel de config por cima
-        if (painelConfig != null) painelConfig.SetActive(true);
+        // abre o livro 3D como fundo visual
+        if (Book != null)
+            Book.SetActive(true);
+
+        // exibe o painel de config
+        if (painelConfig != null)
+            painelConfig.SetActive(true);
+
+        // exibe os botões do menu de pause
+        if (botaoRetomar != null)
+            botaoRetomar.SetActive(true);
+
+        if (botaoExit != null)
+            botaoExit.SetActive(true);
     }
 
     /// <summary>Retoma o jogo e fecha tudo.</summary>
@@ -116,12 +152,22 @@ public class PauseManager : MonoBehaviour
 
         TocarSom();
 
-        if (painelConfig != null) painelConfig.SetActive(false);
+        if (painelConfig != null)
+            painelConfig.SetActive(false);
 
         if (Book != null)
-        {
             Book.SetActive(false);
-        }
+
+        // esconde os botões do menu de pause
+        if (botaoRetomar != null)
+            botaoRetomar.SetActive(false);
+
+        if (botaoExit != null)
+            botaoExit.SetActive(false);
+
+        // mostra novamente o botão de pause
+        if (PauseButton != null)
+            PauseButton.SetActive(true);
     }
 
     /// <summary>Volta ao menu principal. Conecte ao botao "Voltar ao Menu".</summary>
@@ -131,7 +177,22 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1f;
         _pausado = false;
 
-        if (painelConfig != null) painelConfig.SetActive(false);
+        if (painelConfig != null)
+            painelConfig.SetActive(false);
+
+        if (Book != null)
+            Book.SetActive(false);
+
+        // esconde os botões do menu de pause
+        if (botaoRetomar != null)
+            botaoRetomar.SetActive(false);
+
+        if (botaoExit != null)
+            botaoExit.SetActive(false);
+
+        // deixa o botão de pause preparado para quando voltar ao jogo
+        if (PauseButton != null)
+            PauseButton.SetActive(true);
 
         SceneManager.LoadScene(cenaMenu);
     }

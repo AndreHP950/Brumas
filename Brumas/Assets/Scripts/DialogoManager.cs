@@ -366,7 +366,7 @@ public class DialogoManager : MonoBehaviour
     
         public IEnumerator IniciarFade(string Cena)
     {
-        yield return new WaitForSeconds(3f);
+        if (SceneManager.GetActiveScene().name.Contains("CenaExtra")) yield return new WaitForSeconds(3f);
         _fade.Fade();
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene($"{Cena}");
