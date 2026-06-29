@@ -157,6 +157,7 @@ public class AudioManager : MonoBehaviour
     public static void WalkSound(int i)
     {
         if (Instance == null || Instance.Walk == null) return;
+        Instance._audioSourceEfeitos.pitch = Random.Range(0.85f, 1.5f);
         Instance._audioSourceEfeitos.PlayOneShot(Instance.Walk[i]);
     }
 }

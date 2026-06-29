@@ -25,10 +25,12 @@ public class MoveNavmesh : MonoBehaviour
     private NavMeshAgent agent;
     private DialogoManager dialogoManager;
     private GameObject currentIndicator;
+    private GameObject pai;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        pai = gameObject.transform.parent.gameObject;
 
         if (sceneCamera == null)
             sceneCamera = Camera.main;
@@ -49,7 +51,11 @@ public class MoveNavmesh : MonoBehaviour
         if (andandoTimer >= intervalo && estavaAndando)
         {
             andandoTimer = 0;
+            if (pai.name=="CenaQuarto" || pai.name=="CenaCozinha")
             AudioManager.WalkSound(2);
+            else if (pai.name=="CenaEstrada"||pai.name=="CenaFloresta"||pai.name=="CenaRio") 
+            AudioManager.WalkSound(0);
+            else AudioManager.WalkSound(1);
         }
         AtualizarAnimacao();
 
