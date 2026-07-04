@@ -119,6 +119,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CenaExtra10- 1.unity
     guid: 85d0ecac2c699cc4e803000186f2ddf6
+  - enabled: 1
+    path: Assets/Scenes/CenaExtra7.unity
+    guid: 5d509b00b5f450d45b552c2e91250f79
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
