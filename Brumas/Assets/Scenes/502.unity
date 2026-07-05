@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_AnchorMin.x
@@ -141,23 +141,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 523.68005
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 123.63318
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 411.84003
       objectReference: {fileID: 0}
     - target: {fileID: 1074834608144650453, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -211.81659
       objectReference: {fileID: 0}
     - target: {fileID: 5179519988138547456, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_Name
@@ -165,7 +165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5179519988138547456, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5315224033110524733, guid: 25866ad94005f0a488e953b910e27c67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

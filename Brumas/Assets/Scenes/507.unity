@@ -768,17 +768,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2611992520010748233, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -305.64868
+      value: -259.61932
       objectReference: {fileID: 0}
     - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_text
-      value: 'buscar seu material primeiro
+      value: 'Buscar material
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_fontSize
-      value: 37.35
+      value: 69.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_margin.x
+      value: 19.665695
+      objectReference: {fileID: 0}
+    - target: {fileID: 3893631956929899435, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
+      propertyPath: m_margin.z
+      value: 24.932678
       objectReference: {fileID: 0}
     - target: {fileID: 4422316178986979973, guid: 94a41fbb592a7b348bac27af5c3358b6, type: 3}
       propertyPath: m_AnchorMax.y
