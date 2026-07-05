@@ -1566,6 +1566,8 @@ MonoBehaviour:
   botaoRetomar: {fileID: 1811036877}
   botaoExit: {fileID: 1517380465}
   cenaMenu: Menu
+  cenasSemPause:
+  - MenuCreditos
   teclaPause: 27
   audioSource: {fileID: 0}
   somAbrirFechar: {fileID: 0}
@@ -6823,7 +6825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.29956383}
-  m_AnchoredPosition: {x: -336.7312, y: 3.5005112}
+  m_AnchoredPosition: {x: -336.7312, y: 3.5004883}
   m_SizeDelta: {x: -725.4781, y: -66.1818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539825285
@@ -7763,6 +7765,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746113769}
   m_CullTransparentMesh: 1
+--- !u!1001 &1799126132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7245729656083164386, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_Name
+      value: Mula
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5109916
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5109916
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5109916
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3807.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -363.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.94866145
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.31629342
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 36.878
+      objectReference: {fileID: 0}
+    - target: {fileID: 8054072306024707672, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 845cb5b61c8ed3f45b8cba671dfcef90, type: 3}
 --- !u!1 &1806032510
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,13 +10203,13 @@ MonoBehaviour:
     Nery e Simone Nogueira\nProfessoras\n\nGiovani Brito Antunes Junior\nCompositor
     Musical, e Play Tester\n\nJeovani Antunes e Ernane Parreiras\nCompositores Musicais\n\nEm
     mem\xF3ria das v\xEDtimas de Brumadinho\n\nA lista a seguir homenageia as v\xEDtimas
-    do rompimento da barragem ocorrido em 25 de janeiro de 2019.\n\nCr\xE9ditos\nEm
-    Homenagem a:\n\nAdail dos Santos Junior\n\nAdair Cust\xF3dio Rodrigues\n\nAdemario
-    Bispo\n\nAdilson Saturnino de Souza\n\nAdnilson Silva Nascimento\n\nAdriano Aguiar
-    Lamounier\n\nAdriano Caldeira do Amaral\n\nAdriano Gon\xE7alves dos Anjos\n\nAdriano
-    Junio Braga\n\nAdriano Ribeiro da Silva\n\nAdriano Wagner da Cruz de Oliveira\n\nAla\xE9rcio
-    L\xFAcio Ferreira\n\nAlano Reis Teixeira\n\nAlex M\xE1rio Moraes Bispo\n\nAlex
-    Rafael Piedade\n\nAlexis Adriano da Silva\n\nAlexis C\xE9sar Jesus Costa\n\nAlisson
+    do rompimento da barragem ocorrido em 25 de janeiro de 2019.\n\nEm Homenagem
+    a:\n\nAdail dos Santos Junior\n\nAdair Cust\xF3dio Rodrigues\n\nAdemario Bispo\n\nAdilson
+    Saturnino de Souza\n\nAdnilson Silva Nascimento\n\nAdriano Aguiar Lamounier\n\nAdriano
+    Caldeira do Amaral\n\nAdriano Gon\xE7alves dos Anjos\n\nAdriano Junio Braga\n\nAdriano
+    Ribeiro da Silva\n\nAdriano Wagner da Cruz de Oliveira\n\nAla\xE9rcio L\xFAcio
+    Ferreira\n\nAlano Reis Teixeira\n\nAlex M\xE1rio Moraes Bispo\n\nAlex Rafael
+    Piedade\n\nAlexis Adriano da Silva\n\nAlexis C\xE9sar Jesus Costa\n\nAlisson
     Martins de Souza\n\nAlisson Pessoa Damasceno\n\nAmanda de Ara\xFAjo Silva\n\nAmarina
     de Lourdes Ferreira\n\nAmauri Geraldo da Cruz\n\nAnailde Souza Pereira\n\nAnderson
     Luiz da Silva\n\nAndre Luiz Almeida Santos\n\nAndr\xE9a Lima Cunha\n\nAng\xE9lica
@@ -11058,3 +11129,4 @@ SceneRoots:
   - {fileID: 335245632}
   - {fileID: 207320199}
   - {fileID: 1084257663}
+  - {fileID: 1799126132}
