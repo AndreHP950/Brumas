@@ -17,6 +17,14 @@ public class AudioManager : MonoBehaviour
     [Header("Efeitos Sonoros")]
     [SerializeField] private AudioClip[] UI;
     [SerializeField] private AudioClip[] Walk;
+    [Header("")]
+    [Header("============================")]
+    [Header("AINDA SENDO FEITO")]
+    [SerializeField] private AudioClip[] Ambience;
+    [Header("AudioSource da musica ambiente (dentro de efeitos)")]
+    [SerializeField] private AudioSource audioSourceAmbience;
+    [Header("============================")]
+    [Header("")]
 
     // ─────────────────────────────────────────────
     //  MÚSICA
@@ -159,4 +167,10 @@ public class AudioManager : MonoBehaviour
         Instance._audioSourceEfeitos.pitch = Random.Range(0.85f, 1.5f);
         Instance._audioSourceEfeitos.PlayOneShot(Instance.Walk[i]);
     }
+    /*public static void AmbienceSound()
+    {
+        if (Instance==null|| Instance.Ambience==null)return;
+      if (SceneManager.GetActiveScene().name=="")
+        Instance.audioSourceAmbience.Play();
+    }*/
 }
